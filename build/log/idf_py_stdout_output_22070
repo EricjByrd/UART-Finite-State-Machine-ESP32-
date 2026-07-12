@@ -1,0 +1,324 @@
+Command: /home/bmetal/.espressif/python_env/idf6.2_py3.14_env/bin/python /home/bmetal/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/bmetal/esp-idf/uartTest/build/uartTest.elf /home/bmetal/esp-idf/uartTest/build/bootloader/bootloader.elf -m '/home/bmetal/.espressif/python_env/idf6.2_py3.14_env/bin/python' '/home/bmetal/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6292
+load:0x40078000,len:15820
+load:0x40080400,len:3988
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.1-dev-5439-g835c947761-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 12 2026 01:06:42[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a130h ( 41264) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a158 vaddr=3ffb0000 size=02b7ch ( 11132) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001ccdc vaddr=40080000 size=0333ch ( 13116) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=10e08h ( 69128) map[0m
+[0;32mI (139) esp_image: segment 4: paddr=00030e30 vaddr=4008333c size=08ab0h ( 35504) load[0m
+[0;32mI (154) esp_image: segment 5: paddr=000398e8 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (160) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (160) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (180) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (182) app_init: Application information:[0m
+[0;32mI (186) app_init: Project name:     uartTest[0m
+[0;32mI (190) app_init: App version:      v6.1-dev-5439-g835c947761-dirty[0m
+[0;32mI (196) app_init: Compile time:     Jun 12 2026 01:10:42[0m
+[0;32mI (201) app_init: ELF file SHA256:  4ecdd5da5...[0m
+[0;32mI (206) app_init: ESP-IDF:          v6.1-dev-5439-g835c947761-dirty[0m
+[0;32mI (212) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (215) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (219) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (223) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (230) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (235) heap_init: At 3FFB35F8 len 0002CA08 (178 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (245) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 4008BDEC len 00014214 (80 KiB): IRAM[0m
+[0;33mW (257) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (269) spi_flash: detected chip: generic[0m
+[0;32mI (273) spi_flash: flash io: dio[0m
+[0;33mW (276) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (289) main_task: Started on CPU0[0m
+[0;32mI (289) main_task: Calling app_main()[0m
+[0;32mI (289) uart: queue free spaces: 10[0m
+[0;32mI (699) Data Read: 13 bytes:'�'[0m
+[0;32mI (699) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 ba 01 db bb           |...".........|[0m
+[0;32mI (1129) Data Read: 13 bytes:'�'[0m
+[0;32mI (1129) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 b9 02 2b 0b           |...".......+.|[0m
+[0;32mI (1559) Data Read: 13 bytes:'�'[0m
+[0;32mI (1559) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 ba 01 c1 a1           |...".........|[0m
+[0;32mI (1989) Data Read: 13 bytes:'�'[0m
+[0;32mI (1989) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 bd 02 13 f7           |...".........|[0m
+[0;32mI (2419) Data Read: 13 bytes:'�'[0m
+[0;32mI (2419) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 b9 02 79 59           |...".......yY|[0m
+[0;32mI (2849) Data Read: 13 bytes:'�'[0m
+[0;32mI (2849) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 b9 02 51 31           |...".......Q1|[0m
+[0;32mI (3279) Data Read: 13 bytes:'�'[0m
+[0;32mI (3279) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 b8 02 7c 5b           |...".......|[|[0m
+[0;32mI (3709) Data Read: 13 bytes:'�'[0m
+[0;32mI (3709) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 b9 02 03 e3           |...".........|[0m
+[0;32mI (4139) Data Read: 13 bytes:'�'[0m
+[0;32mI (4139) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 ba 01 f9 d9           |...".........|[0m
+[0;32mI (4569) Data Read: 13 bytes:'�'[0m
+[0;32mI (4569) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 bb 02 75 57           |...".......uW|[0m
+[0;32mI (4999) Data Read: 13 bytes:'�'[0m
+[0;32mI (4999) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 b9 02 5c 3c           |...".......\<|[0m
+[0;32mI (5429) Data Read: 13 bytes:'�'[0m
+[0;32mI (5429) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 bd 02 0c f0           |...".........|[0m
+[0;32mI (5859) Data Read: 13 bytes:'�'[0m
+[0;32mI (5859) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 ba 02 4e 2f           |...".......N/|[0m
+[0;32mI (6289) Data Read: 13 bytes:'�'[0m
+[0;32mI (6289) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 bb 02 2f 11           |..."......./.|[0m
+[0;32mI (6709) Data Read: 13 bytes:'�'[0m
+[0;32mI (6709) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 b8 02 40 1f           |...".......@.|[0m
+[0;32mI (7139) Data Read: 13 bytes:'�'[0m
+[0;32mI (7139) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 b9 01 cc ab           |...".........|[0m
+[0;32mI (7569) Data Read: 13 bytes:'�'[0m
+[0;32mI (7569) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 bb 01 e5 c6           |...".........|[0m
+[0;32mI (7999) Data Read: 13 bytes:'�'[0m
+[0;32mI (7999) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 bc 02 7e 61           |...".......~a|[0m
+[0;32mI (8429) Data Read: 13 bytes:'�'[0m
+[0;32mI (8429) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 ba 02 1b fc           |...".........|[0m
+[0;32mI (8859) Data Read: 13 bytes:'�'[0m
+[0;32mI (8859) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 b8 02 27 06           |...".......'.|[0m
+[0;32mI (9289) Data Read: 13 bytes:'�'[0m
+[0;32mI (9289) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 ba 02 78 59           |...".......xY|[0m
+[0;32mI (9719) Data Read: 13 bytes:'�'[0m
+[0;32mI (9719) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 ba 01 dc bc           |...".........|[0m
+[0;32mI (10149) Data Read: 13 bytes:'�'[0m
+[0;32mI (10149) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 b5 01 fa d5           |...".........|[0m
+[0;32mI (10579) Data Read: 13 bytes:'�'[0m
+[0;32mI (10579) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 b9 02 08 e8           |...".........|[0m
+[0;32mI (11009) Data Read: 13 bytes:'�'[0m
+[0;32mI (11009) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 bc 02 1e 01           |...".........|[0m
+[0;32mI (11439) Data Read: 13 bytes:'�'[0m
+[0;32mI (11439) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 bd 02 74 58           |...".......tX|[0m
+[0;32mI (11869) Data Read: 13 bytes:'�'[0m
+[0;32mI (11869) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 bd 02 64 48           |...".......dH|[0m
+[0;32mI (12299) Data Read: 13 bytes:'�'[0m
+[0;32mI (12299) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 bd 02 9d 81           |...".........|[0m
+[0;32mI (12719) Data Read: 13 bytes:'�'[0m
+[0;32mI (12729) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 ba 02 78 59           |...".......xY|[0m
+[0;32mI (13159) Data Read: 13 bytes:'�'[0m
+[0;32mI (13159) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 be 01 dd c1           |...".........|[0m
+[0;32mI (13579) Data Read: 13 bytes:'�'[0m
+[0;32mI (13579) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 ba 02 4e 2f           |...".......N/|[0m
+[0;32mI (14009) Data Read: 13 bytes:'�'[0m
+[0;32mI (14009) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 bb 02 4d 2f           |...".......M/|[0m
+[0;32mI (14439) Data Read: 13 bytes:'�'[0m
+[0;32mI (14439) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 ba 02 47 28           |...".......G(|[0m
+[0;32mI (14869) Data Read: 13 bytes:'�'[0m
+[0;32mI (14869) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 b0 03 4e 26           |...".......N&|[0m
+[0;32mI (15299) Data Read: 13 bytes:'�'[0m
+[0;32mI (15299) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 2d 02 27 7b           |...".....-.'{|[0m
+[0;32mI (20879) Data Read: 13 bytes:'�'[0m
+[0;32mI (20879) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 aa 07 2d 03           |...".......-.|[0m
+[0;32mI (21309) Data Read: 13 bytes:'�'[0m
+[0;32mI (21309) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 bb 07 9e 85           |...".........|[0m
+[0;32mI (21739) Data Read: 13 bytes:'�'[0m
+[0;32mI (21739) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 b1 06 dc b8           |...".........|[0m
+[0;32mI (29089) Data Read: 13 bytes:'�'[0m
+[0;32mI (29089) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 94 04 7d 3a           |...".......}:|[0m
+[0;32mI (29519) Data Read: 13 bytes:'�'[0m
+[0;32mI (29519) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  01 f6 01 86 a3           |...".........|[0m
+[0;32mI (29949) Data Read: 13 bytes:'�'[0m
+[0;32mI (29949) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  02 0e 01 5b 91           |...".......[.|[0m
+[0;32mI (31219) Data Read: 13 bytes:'�'[0m
+[0;32mI (31219) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 c0 04 55 3e           |...".......U>|[0m
+[0;32mI (31649) Data Read: 13 bytes:'�'[0m
+[0;32mI (31649) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 c0 03 3c 24           |...".......<$|[0m
+[0;32mI (32079) Data Read: 13 bytes:'�'[0m
+[0;32mI (32079) HEX: 0x3ffb4820   aa 00 00 22 00 03 00 00  00 b0 05 76 50           |...".......vP|[0m
+[0;32mI (33349) Data Read: 13 bytes:'�'[0m
+[0;32mI (33349) HEX: 0x3ffb4820   ee 00 00 00 00 01 00 0f  10 ee 00 00 00           |.............|[0m
+[0;32mI (33779) Data Read: 13 bytes:''[0m
+[0;32mI (33779) HEX: 0x3ffb4820   00 01 00 0f 10 ee 00 00  00 00 01 00 0f           |.............|[0m
+[0;32mI (35049) Data Read: 13 bytes:'�'[0m
+[0;32mI (35049) HEX: 0x3ffb4820   10 ee 00 00 00 00 01 00  0f 10 ee 00 00           |.............|[0m
+[0;32mI (35899) Data Read: 13 bytes:''[0m
+[0;32mI (35899) HEX: 0x3ffb4820   00 00 01 00 0f 10 aa 00  00 22 00 03 00           |........."...|[0m
+[0;32mI (36329) Data Read: 13 bytes:''[0m
+[0;32mI (36329) HEX: 0x3ffb4820   00 01 82 10 cc 84 ee 00  00 00 00 01 00           |.............|[0m
+[0;32mI (36759) Data Read: 13 bytes:'�'[0m
+[0;32mI (36759) HEX: 0x3ffb4820   0f 10 aa 00 00 22 00 03  00 00 01 7d 11           |.....".....}.|[0m
+[0;32mI (38459) Data Read: 13 bytes:'�<�'[0m
+[0;32mI (38459) HEX: 0x3ffb4820   88 3c ee 00 00 00 00 01  00 0f 10 aa 00           |.<...........|[0m
+[0;32mI (38889) Data Read: 13 bytes:''[0m
+[0;32mI (38889) HEX: 0x3ffb4820   00 22 00 03 00 00 01 60  11 27 be aa 00           |.".....`.'...|[0m
+[0;32mI (39739) Data Read: 13 bytes:''[0m
+[0;32mI (39739) HEX: 0x3ffb4820   00 22 00 03 00 00 01 65  0d 28 c0 ee 00           |.".....e.(...|[0m
+[0;32mI (40579) Data Read: 13 bytes:''[0m
+[0;32mI (40579) HEX: 0x3ffb4820   00 00 00 01 00 0f 10 ee  00 00 00 00 01           |.............|[0m
+[0;32mI (41859) Data Read: 13 bytes:''[0m
+[0;32mI (41859) HEX: 0x3ffb4820   00 0f 10 ee 00 00 00 00  01 00 0f 10 ee           |.............|[0m
+[0;32mI (42279) Data Read: 13 bytes:''[0m
+[0;32mI (42279) HEX: 0x3ffb4820   00 00 00 00 01 00 0f 10  ee 00 00 00 00           |.............|[0m
+[0;32mI (43129) Data Read: 13 bytes:''[0m
+[0;32mI (43129) HEX: 0x3ffb4820   01 00 0f 10 ee 00 00 00  00 01 00 0f 10           |.............|[0m
+[0;32mI (43979) Data Read: 13 bytes:'�'[0m
+[0;32mI (43989) HEX: 0x3ffb4820   ee 00 00 00 00 01 00 0f  10 ee 00 00 00           |.............|[0m
+[0;32mI (44409) Data Read: 13 bytes:''[0m
+[0;32mI (44409) HEX: 0x3ffb4820   00 01 00 0f 10 ee 00 00  00 00 01 00 0f           |.............|[0m
+[0;32mI (45259) Data Read: 13 bytes:'�'[0m
+[0;32mI (45259) HEX: 0x3ffb4820   10 ee 00 00 00 00 01 00  0f 10 ee 00 00           |.............|[0m
+[0;32mI (45689) Data Read: 13 bytes:''[0m
+[0;32mI (45689) HEX: 0x3ffb4820   00 00 01 00 0f 10 ee 00  00 00 00 01 00           |.............|[0m
+[0;32mI (46539) Data Read: 13 bytes:'�'[0m
+[0;32mI (46539) HEX: 0x3ffb4820   0f 10 ee 00 00 00 00 01  00 0f 10 ee 00           |.............|[0m
+[0;32mI (46969) Data Read: 13 bytes:''[0m
+[0;32mI (46969) HEX: 0x3ffb4820   00 00 00 01 00 0f 10 ee  00 00 00 00 01           |.............|[0m
+[0;32mI (47819) Data Read: 13 bytes:''[0m
+[0;32mI (47819) HEX: 0x3ffb4820   00 0f 10 aa 00 00 22 00  03 00 00 83 cc           |......"......|[0m
+[0;32mI (49509) Data Read: 13 bytes:'�@�'[0m
+[0;32mI (49509) HEX: 0x3ffb4820   04 c8 40 aa 00 00 22 00  03 00 00 00 dd           |..@..."......|[0m
+[0;32mI (49939) Data Read: 13 bytes:'"/�'[0m
+[0;32mI (49939) HEX: 0x3ffb4820   0b 22 2f aa 00 00 22 00  03 00 00 00 dd           |."/..."......|[0m
+[0;32mI (50369) Data Read: 13 bytes:'��'[0m
+[0;32mI (50369) HEX: 0x3ffb4820   04 de e4 aa 00 00 22 00  03 00 00 00 db           |......"......|[0m
+[0;32mI (50799) Data Read: 13 bytes:'wy�'[0m
+[0;32mI (50799) HEX: 0x3ffb4820   02 77 79 aa 00 00 22 00  03 00 00 00 e4           |.wy..."......|[0m
+[0;32mI (51229) Data Read: 13 bytes:'���'[0m
+[0;32mI (51229) HEX: 0x3ffb4820   02 ae b9 aa 00 00 22 00  03 00 00 00 e2           |......"......|[0m
+[0;32mI (51659) Data Read: 13 bytes:'&0�'[0m
+[0;32mI (51659) HEX: 0x3ffb4820   03 26 30 aa 00 00 22 00  03 00 00 00 e0           |.&0..."......|[0m
+[0;32mI (52089) Data Read: 13 bytes:'T\�'[0m
+[0;32mI (52089) HEX: 0x3ffb4820   03 54 5c aa 00 00 22 00  03 00 00 00 e0           |.T\..."......|[0m
+[0;32mI (52519) Data Read: 13 bytes:'���'[0m
+[0;32mI (52519) HEX: 0x3ffb4820   02 9f a6 aa 00 00 22 00  03 00 00 00 e0           |......"......|[0m
+[0;32mI (52949) Data Read: 13 bytes:'���'[0m
+[0;32mI (52949) HEX: 0x3ffb4820   03 b9 c1 aa 00 00 22 00  03 00 00 00 e0           |......"......|[0m
+[0;32mI (53379) Data Read: 13 bytes:'��'[0m
+[0;32mI (53379) HEX: 0x3ffb4820   02 ff 06 aa 00 00 22 00  03 00 00 00 e0           |......"......|[0m
+[0;32mI (53809) Data Read: 13 bytes:'���'[0m
+[0;32mI (53809) HEX: 0x3ffb4820   02 f6 fd aa 00 00 22 00  03 00 00 00 e1           |......"......|[0m
+[0;32mI (54239) Data Read: 13 bytes:'���'[0m
+[0;32mI (54239) HEX: 0x3ffb4820   03 90 99 aa 00 00 22 00  03 00 00 00 e3           |......"......|[0m
+[0;32mI (54669) Data Read: 13 bytes:'0;�'[0m
+[0;32mI (54669) HEX: 0x3ffb4820   03 30 3b aa 00 00 22 00  03 00 00 00 e1           |.0;..."......|[0m
+[0;32mI (55099) Data Read: 13 bytes:'���'[0m
+[0;32mI (55099) HEX: 0x3ffb4820   03 93 9c aa 00 00 22 00  03 00 00 00 e1           |......"......|[0m
+[0;32mI (55529) Data Read: 13 bytes:'U^�'[0m
+[0;32mI (55529) HEX: 0x3ffb4820   03 55 5e aa 00 00 22 00  03 00 00 00 e4           |.U^..."......|[0m
+[0;32mI (55959) Data Read: 13 bytes:'%�'[0m
+[0;32mI (55959) HEX: 0x3ffb4820   03 19 25 aa 00 00 22 00  03 00 00 00 e2           |..%..."......|[0m
+[0;32mI (56389) Data Read: 13 bytes:'���'[0m
+[0;32mI (56389) HEX: 0x3ffb4820   03 8a 94 aa 00 00 22 00  03 00 00 00 e2           |......"......|[0m
+[0;32mI (56809) Data Read: 13 bytes:'$�'[0m
+[0;32mI (56819) HEX: 0x3ffb4820   03 1a 24 aa 00 00 22 00  03 00 00 00 e2           |..$..."......|[0m
+[0;32mI (57249) Data Read: 13 bytes:'���'[0m
+[0;32mI (57249) HEX: 0x3ffb4820   02 f5 fe aa 00 00 22 00  03 00 00 00 e5           |......"......|[0m
+[0;32mI (57669) Data Read: 13 bytes:'/<�'[0m
+[0;32mI (57669) HEX: 0x3ffb4820   03 2f 3c aa 00 00 22 00  03 00 00 00 e6           |./<..."......|[0m
+[0;32mI (58949) Data Read: 13 bytes:'�ת'[0m
+[0;32mI (58949) HEX: 0x3ffb4820   02 ca d7 aa 00 00 22 00  03 00 00 00 de           |......"......|[0m
+[0;32mI (59379) Data Read: 13 bytes:'��'[0m
+[0;32mI (59379) HEX: 0x3ffb4820   02 ea ef aa 00 00 22 00  03 00 00 00 e3           |......"......|[0m
+[0;32mI (60649) Data Read: 13 bytes:'���'[0m
+[0;32mI (60649) HEX: 0x3ffb4820   02 a8 b2 aa 00 00 22 00  03 00 00 00 e5           |......"......|[0m
+[0;32mI (61079) Data Read: 13 bytes:'���'[0m
+[0;32mI (61079) HEX: 0x3ffb4820   02 8a 96 aa 00 00 22 00  03 00 00 00 e5           |......"......|[0m
+[0;32mI (61509) Data Read: 13 bytes:'an�'[0m
+[0;32mI (61509) HEX: 0x3ffb4820   03 61 6e aa 00 00 22 00  03 00 00 00 e2           |.an..."......|[0m
+[0;32mI (61939) Data Read: 13 bytes:'���'[0m
+[0;32mI (61939) HEX: 0x3ffb4820   02 92 9b aa 00 00 22 00  03 00 00 00 e4           |......"......|[0m
+[0;32mI (62369) Data Read: 13 bytes:'���'[0m
+[0;32mI (62369) HEX: 0x3ffb4820   02 ab b6 aa 00 00 22 00  03 00 00 00 e2           |......"......|[0m
+[0;32mI (62799) Data Read: 13 bytes:'[0m�'
+[0;32mI (62799) HEX: 0x3ffb4820   03 03 0d aa 00 00 22 00  03 00 00 00 dd           |......"......|[0m
+[0;32mI (63229) Data Read: 13 bytes:'���'[0m
+[0;32mI (63229) HEX: 0x3ffb4820   02 96 9a aa 00 00 22 00  03 00 00 00 e3           |......"......|[0m
+[0;32mI (63659) Data Read: 13 bytes:'��'[0m
+[0;32mI (63659) HEX: 0x3ffb4820   02 e7 f1 aa 00 00 22 00  03 00 00 00 e4           |......"......|[0m
+[0;32mI (64089) Data Read: 13 bytes:'�٪'[0m
+[0;32mI (64089) HEX: 0x3ffb4820   02 ce d9 aa 00 00 22 00  03 00 00 00 de           |......"......|[0m
+[0;32mI (64519) Data Read: 13 bytes:'���'[0m
+[0;32mI (64519) HEX: 0x3ffb4820   02 f5 fa aa 00 00 22 00  03 00 00 00 e4           |......"......|[0m
+[0;32mI (64949) Data Read: 13 bytes:'���'[0m
+[0;32mI (64949) HEX: 0x3ffb4820   02 b4 bf aa 00 00 22 00  03 00 00 00 e2           |......"......|[0m
+[0;32mI (65369) Data Read: 13 bytes:'���'[0m
+[0;32mI (65369) HEX: 0x3ffb4820   03 9b a5 aa 00 00 22 00  03 00 00 00 e0           |......"......|[0m
+[0;32mI (65799) Data Read: 13 bytes:'MU�'[0m
+[0;32mI (65799) HEX: 0x3ffb4820   03 4d 55 aa 00 00 22 00  03 00 00 00 e4           |.MU..."......|[0m
+[0;32mI (66229) Data Read: 13 bytes:'mx�'[0m
+[0;32mI (66229) HEX: 0x3ffb4820   02 6d 78 aa 00 00 22 00  03 00 00 00 e3           |.mx..."......|[0m
+[0;32mI (66659) Data Read: 13 bytes:'�٪'[0m
+[0;32mI (66659) HEX: 0x3ffb4820   02 cf d9 aa 00 00 22 00  03 00 00 00 e0           |......"......|[0m
+[0;32mI (67089) Data Read: 13 bytes:'���'[0m
+[0;32mI (67089) HEX: 0x3ffb4820   02 85 8c aa 00 00 22 00  03 00 00 00 e4           |......"......|[0m
+[0;32mI (67519) Data Read: 13 bytes:'���'[0m
+[0;32mI (67519) HEX: 0x3ffb4820   02 b0 bb aa 00 00 22 00  03 00 00 00 e7           |......"......|[0m
+[0;32mI (67949) Data Read: 13 bytes:''6�'[0m
+[0;32mI (67949) HEX: 0x3ffb4820   03 27 36 aa 00 00 22 00  03 00 00 00 df           |.'6..."......|[0m
+[0;32mI (68379) Data Read: 13 bytes:'4:�'[0m
+[0;32mI (68379) HEX: 0x3ffb4820   02 34 3a aa 00 00 22 00  03 00 00 00 e2           |.4:..."......|[0m
+[0;32mI (68809) Data Read: 13 bytes:'U_�'[0m
+[0;32mI (68809) HEX: 0x3ffb4820   03 55 5f aa 00 00 22 00  03 00 00 00 e4           |.U_..."......|[0m
+[0;32mI (69239) Data Read: 13 bytes:'S_�'[0m
+[0;32mI (69239) HEX: 0x3ffb4820   03 53 5f aa 00 00 22 00  03 00 00 00 e4           |.S_..."......|[0m
+[0;32mI (69669) Data Read: 13 bytes:'!-�'[0m
+[0;32mI (69669) HEX: 0x3ffb4820   03 21 2d aa 00 00 22 00  03 00 00 00 e3           |.!-..."......|[0m
+[0;32mI (70099) Data Read: 13 bytes:'mx�'[0m
+[0;32mI (70099) HEX: 0x3ffb4820   03 6d 78 aa 00 00 22 00  03 00 00 00 e4           |.mx..."......|[0m
+[0;32mI (70529) Data Read: 13 bytes:'Ze�'[0m
+[0;32mI (70529) HEX: 0x3ffb4820   02 5a 65 aa 00 00 22 00  03 00 00 00 e3           |.Ze..."......|[0m
+[0;32mI (70959) Data Read: 13 bytes:'#.�'[0m
+[0;32mI (70959) HEX: 0x3ffb4820   03 23 2e aa 00 00 22 00  03 00 00 00 e3           |.#...."......|[0m
+[0;32mI (72229) Data Read: 13 bytes:'��'[0m
+[0;32mI (72229) HEX: 0x3ffb4820   02 e5 ef aa 00 00 22 00  03 00 00 00 e4           |......"......|[0m
+[0;32mI (72659) Data Read: 13 bytes:'���'[0m
+[0;32mI (72659) HEX: 0x3ffb4820   02 f0 fb aa 00 00 22 00  03 00 00 00 e4           |......"......|[0m
+[0;32mI (73089) Data Read: 13 bytes:'U`�'[0m
+[0;32mI (73089) HEX: 0x3ffb4820   02 55 60 aa 00 00 22 00  03 00 00 00 e0           |.U`..."......|[0m
+[0;32mI (73519) Data Read: 13 bytes:'�Ъ'[0m
+[0;32mI (73519) HEX: 0x3ffb4820   03 c8 d0 aa 00 00 22 00  03 00 00 00 e1           |......"......|[0m
+[0;32mI (73949) Data Read: 13 bytes:'�'[0m
+[0;32mI (73949) HEX: 0x3ffb4820   03 10 19 aa 00 00 22 00  03 00 00 00 df           |......"......|[0m
+[0;32mI (74379) Data Read: 13 bytes:'rx�'[0m
+[0;32mI (74379) HEX: 0x3ffb4820   02 72 78 aa 00 00 22 00  03 00 00 00 e4           |.rx..."......|[0m
+[0;32mI (74809) Data Read: 13 bytes:'���'[0m
+[0;32mI (74809) HEX: 0x3ffb4820   02 a9 b4 aa 00 00 22 00  03 00 00 00 e3           |......"......|[0m
+[0;32mI (75239) Data Read: 13 bytes:'�'[0m
+[0;32mI (75239) HEX: 0x3ffb4820   03 0f 1a aa 00 00 22 00  03 00 00 00 e3           |......"......|[0m
+[0;32mI (75669) Data Read: 13 bytes:'���'[0m
+[0;32mI (75669) HEX: 0x3ffb4820   02 92 9c aa 00 00 22 00  03 00 00 00 e4           |......"......|[0m
+[0;32mI (76099) Data Read: 13 bytes:'��'[0m
+[0;32mI (76099) HEX: 0x3ffb4820   02 e7 f2 aa 00 00 22 00  03 00 00 00 e2           |......"......|[0m
+[0;32mI (76529) Data Read: 13 bytes:'[0m
+�'
+[0;32mI (76529) HEX: 0x3ffb4820   03 0a 14 aa 00 00 22 00  03 00 00 00 e3           |......"......|[0m
+[0;32mI (76959) Data Read: 13 bytes:'���'[0m
+[0;32mI (76959) HEX: 0x3ffb4820   02 aa b4 aa 00 00 22 00  03 00 00 00 e6           |......"......|[0m
+[0;32mI (77389) Data Read: 13 bytes:'iv�'[0m
+[0;32mI (77389) HEX: 0x3ffb4820   02 69 76 aa 00 00 22 00  03 00 00 00 e3           |.iv..."......|[0m
+[0;32mI (77819) Data Read: 13 bytes:'���'[0m
+[0;32mI (77819) HEX: 0x3ffb4820   02 ad b7 aa 00 00 22 00  03 00 00 00 e2           |......"......|[0m
+[0;32mI (78249) Data Read: 13 bytes:'���'[0m
+[0;32mI (78249) HEX: 0x3ffb4820   02 eb f4 aa 00 00 22 00  03 00 00 00 e2           |......"......|[0m
+[0;32mI (78679) Data Read: 13 bytes:'�'[0m
+[0;32mI (78679) HEX: 0x3ffb4820   03 11 1b aa 00 00 22 00  03 00 00 00 e6           |......"......|[0m
+[0;32mI (79099) Data Read: 13 bytes:'��'[0m
+[0;32mI (79099) HEX: 0x3ffb4820   02 d3 e0 aa 00 00 22 00  03 00 00 00 e3           |......"......|[0m
+[0;32mI (79539) Data Read: 13 bytes:'���'[0m
+[0;32mI (79539) HEX: 0x3ffb4820   02 89 93 aa 00 00 22 00  03 00 00 00 e7           |......"......|[0m
+[0;32mI (79959) Data Read: 13 bytes:'��'[0m
+[0;32mI (79959) HEX: 0x3ffb4820   02 fe 0c aa 00 00 22 00  03 00 00 00 e3           |......"......|[0m
+[0;32mI (80389) Data Read: 13 bytes:'���'[0m
+[0;32mI (80389) HEX: 0x3ffb4820   02 f5 ff aa 00 00 22 00  03 00 00 00 e3           |......"......|[0m
+[0;32mI (80819) Data Read: 13 bytes:'��'[0m
+[0;32mI (80819) HEX: 0x3ffb4820   02 e0 ea aa 00 00 22 00  03 00 00 00 e2           |......"......|[0m

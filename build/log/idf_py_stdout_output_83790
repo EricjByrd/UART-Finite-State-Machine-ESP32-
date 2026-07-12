@@ -1,0 +1,579 @@
+Command: /home/bmetal/.espressif/python_env/idf6.2_py3.14_env/bin/python /home/bmetal/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/bmetal/esp-idf/uartTest/build/uartTest.elf /home/bmetal/esp-idf/uartTest/build/bootloader/bootloader.elf -m '/home/bmetal/.espressif/python_env/idf6.2_py3.14_env/bin/python' '/home/bmetal/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6292
+load:0x40078000,len:15820
+load:0x40080400,len:3988
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.1-dev-5439-g835c947761-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 12 2026 01:06:42[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a0e0h ( 41184) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a108 vaddr=3ffb0000 size=02b68h ( 11112) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001cc78 vaddr=40080000 size=033a0h ( 13216) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=10c38h ( 68664) map[0m
+[0;32mI (139) esp_image: segment 4: paddr=00030c60 vaddr=400833a0 size=08978h ( 35192) load[0m
+[0;32mI (154) esp_image: segment 5: paddr=000395e0 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (160) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (160) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (180) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (180) cpu_start: Pro cpu start user code[0m
+[0;32mI (180) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (182) app_init: Application information:[0m
+[0;32mI (186) app_init: Project name:     uartTest[0m
+[0;32mI (190) app_init: App version:      v6.1-dev-5439-g835c947761-dirty[0m
+[0;32mI (196) app_init: Compile time:     Jun 12 2026 01:10:42[0m
+[0;32mI (201) app_init: ELF file SHA256:  23d109ea2...[0m
+[0;32mI (205) app_init: ESP-IDF:          v6.1-dev-5439-g835c947761-dirty[0m
+[0;32mI (211) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (215) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (219) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (223) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (234) heap_init: At 3FFB35E0 len 0002CA20 (178 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (245) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 4008BD18 len 000142E8 (80 KiB): IRAM[0m
+[0;33mW (257) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (269) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (289) main_task: Started on CPU0[0m
+[0;32mI (289) main_task: Calling app_main()[0m
+[0;32mI (289) uart: queue free spaces: 10[0m
+[0;32mI (429) TAG: STUFF[0m
+[0;32mI (429) TAG: STUFF[0m
+[0;32mI (429) TAG: STUFF[0m
+[0;32mI (429) TAG: STUFF[0m
+[0;32mI (429) TAG: STUFF[0m
+[0;32mI (429) TAG: STUFF[0m
+[0;32mI (429) TAG: STUFF[0m
+[0;32mI (429) TAG: STUFF[0m
+[0;32mI (439) TAG: STUFF[0m
+[0;32mI (439) TAG: STUFF[0m
+[0;32mI (439) TAG: STUFF[0m
+[0;32mI (439) TAG: STUFF[0m
+[0;32mI (439) TAG: STUFF[0m
+[0;32mI (859) TAG: STUFF[0m
+[0;32mI (859) TAG: STUFF[0m
+[0;32mI (859) TAG: STUFF[0m
+[0;32mI (859) TAG: STUFF[0m
+[0;32mI (859) TAG: STUFF[0m
+[0;32mI (859) TAG: STUFF[0m
+[0;32mI (859) TAG: STUFF[0m
+[0;32mI (859) TAG: STUFF[0m
+[0;32mI (869) TAG: STUFF[0m
+[0;32mI (869) TAG: STUFF[0m
+[0;32mI (869) TAG: STUFF[0m
+[0;32mI (869) TAG: STUFF[0m
+[0;32mI (869) TAG: STUFF[0m
+[0;32mI (1289) TAG: STUFF[0m
+[0;32mI (1289) TAG: STUFF[0m
+[0;32mI (1289) TAG: STUFF[0m
+[0;32mI (1289) TAG: STUFF[0m
+[0;32mI (1289) TAG: STUFF[0m
+[0;32mI (1289) TAG: STUFF[0m
+[0;32mI (1289) TAG: STUFF[0m
+[0;32mI (1289) TAG: STUFF[0m
+[0;32mI (1299) TAG: STUFF[0m
+[0;32mI (1299) TAG: STUFF[0m
+[0;32mI (1299) TAG: STUFF[0m
+[0;32mI (1299) TAG: STUFF[0m
+[0;32mI (1299) TAG: STUFF[0m
+[0;32mI (1719) TAG: STUFF[0m
+[0;32mI (1719) TAG: STUFF[0m
+[0;32mI (1719) TAG: STUFF[0m
+[0;32mI (1719) TAG: STUFF[0m
+[0;32mI (1719) TAG: STUFF[0m
+[0;32mI (1719) TAG: STUFF[0m
+[0;32mI (1719) TAG: STUFF[0m
+[0;32mI (1719) TAG: STUFF[0m
+[0;32mI (1729) TAG: STUFF[0m
+[0;32mI (1729) TAG: STUFF[0m
+[0;32mI (1729) TAG: STUFF[0m
+[0;32mI (1729) TAG: STUFF[0m
+[0;32mI (1729) TAG: STUFF[0m
+[0;32mI (2149) TAG: STUFF[0m
+[0;32mI (2149) TAG: STUFF[0m
+[0;32mI (2149) TAG: STUFF[0m
+[0;32mI (2149) TAG: STUFF[0m
+[0;32mI (2149) TAG: STUFF[0m
+[0;32mI (2149) TAG: STUFF[0m
+[0;32mI (2149) TAG: STUFF[0m
+[0;32mI (2149) TAG: STUFF[0m
+[0;32mI (2149) TAG: STUFF[0m
+[0;32mI (2159) TAG: STUFF[0m
+[0;32mI (2159) TAG: STUFF[0m
+[0;32mI (2159) TAG: STUFF[0m
+[0;32mI (2159) TAG: STUFF[0m
+[0;32mI (2579) TAG: STUFF[0m
+[0;32mI (2579) TAG: STUFF[0m
+[0;32mI (2579) TAG: STUFF[0m
+[0;32mI (2579) TAG: STUFF[0m
+[0;32mI (2579) TAG: STUFF[0m
+[0;32mI (2579) TAG: STUFF[0m
+[0;32mI (2579) TAG: STUFF[0m
+[0;32mI (2579) TAG: STUFF[0m
+[0;32mI (2589) TAG: STUFF[0m
+[0;32mI (2589) TAG: STUFF[0m
+[0;32mI (2589) TAG: STUFF[0m
+[0;32mI (2589) TAG: STUFF[0m
+[0;32mI (2589) TAG: STUFF[0m
+[0;32mI (3009) TAG: STUFF[0m
+[0;32mI (3009) TAG: STUFF[0m
+[0;32mI (3009) TAG: STUFF[0m
+[0;32mI (3009) TAG: STUFF[0m
+[0;32mI (3009) TAG: STUFF[0m
+[0;32mI (3009) TAG: STUFF[0m
+[0;32mI (3009) TAG: STUFF[0m
+[0;32mI (3009) TAG: STUFF[0m
+[0;32mI (3009) TAG: STUFF[0m
+[0;32mI (3019) TAG: STUFF[0m
+[0;32mI (3019) TAG: STUFF[0m
+[0;32mI (3019) TAG: STUFF[0m
+[0;32mI (3019) TAG: STUFF[0m
+[0;32mI (3439) TAG: STUFF[0m
+[0;32mI (3439) TAG: STUFF[0m
+[0;32mI (3439) TAG: STUFF[0m
+[0;32mI (3439) TAG: STUFF[0m
+[0;32mI (3439) TAG: STUFF[0m
+[0;32mI (3439) TAG: STUFF[0m
+[0;32mI (3439) TAG: STUFF[0m
+[0;32mI (3439) TAG: STUFF[0m
+[0;32mI (3439) TAG: STUFF[0m
+[0;32mI (3449) TAG: STUFF[0m
+[0;32mI (3449) TAG: STUFF[0m
+[0;32mI (3449) TAG: STUFF[0m
+[0;32mI (3449) TAG: STUFF[0m
+[0;32mI (3869) TAG: STUFF[0m
+[0;32mI (3869) TAG: STUFF[0m
+[0;32mI (3869) TAG: STUFF[0m
+[0;32mI (3869) TAG: STUFF[0m
+[0;32mI (3869) TAG: STUFF[0m
+[0;32mI (3869) TAG: STUFF[0m
+[0;32mI (3869) TAG: STUFF[0m
+[0;32mI (3869) TAG: STUFF[0m
+[0;32mI (3869) TAG: STUFF[0m
+[0;32mI (3869) TAG: STUFF[0m
+[0;32mI (3879) TAG: STUFF[0m
+[0;32mI (3879) TAG: STUFF[0m
+[0;32mI (3879) TAG: STUFF[0m
+[0;32mI (4299) TAG: STUFF[0m
+[0;32mI (4299) TAG: STUFF[0m
+[0;32mI (4299) TAG: STUFF[0m
+[0;32mI (4299) TAG: STUFF[0m
+[0;32mI (4299) TAG: STUFF[0m
+[0;32mI (4299) TAG: STUFF[0m
+[0;32mI (4299) TAG: STUFF[0m
+[0;32mI (4299) TAG: STUFF[0m
+[0;32mI (4299) TAG: STUFF[0m
+[0;32mI (4309) TAG: STUFF[0m
+[0;32mI (4309) TAG: STUFF[0m
+[0;32mI (4309) TAG: STUFF[0m
+[0;32mI (4309) TAG: STUFF[0m
+[0;32mI (4729) TAG: STUFF[0m
+[0;32mI (4729) TAG: STUFF[0m
+[0;32mI (4729) TAG: STUFF[0m
+[0;32mI (4729) TAG: STUFF[0m
+[0;32mI (4729) TAG: STUFF[0m
+[0;32mI (4729) TAG: STUFF[0m
+[0;32mI (4729) TAG: STUFF[0m
+[0;32mI (4729) TAG: STUFF[0m
+[0;32mI (4729) TAG: STUFF[0m
+[0;32mI (4729) TAG: STUFF[0m
+[0;32mI (4739) TAG: STUFF[0m
+[0;32mI (4739) TAG: STUFF[0m
+[0;32mI (4739) TAG: STUFF[0m
+[0;32mI (5159) TAG: STUFF[0m
+[0;32mI (5159) TAG: STUFF[0m
+[0;32mI (5159) TAG: STUFF[0m
+[0;32mI (5159) TAG: STUFF[0m
+[0;32mI (5159) TAG: STUFF[0m
+[0;32mI (5159) TAG: STUFF[0m
+[0;32mI (5159) TAG: STUFF[0m
+[0;32mI (5159) TAG: STUFF[0m
+[0;32mI (5159) TAG: STUFF[0m
+[0;32mI (5159) TAG: STUFF[0m
+[0;32mI (5169) TAG: STUFF[0m
+[0;32mI (5169) TAG: STUFF[0m
+[0;32mI (5169) TAG: STUFF[0m
+[0;32mI (5589) TAG: STUFF[0m
+[0;32mI (5589) TAG: STUFF[0m
+[0;32mI (5589) TAG: STUFF[0m
+[0;32mI (5589) TAG: STUFF[0m
+[0;32mI (5589) TAG: STUFF[0m
+[0;32mI (5589) TAG: STUFF[0m
+[0;32mI (5589) TAG: STUFF[0m
+[0;32mI (5589) TAG: STUFF[0m
+[0;32mI (5589) TAG: STUFF[0m
+[0;32mI (5589) TAG: STUFF[0m
+[0;32mI (5599) TAG: STUFF[0m
+[0;32mI (5599) TAG: STUFF[0m
+[0;32mI (5599) TAG: STUFF[0m
+[0;32mI (6019) TAG: STUFF[0m
+[0;32mI (6019) TAG: STUFF[0m
+[0;32mI (6019) TAG: STUFF[0m
+[0;32mI (6019) TAG: STUFF[0m
+[0;32mI (6019) TAG: STUFF[0m
+[0;32mI (6019) TAG: STUFF[0m
+[0;32mI (6019) TAG: STUFF[0m
+[0;32mI (6019) TAG: STUFF[0m
+[0;32mI (6019) TAG: STUFF[0m
+[0;32mI (6019) TAG: STUFF[0m
+[0;32mI (6029) TAG: STUFF[0m
+[0;32mI (6029) TAG: STUFF[0m
+[0;32mI (6029) TAG: STUFF[0m
+[0;32mI (6449) TAG: STUFF[0m
+[0;32mI (6449) TAG: STUFF[0m
+[0;32mI (6449) TAG: STUFF[0m
+[0;32mI (6449) TAG: STUFF[0m
+[0;32mI (6449) TAG: STUFF[0m
+[0;32mI (6449) TAG: STUFF[0m
+[0;32mI (6449) TAG: STUFF[0m
+[0;32mI (6449) TAG: STUFF[0m
+[0;32mI (6449) TAG: STUFF[0m
+[0;32mI (6449) TAG: STUFF[0m
+[0;32mI (6449) TAG: STUFF[0m
+[0;32mI (6459) TAG: STUFF[0m
+[0;32mI (6459) TAG: STUFF[0m
+[0;32mI (6879) TAG: STUFF[0m
+[0;32mI (6879) TAG: STUFF[0m
+[0;32mI (6879) TAG: STUFF[0m
+[0;32mI (6879) TAG: STUFF[0m
+[0;32mI (6879) TAG: STUFF[0m
+[0;32mI (6879) TAG: STUFF[0m
+[0;32mI (6879) TAG: STUFF[0m
+[0;32mI (6879) TAG: STUFF[0m
+[0;32mI (6879) TAG: STUFF[0m
+[0;32mI (6879) TAG: STUFF[0m
+[0;32mI (6879) TAG: STUFF[0m
+[0;32mI (6889) TAG: STUFF[0m
+[0;32mI (6889) TAG: STUFF[0m
+[0;32mI (7309) TAG: STUFF[0m
+[0;32mI (7309) TAG: STUFF[0m
+[0;32mI (7309) TAG: STUFF[0m
+[0;32mI (7309) TAG: STUFF[0m
+[0;32mI (7309) TAG: STUFF[0m
+[0;32mI (7309) TAG: STUFF[0m
+[0;32mI (7309) TAG: STUFF[0m
+[0;32mI (7309) TAG: STUFF[0m
+[0;32mI (7309) TAG: STUFF[0m
+[0;32mI (7309) TAG: STUFF[0m
+[0;32mI (7309) TAG: STUFF[0m
+[0;32mI (7309) TAG: STUFF[0m
+[0;32mI (7319) TAG: STUFF[0m
+[0;32mI (7739) TAG: STUFF[0m
+[0;32mI (7739) TAG: STUFF[0m
+[0;32mI (7739) TAG: STUFF[0m
+[0;32mI (7739) TAG: STUFF[0m
+[0;32mI (7739) TAG: STUFF[0m
+[0;32mI (7739) TAG: STUFF[0m
+[0;32mI (7739) TAG: STUFF[0m
+[0;32mI (7739) TAG: STUFF[0m
+[0;32mI (7739) TAG: STUFF[0m
+[0;32mI (7739) TAG: STUFF[0m
+[0;32mI (7739) TAG: STUFF[0m
+[0;32mI (7749) TAG: STUFF[0m
+[0;32mI (7749) TAG: STUFF[0m
+[0;32mI (8169) TAG: STUFF[0m
+[0;32mI (8169) TAG: STUFF[0m
+[0;32mI (8169) TAG: STUFF[0m
+[0;32mI (8169) TAG: STUFF[0m
+[0;32mI (8169) TAG: STUFF[0m
+[0;32mI (8169) TAG: STUFF[0m
+[0;32mI (8169) TAG: STUFF[0m
+[0;32mI (8169) TAG: STUFF[0m
+[0;32mI (8169) TAG: STUFF[0m
+[0;32mI (8169) TAG: STUFF[0m
+[0;32mI (8169) TAG: STUFF[0m
+[0;32mI (8169) TAG: STUFF[0m
+[0;32mI (8179) TAG: STUFF[0m
+[0;32mI (8599) TAG: STUFF[0m
+[0;32mI (8599) TAG: STUFF[0m
+[0;32mI (8599) TAG: STUFF[0m
+[0;32mI (8599) TAG: STUFF[0m
+[0;32mI (8599) TAG: STUFF[0m
+[0;32mI (8599) TAG: STUFF[0m
+[0;32mI (8599) TAG: STUFF[0m
+[0;32mI (8599) TAG: STUFF[0m
+[0;32mI (8599) TAG: STUFF[0m
+[0;32mI (8599) TAG: STUFF[0m
+[0;32mI (8599) TAG: STUFF[0m
+[0;32mI (8599) TAG: STUFF[0m
+[0;32mI (8609) TAG: STUFF[0m
+[0;32mI (9019) TAG: STUFF[0m
+[0;32mI (9019) TAG: STUFF[0m
+[0;32mI (9019) TAG: STUFF[0m
+[0;32mI (9019) TAG: STUFF[0m
+[0;32mI (9019) TAG: STUFF[0m
+[0;32mI (9019) TAG: STUFF[0m
+[0;32mI (9019) TAG: STUFF[0m
+[0;32mI (9029) TAG: STUFF[0m
+[0;32mI (9029) TAG: STUFF[0m
+[0;32mI (9029) TAG: STUFF[0m
+[0;32mI (9029) TAG: STUFF[0m
+[0;32mI (9029) TAG: STUFF[0m
+[0;32mI (9039) TAG: STUFF[0m
+[0;32mI (9449) TAG: STUFF[0m
+[0;32mI (9449) TAG: STUFF[0m
+[0;32mI (9449) TAG: STUFF[0m
+[0;32mI (9459) TAG: STUFF[0m
+[0;32mI (9459) TAG: STUFF[0m
+[0;32mI (9459) TAG: STUFF[0m
+[0;32mI (9459) TAG: STUFF[0m
+[0;32mI (9459) TAG: STUFF[0m
+[0;32mI (9459) TAG: STUFF[0m
+[0;32mI (9459) TAG: STUFF[0m
+[0;32mI (9459) TAG: STUFF[0m
+[0;32mI (9459) TAG: STUFF[0m
+[0;32mI (9469) TAG: STUFF[0m
+[0;32mI (9879) TAG: STUFF[0m
+[0;32mI (9879) TAG: STUFF[0m
+[0;32mI (9879) TAG: STUFF[0m
+[0;32mI (9879) TAG: STUFF[0m
+[0;32mI (9879) TAG: STUFF[0m
+[0;32mI (9879) TAG: STUFF[0m
+[0;32mI (9879) TAG: STUFF[0m
+[0;32mI (9889) TAG: STUFF[0m
+[0;32mI (9889) TAG: STUFF[0m
+[0;32mI (9889) TAG: STUFF[0m
+[0;32mI (9889) TAG: STUFF[0m
+[0;32mI (9889) TAG: STUFF[0m
+[0;32mI (9889) TAG: STUFF[0m
+[0;32mI (10309) TAG: STUFF[0m
+[0;32mI (10309) TAG: STUFF[0m
+[0;32mI (10309) TAG: STUFF[0m
+[0;32mI (10309) TAG: STUFF[0m
+[0;32mI (10309) TAG: STUFF[0m
+[0;32mI (10309) TAG: STUFF[0m
+[0;32mI (10309) TAG: STUFF[0m
+[0;32mI (10319) TAG: STUFF[0m
+[0;32mI (10319) TAG: STUFF[0m
+[0;32mI (10319) TAG: STUFF[0m
+[0;32mI (10319) TAG: STUFF[0m
+[0;32mI (10319) TAG: STUFF[0m
+[0;32mI (10329) TAG: STUFF[0m
+[0;32mI (10739) TAG: STUFF[0m
+[0;32mI (10739) TAG: STUFF[0m
+[0;32mI (10739) TAG: STUFF[0m
+[0;32mI (10739) TAG: STUFF[0m
+[0;32mI (10739) TAG: STUFF[0m
+[0;32mI (10739) TAG: STUFF[0m
+[0;32mI (10739) TAG: STUFF[0m
+[0;32mI (10739) TAG: STUFF[0m
+[0;32mI (10749) TAG: STUFF[0m
+[0;32mI (10749) TAG: STUFF[0m
+[0;32mI (10749) TAG: STUFF[0m
+[0;32mI (10749) TAG: STUFF[0m
+[0;32mI (10749) TAG: STUFF[0m
+[0;32mI (11169) TAG: STUFF[0m
+[0;32mI (11169) TAG: STUFF[0m
+[0;32mI (11169) TAG: STUFF[0m
+[0;32mI (11169) TAG: STUFF[0m
+[0;32mI (11169) TAG: STUFF[0m
+[0;32mI (11169) TAG: STUFF[0m
+[0;32mI (11169) TAG: STUFF[0m
+[0;32mI (11179) TAG: STUFF[0m
+[0;32mI (11179) TAG: STUFF[0m
+[0;32mI (11179) TAG: STUFF[0m
+[0;32mI (11179) TAG: STUFF[0m
+[0;32mI (11179) TAG: STUFF[0m
+[0;32mI (11179) TAG: STUFF[0m
+[0;32mI (11599) TAG: STUFF[0m
+[0;32mI (11599) TAG: STUFF[0m
+[0;32mI (11599) TAG: STUFF[0m
+[0;32mI (11599) TAG: STUFF[0m
+[0;32mI (11599) TAG: STUFF[0m
+[0;32mI (11599) TAG: STUFF[0m
+[0;32mI (11599) TAG: STUFF[0m
+[0;32mI (11599) TAG: STUFF[0m
+[0;32mI (11609) TAG: STUFF[0m
+[0;32mI (11609) TAG: STUFF[0m
+[0;32mI (11609) TAG: STUFF[0m
+[0;32mI (11609) TAG: STUFF[0m
+[0;32mI (11609) TAG: STUFF[0m
+[0;32mI (12029) TAG: STUFF[0m
+[0;32mI (12029) TAG: STUFF[0m
+[0;32mI (12029) TAG: STUFF[0m
+[0;32mI (12029) TAG: STUFF[0m
+[0;32mI (12029) TAG: STUFF[0m
+[0;32mI (12029) TAG: STUFF[0m
+[0;32mI (12029) TAG: STUFF[0m
+[0;32mI (12029) TAG: STUFF[0m
+[0;32mI (12039) TAG: STUFF[0m
+[0;32mI (12039) TAG: STUFF[0m
+[0;32mI (12039) TAG: STUFF[0m
+[0;32mI (12039) TAG: STUFF[0m
+[0;32mI (12039) TAG: STUFF[0m
+[0;32mI (12459) TAG: STUFF[0m
+[0;32mI (12459) TAG: STUFF[0m
+[0;32mI (12459) TAG: STUFF[0m
+[0;32mI (12459) TAG: STUFF[0m
+[0;32mI (12459) TAG: STUFF[0m
+[0;32mI (12459) TAG: STUFF[0m
+[0;32mI (12459) TAG: STUFF[0m
+[0;32mI (12459) TAG: STUFF[0m
+[0;32mI (12469) TAG: STUFF[0m
+[0;32mI (12469) TAG: STUFF[0m
+[0;32mI (12469) TAG: STUFF[0m
+[0;32mI (12469) TAG: STUFF[0m
+[0;32mI (12469) TAG: STUFF[0m
+[0;32mI (12889) TAG: STUFF[0m
+[0;32mI (12889) TAG: STUFF[0m
+[0;32mI (12889) TAG: STUFF[0m
+[0;32mI (12889) TAG: STUFF[0m
+[0;32mI (12889) TAG: STUFF[0m
+[0;32mI (12889) TAG: STUFF[0m
+[0;32mI (12889) TAG: STUFF[0m
+[0;32mI (12889) TAG: STUFF[0m
+[0;32mI (12899) TAG: STUFF[0m
+[0;32mI (12899) TAG: STUFF[0m
+[0;32mI (12899) TAG: STUFF[0m
+[0;32mI (12899) TAG: STUFF[0m
+[0;32mI (12899) TAG: STUFF[0m
+[0;32mI (13319) TAG: STUFF[0m
+[0;32mI (13319) TAG: STUFF[0m
+[0;32mI (13319) TAG: STUFF[0m
+[0;32mI (13319) TAG: STUFF[0m
+[0;32mI (13319) TAG: STUFF[0m
+[0;32mI (13319) TAG: STUFF[0m
+[0;32mI (13319) TAG: STUFF[0m
+[0;32mI (13319) TAG: STUFF[0m
+[0;32mI (13319) TAG: STUFF[0m
+[0;32mI (13329) TAG: STUFF[0m
+[0;32mI (13329) TAG: STUFF[0m
+[0;32mI (13329) TAG: STUFF[0m
+[0;32mI (13329) TAG: STUFF[0m
+[0;32mI (13749) TAG: STUFF[0m
+[0;32mI (13749) TAG: STUFF[0m
+[0;32mI (13749) TAG: STUFF[0m
+[0;32mI (13749) TAG: STUFF[0m
+[0;32mI (13749) TAG: STUFF[0m
+[0;32mI (13749) TAG: STUFF[0m
+[0;32mI (13749) TAG: STUFF[0m
+[0;32mI (13749) TAG: STUFF[0m
+[0;32mI (13749) TAG: STUFF[0m
+[0;32mI (13759) TAG: STUFF[0m
+[0;32mI (13759) TAG: STUFF[0m
+[0;32mI (13759) TAG: STUFF[0m
+[0;32mI (13759) TAG: STUFF[0m
+[0;32mI (14179) TAG: STUFF[0m
+[0;32mI (14179) TAG: STUFF[0m
+[0;32mI (14179) TAG: STUFF[0m
+[0;32mI (14179) TAG: STUFF[0m
+[0;32mI (14179) TAG: STUFF[0m
+[0;32mI (14179) TAG: STUFF[0m
+[0;32mI (14179) TAG: STUFF[0m
+[0;32mI (14179) TAG: STUFF[0m
+[0;32mI (14179) TAG: STUFF[0m
+[0;32mI (14189) TAG: STUFF[0m
+[0;32mI (14189) TAG: STUFF[0m
+[0;32mI (14189) TAG: STUFF[0m
+[0;32mI (14189) TAG: STUFF[0m
+[0;32mI (14609) TAG: STUFF[0m
+[0;32mI (14609) TAG: STUFF[0m
+[0;32mI (14609) TAG: STUFF[0m
+[0;32mI (14609) TAG: STUFF[0m
+[0;32mI (14609) TAG: STUFF[0m
+[0;32mI (14609) TAG: STUFF[0m
+[0;32mI (14609) TAG: STUFF[0m
+[0;32mI (14609) TAG: STUFF[0m
+[0;32mI (14609) TAG: STUFF[0m
+[0;32mI (14619) TAG: STUFF[0m
+[0;32mI (14619) TAG: STUFF[0m
+[0;32mI (14619) TAG: STUFF[0m
+[0;32mI (14619) TAG: STUFF[0m
+[0;32mI (15039) TAG: STUFF[0m
+[0;32mI (15039) TAG: STUFF[0m
+[0;32mI (15039) TAG: STUFF[0m
+[0;32mI (15039) TAG: STUFF[0m
+[0;32mI (15039) TAG: STUFF[0m
+[0;32mI (15039) TAG: STUFF[0m
+[0;32mI (15039) TAG: STUFF[0m
+[0;32mI (15039) TAG: STUFF[0m
+[0;32mI (15039) TAG: STUFF[0m
+[0;32mI (15039) TAG: STUFF[0m
+[0;32mI (15049) TAG: STUFF[0m
+[0;32mI (15049) TAG: STUFF[0m
+[0;32mI (15049) TAG: STUFF[0m
+[0;32mI (15469) TAG: STUFF[0m
+[0;32mI (15469) TAG: STUFF[0m
+[0;32mI (15469) TAG: STUFF[0m
+[0;32mI (15469) TAG: STUFF[0m
+[0;32mI (15469) TAG: STUFF[0m
+[0;32mI (15469) TAG: STUFF[0m
+[0;32mI (15469) TAG: STUFF[0m
+[0;32mI (15469) TAG: STUFF[0m
+[0;32mI (15469) TAG: STUFF[0m
+[0;32mI (15469) TAG: STUFF[0m
+[0;32mI (15479) TAG: STUFF[0m
+[0;32mI (15479) TAG: STUFF[0m
+[0;32mI (15479) TAG: STUFF[0m
+[0;32mI (15899) TAG: STUFF[0m
+[0;32mI (15899) TAG: STUFF[0m
+[0;32mI (15899) TAG: STUFF[0m
+[0;32mI (15899) TAG: STUFF[0m
+[0;32mI (15899) TAG: STUFF[0m
+[0;32mI (15899) TAG: STUFF[0m
+[0;32mI (15899) TAG: STUFF[0m
+[0;32mI (15899) TAG: STUFF[0m
+[0;32mI (15899) TAG: STUFF[0m
+[0;32mI (15899) TAG: STUFF[0m
+[0;32mI (15909) TAG: STUFF[0m
+[0;32mI (15909) TAG: STUFF[0m
+[0;32mI (15909) TAG: STUFF[0m
+[0;32mI (16329) TAG: STUFF[0m
+[0;32mI (16329) TAG: STUFF[0m
+[0;32mI (16329) TAG: STUFF[0m
+[0;32mI (16329) TAG: STUFF[0m
+[0;32mI (16329) TAG: STUFF[0m
+[0;32mI (16329) TAG: STUFF[0m
+[0;32mI (16329) TAG: STUFF[0m
+[0;32mI (16329) TAG: STUFF[0m
+[0;32mI (16329) TAG: STUFF[0m
+[0;32mI (16329) TAG: STUFF[0m
+[0;32mI (16339) TAG: STUFF[0m
+[0;32mI (16339) TAG: STUFF[0m
+[0;32mI (16339) TAG: STUFF[0m
+[0;32mI (16759) TAG: STUFF[0m
+[0;32mI (16759) TAG: STUFF[0m
+[0;32mI (16759) TAG: STUFF[0m
+[0;32mI (16759) TAG: STUFF[0m
+[0;32mI (16759) TAG: STUFF[0m
+[0;32mI (16759) TAG: STUFF[0m
+[0;32mI (16759) TAG: STUFF[0m
+[0;32mI (16759) TAG: STUFF[0m
+[0;32mI (16759) TAG: STUFF[0m
+[0;32mI (16759) TAG: STUFF[0m
+[0;32mI (16759) TAG: STUFF[0m
+[0;32mI (16769) TAG: STUFF[0m
+[0;32mI (16769) TAG: STUFF[0m
+[0;32mI (17189) TAG: STUFF[0m
+[0;32mI (17189) TAG: STUFF[0m
+[0;32mI (17189) TAG: STUFF[0m
+[0;32mI (17189) TAG: STUFF[0m
+[0;32mI (17189) TAG: STUFF[0m
+[0;32mI (17189) TAG: STUFF[0m
+[0;32mI (17189) TAG: STUFF[0m
+[0;32mI (17189) TAG: STUFF[0m
+[0;32mI (17189) TAG: STUFF[0m
+[0;32mI (17189) TAG: STUFF[0m
+[0;32mI (17189) TAG: STUFF[0m
+[0;32mI (17199) TAG: STUFF[0m
+[0;32mI (17199) TAG: STUFF[0m

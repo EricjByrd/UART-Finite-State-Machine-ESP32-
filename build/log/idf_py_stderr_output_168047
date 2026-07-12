@@ -1,0 +1,5 @@
+Command: make -j 6 all
+/home/bmetal/esp-idf/uartTest/main/uartTest.c: In function 'uart_rcv':
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:55:25: warning: unused variable 'rx_junk_read' [-Wunused-variable]
+   55 |                 uint8_t rx_junk_read = uart_read_bytes(uart_num, rx_junk, index, 500);
+      |                         ^~~~~~~~~~~~

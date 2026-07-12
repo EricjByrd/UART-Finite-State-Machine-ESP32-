@@ -1,0 +1,2 @@
+source /home/bmetal/esp-idf/uartTest/build/gdbinit/symbols
+source /home/bmetal/esp-idf/uartTest/build/gdbinit/connect

@@ -1,0 +1,16 @@
+Command: make -j 6 all
+/home/bmetal/esp-idf/uartTest/main/uartTest.c: In function 'uart_rcv':
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:46:26: error: expected ':', ',', ';', '}' or '__attribute__' before 'payloadSQ'
+   46 |                 uint16_t payloadSQ;
+      |                          ^~~~~~~~~
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:59:25: error: 'LaserResponse' undeclared (first use in this function)
+   59 |                         LaserResponse.payload_distance.msb_data = rx_data[6];
+      |                         ^~~~~~~~~~~~~
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:59:25: note: each undeclared identifier is reported only once for each function it appears in
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:57:38: warning: unused variable 'responseData' [-Wunused-variable]
+   57 |                 struct LaserResponse responseData;
+      |                                      ^~~~~~~~~~~~
+configdep.c:648: in main: exec_process exited with error code: 1
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:79: esp-idf/main/CMakeFiles/__idf_main.dir/uartTest.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:9466: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

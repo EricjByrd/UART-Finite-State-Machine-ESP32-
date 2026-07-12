@@ -1,0 +1,87 @@
+Command: make -j 6 all
+/home/bmetal/esp-idf/uartTest/main/uartTest.c: In function 'uart_setup':
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:7:9: error: unknown type name 'QueueHandle_t'
+    7 |         QueueHandle_t uart_queue;
+      |         ^~~~~~~~~~~~~
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:9:9: error: implicit declaration of function 'ESP_ERROR_CHECK' [-Wimplicit-function-declaration]
+    9 |         ESP_ERROR_CHECK(uart_driver_install(UART_NUM_2, uart_buffer_size, uart_buffer_size, 10, &uart_queue, 0));
+      |         ^~~~~~~~~~~~~~~
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:9:25: error: implicit declaration of function 'uart_driver_install' [-Wimplicit-function-declaration]
+    9 |         ESP_ERROR_CHECK(uart_driver_install(UART_NUM_2, uart_buffer_size, uart_buffer_size, 10, &uart_queue, 0));
+      |                         ^~~~~~~~~~~~~~~~~~~
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:9:45: error: 'UART_NUM_2' undeclared (first use in this function)
+    9 |         ESP_ERROR_CHECK(uart_driver_install(UART_NUM_2, uart_buffer_size, uart_buffer_size, 10, &uart_queue, 0));
+      |                                             ^~~~~~~~~~
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:9:45: note: each undeclared identifier is reported only once for each function it appears in
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:10:15: error: unknown type name 'uart_port_t'
+   10 |         const uart_port_t uart_num = UART_NUM_2;
+      |               ^~~~~~~~~~~
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:11:9: error: unknown type name 'uart_config_t'
+   11 |         uart_config_t uart_config = {
+      |         ^~~~~~~~~~~~~
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:12:17: error: field name not in record or union initializer
+   12 |                 .baud_rate = 19200,
+      |                 ^
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:12:17: note: (near initialization for 'uart_config')
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:13:17: error: field name not in record or union initializer
+   13 |                 .data_bits = UART_DATA_8_BITS,
+      |                 ^
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:13:17: note: (near initialization for 'uart_config')
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:13:30: error: 'UART_DATA_8_BITS' undeclared (first use in this function)
+   13 |                 .data_bits = UART_DATA_8_BITS,
+      |                              ^~~~~~~~~~~~~~~~
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:13:30: error: excess elements in scalar initializer [-Werror]
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:13:30: note: (near initialization for 'uart_config')
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:14:17: error: field name not in record or union initializer
+   14 |                 .parity = UART_PARITY_DISABLE,
+      |                 ^
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:14:17: note: (near initialization for 'uart_config')
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:14:27: error: 'UART_PARITY_DISABLE' undeclared (first use in this function)
+   14 |                 .parity = UART_PARITY_DISABLE,
+      |                           ^~~~~~~~~~~~~~~~~~~
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:14:27: error: excess elements in scalar initializer [-Werror]
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:14:27: note: (near initialization for 'uart_config')
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:15:17: error: field name not in record or union initializer
+   15 |                 .stop_bits = UART_STOP_BITS_1,
+      |                 ^
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:15:17: note: (near initialization for 'uart_config')
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:15:30: error: 'UART_STOP_BITS_1' undeclared (first use in this function)
+   15 |                 .stop_bits = UART_STOP_BITS_1,
+      |                              ^~~~~~~~~~~~~~~~
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:15:30: error: excess elements in scalar initializer [-Werror]
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:15:30: note: (near initialization for 'uart_config')
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:16:17: error: field name not in record or union initializer
+   16 |                 .flow_ctrl = UART_HW_FLOWCTRL_CTS_RTS,
+      |                 ^
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:16:17: note: (near initialization for 'uart_config')
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:16:30: error: 'UART_HW_FLOWCTRL_CTS_RTS' undeclared (first use in this function)
+   16 |                 .flow_ctrl = UART_HW_FLOWCTRL_CTS_RTS,
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:16:30: error: excess elements in scalar initializer [-Werror]
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:16:30: note: (near initialization for 'uart_config')
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:17:17: error: field name not in record or union initializer
+   17 |                 .rx_flow_ctrl_thresh = 0,
+      |                 ^
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:17:17: note: (near initialization for 'uart_config')
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:17:40: error: excess elements in scalar initializer [-Werror]
+   17 |                 .rx_flow_ctrl_thresh = 0,
+      |                                        ^
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:17:40: note: (near initialization for 'uart_config')
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:20:25: error: implicit declaration of function 'uart_param_config' [-Wimplicit-function-declaration]
+   20 |         ESP_ERROR_CHECK(uart_param_config(uart_num, &uart_config));
+      |                         ^~~~~~~~~~~~~~~~~
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:22:25: error: implicit declaration of function 'uart_set_pin'; did you mean 'uart_setup'? [-Wimplicit-function-declaration]
+   22 |         ESP_ERROR_CHECK(uart_set_pin(UART_NUM_2, 17, 16, 18, 19, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE));
+      |                         ^~~~~~~~~~~~
+      |                         uart_setup
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:22:66: error: 'UART_PIN_NO_CHANGE' undeclared (first use in this function)
+   22 |         ESP_ERROR_CHECK(uart_set_pin(UART_NUM_2, 17, 16, 18, 19, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE));
+      |                                                                  ^~~~~~~~~~~~~~~~~~
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:25:9: error: implicit declaration of function 'uart_write_bytes' [-Wimplicit-function-declaration]
+   25 |         uart_write_bytes(uart_num, dataBuffer, 9);
+      |         ^~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+configdep.c:648: in main: exec_process exited with error code: 1
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:79: esp-idf/main/CMakeFiles/__idf_main.dir/uartTest.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:9466: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

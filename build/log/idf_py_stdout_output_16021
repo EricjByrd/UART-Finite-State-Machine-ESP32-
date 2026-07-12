@@ -1,0 +1,2659 @@
+Command: /home/bmetal/.espressif/python_env/idf6.2_py3.14_env/bin/python /home/bmetal/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/bmetal/esp-idf/uartTest/build/uartTest.elf /home/bmetal/esp-idf/uartTest/build/bootloader/bootloader.elf -m '/home/bmetal/.espressif/python_env/idf6.2_py3.14_env/bin/python' '/home/bmetal/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6292
+load:0x40078000,len:15820
+load:0x40080400,len:3988
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.1-dev-5440-g325e39678c-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 12 2026 10:41:02[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a110h ( 41232) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a138 vaddr=3ffb0000 size=02b68h ( 11112) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001cca8 vaddr=40080000 size=03370h ( 13168) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=10cb4h ( 68788) map[0m
+[0;32mI (139) esp_image: segment 4: paddr=00030cdc vaddr=40083370 size=089a8h ( 35240) load[0m
+[0;32mI (154) esp_image: segment 5: paddr=0003968c vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (160) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (160) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (180) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (180) cpu_start: Pro cpu start user code[0m
+[0;32mI (180) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (182) app_init: Application information:[0m
+[0;32mI (186) app_init: Project name:     uartTest[0m
+[0;32mI (190) app_init: App version:      075d29c-dirty[0m
+[0;32mI (194) app_init: Compile time:     Jul 12 2026 10:41:32[0m
+[0;32mI (199) app_init: ELF file SHA256:  128c3000e...[0m
+[0;32mI (204) app_init: ESP-IDF:          v6.1-dev-5440-g325e39678c-dirty[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (228) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB35E0 len 0002CA20 (178 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (243) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (249) heap_init: At 4008BD18 len 000142E8 (80 KiB): IRAM[0m
+[0;33mW (255) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (267) spi_flash: detected chip: generic[0m
+[0;32mI (271) spi_flash: flash io: dio[0m
+[0;33mW (274) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (287) main_task: Started on CPU0[0m
+[0;32mI (287) main_task: Calling app_main()[0m
+[0;32mI (287) uart: queue free spaces: 10[0m
+[0;32mI (407) FSM Loop: Loop Started[0m
+[0;32mI (407) Data: 0[0m
+[0;32mI (407) FSM Loop: Loop Started[0m
+[0;32mI (407) Data: 0[0m
+[0;32mI (407) FSM Loop: Loop Started[0m
+[0;32mI (407) Data: 0[0m
+[0;32mI (417) FSM Loop: Loop Started[0m
+[0;32mI (417) Data: 0[0m
+[0;32mI (417) FSM Loop: Loop Started[0m
+[0;32mI (417) Data: 0[0m
+[0;32mI (417) FSM Loop: Loop Started[0m
+[0;32mI (427) Data: 0[0m
+[0;32mI (427) FSM Loop: Loop Started[0m
+[0;32mI (427) Data: 0[0m
+[0;32mI (427) FSM Loop: Loop Started[0m
+[0;32mI (437) Data: 0[0m
+[0;32mI (437) FSM Loop: Loop Started[0m
+[0;32mI (437) Data: 0[0m
+[0;32mI (437) FSM Loop: Loop Started[0m
+[0;32mI (437) Data: 42496[0m
+[0;32mI (447) FSM Loop: Loop Started[0m
+[0;32mI (447) Data: 42498[0m
+[0;32mI (447) FSM Loop: Loop Started[0m
+[0;32mI (447) Data: 42498[0m
+[0;32mI (457) FSM Loop: Loop Started[0m
+[0;32mI (457) Data: 42498[0m
+[0;32mI (837) FSM Loop: Loop Started[0m
+[0;32mI (837) Data: 42498[0m
+[0;32mI (837) FSM Loop: Loop Started[0m
+[0;32mI (837) Data: 42498[0m
+[0;32mI (837) FSM Loop: Loop Started[0m
+[0;32mI (837) Data: 42498[0m
+[0;32mI (847) FSM Loop: Loop Started[0m
+[0;32mI (847) Data: 42498[0m
+[0;32mI (847) FSM Loop: Loop Started[0m
+[0;32mI (847) Data: 42498[0m
+[0;32mI (847) FSM Loop: Loop Started[0m
+[0;32mI (857) Data: 42498[0m
+[0;32mI (857) FSM Loop: Loop Started[0m
+[0;32mI (857) Data: 42498[0m
+[0;32mI (857) FSM Loop: Loop Started[0m
+[0;32mI (867) Data: 42498[0m
+[0;32mI (867) FSM Loop: Loop Started[0m
+[0;32mI (867) Data: 42498[0m
+[0;32mI (867) FSM Loop: Loop Started[0m
+[0;32mI (877) Data: 42498[0m
+[0;32mI (877) FSM Loop: Loop Started[0m
+[0;32mI (877) Data: 42498[0m
+[0;32mI (877) FSM Loop: Loop Started[0m
+[0;32mI (887) Data: 42498[0m
+[0;32mI (887) FSM Loop: Loop Started[0m
+[0;32mI (887) Data: 42498[0m
+[0;32mI (1267) FSM Loop: Loop Started[0m
+[0;32mI (1267) Data: 0[0m
+[0;32mI (1267) FSM Loop: Loop Started[0m
+[0;32mI (1267) Data: 0[0m
+[0;32mI (1267) FSM Loop: Loop Started[0m
+[0;32mI (1267) Data: 0[0m
+[0;32mI (1267) FSM Loop: Loop Started[0m
+[0;32mI (1277) Data: 0[0m
+[0;32mI (1277) FSM Loop: Loop Started[0m
+[0;32mI (1277) Data: 0[0m
+[0;32mI (1277) FSM Loop: Loop Started[0m
+[0;32mI (1287) Data: 0[0m
+[0;32mI (1287) FSM Loop: Loop Started[0m
+[0;32mI (1287) Data: 0[0m
+[0;32mI (1287) FSM Loop: Loop Started[0m
+[0;32mI (1297) Data: 0[0m
+[0;32mI (1297) FSM Loop: Loop Started[0m
+[0;32mI (1297) Data: 0[0m
+[0;32mI (1297) FSM Loop: Loop Started[0m
+[0;32mI (1297) Data: 42496[0m
+[0;32mI (1307) FSM Loop: Loop Started[0m
+[0;32mI (1307) Data: 42498[0m
+[0;32mI (1307) FSM Loop: Loop Started[0m
+[0;32mI (1307) Data: 42498[0m
+[0;32mI (1317) FSM Loop: Loop Started[0m
+[0;32mI (1317) Data: 42498[0m
+[0;32mI (1697) FSM Loop: Loop Started[0m
+[0;32mI (1697) Data: 42498[0m
+[0;32mI (1697) FSM Loop: Loop Started[0m
+[0;32mI (1697) Data: 42498[0m
+[0;32mI (1697) FSM Loop: Loop Started[0m
+[0;32mI (1697) Data: 42498[0m
+[0;32mI (1697) FSM Loop: Loop Started[0m
+[0;32mI (1707) Data: 42498[0m
+[0;32mI (1707) FSM Loop: Loop Started[0m
+[0;32mI (1707) Data: 42498[0m
+[0;32mI (1707) FSM Loop: Loop Started[0m
+[0;32mI (1717) Data: 42498[0m
+[0;32mI (1717) FSM Loop: Loop Started[0m
+[0;32mI (1717) Data: 42498[0m
+[0;32mI (1717) FSM Loop: Loop Started[0m
+[0;32mI (1727) Data: 42498[0m
+[0;32mI (1727) FSM Loop: Loop Started[0m
+[0;32mI (1727) Data: 42498[0m
+[0;32mI (1727) FSM Loop: Loop Started[0m
+[0;32mI (1737) Data: 42498[0m
+[0;32mI (1737) FSM Loop: Loop Started[0m
+[0;32mI (1737) Data: 42498[0m
+[0;32mI (1737) FSM Loop: Loop Started[0m
+[0;32mI (1747) Data: 42498[0m
+[0;32mI (1747) FSM Loop: Loop Started[0m
+[0;32mI (1747) Data: 42498[0m
+[0;32mI (2127) FSM Loop: Loop Started[0m
+[0;32mI (2127) Data: 0[0m
+[0;32mI (2127) FSM Loop: Loop Started[0m
+[0;32mI (2127) Data: 0[0m
+[0;32mI (2127) FSM Loop: Loop Started[0m
+[0;32mI (2127) Data: 0[0m
+[0;32mI (2127) FSM Loop: Loop Started[0m
+[0;32mI (2137) Data: 0[0m
+[0;32mI (2137) FSM Loop: Loop Started[0m
+[0;32mI (2137) Data: 0[0m
+[0;32mI (2137) FSM Loop: Loop Started[0m
+[0;32mI (2147) Data: 0[0m
+[0;32mI (2147) FSM Loop: Loop Started[0m
+[0;32mI (2147) Data: 0[0m
+[0;32mI (2147) FSM Loop: Loop Started[0m
+[0;32mI (2147) Data: 0[0m
+[0;32mI (2157) FSM Loop: Loop Started[0m
+[0;32mI (2157) Data: 0[0m
+[0;32mI (2157) FSM Loop: Loop Started[0m
+[0;32mI (2157) Data: 41984[0m
+[0;32mI (2167) FSM Loop: Loop Started[0m
+[0;32mI (2167) Data: 41986[0m
+[0;32mI (2167) FSM Loop: Loop Started[0m
+[0;32mI (2167) Data: 41986[0m
+[0;32mI (2167) FSM Loop: Loop Started[0m
+[0;32mI (2177) Data: 41986[0m
+[0;32mI (2557) FSM Loop: Loop Started[0m
+[0;32mI (2557) Data: 41986[0m
+[0;32mI (2557) FSM Loop: Loop Started[0m
+[0;32mI (2557) Data: 41986[0m
+[0;32mI (2557) FSM Loop: Loop Started[0m
+[0;32mI (2557) Data: 41986[0m
+[0;32mI (2557) FSM Loop: Loop Started[0m
+[0;32mI (2567) Data: 41986[0m
+[0;32mI (2567) FSM Loop: Loop Started[0m
+[0;32mI (2567) Data: 41986[0m
+[0;32mI (2567) FSM Loop: Loop Started[0m
+[0;32mI (2577) Data: 41986[0m
+[0;32mI (2577) FSM Loop: Loop Started[0m
+[0;32mI (2577) Data: 41986[0m
+[0;32mI (2577) FSM Loop: Loop Started[0m
+[0;32mI (2587) Data: 41986[0m
+[0;32mI (2587) FSM Loop: Loop Started[0m
+[0;32mI (2587) Data: 41986[0m
+[0;32mI (2587) FSM Loop: Loop Started[0m
+[0;32mI (2597) Data: 41986[0m
+[0;32mI (2597) FSM Loop: Loop Started[0m
+[0;32mI (2597) Data: 41986[0m
+[0;32mI (2597) FSM Loop: Loop Started[0m
+[0;32mI (2597) Data: 41986[0m
+[0;32mI (2607) FSM Loop: Loop Started[0m
+[0;32mI (2607) Data: 41986[0m
+[0;32mI (2987) FSM Loop: Loop Started[0m
+[0;32mI (2987) Data: 0[0m
+[0;32mI (2987) FSM Loop: Loop Started[0m
+[0;32mI (2987) Data: 0[0m
+[0;32mI (2987) FSM Loop: Loop Started[0m
+[0;32mI (2987) Data: 0[0m
+[0;32mI (2987) FSM Loop: Loop Started[0m
+[0;32mI (2997) Data: 0[0m
+[0;32mI (2997) FSM Loop: Loop Started[0m
+[0;32mI (2997) Data: 0[0m
+[0;32mI (2997) FSM Loop: Loop Started[0m
+[0;32mI (2997) Data: 0[0m
+[0;32mI (3007) FSM Loop: Loop Started[0m
+[0;32mI (3007) Data: 0[0m
+[0;32mI (3007) FSM Loop: Loop Started[0m
+[0;32mI (3007) Data: 0[0m
+[0;32mI (3017) FSM Loop: Loop Started[0m
+[0;32mI (3017) Data: 0[0m
+[0;32mI (3017) FSM Loop: Loop Started[0m
+[0;32mI (3017) Data: 41728[0m
+[0;32mI (3017) FSM Loop: Loop Started[0m
+[0;32mI (3027) Data: 41730[0m
+[0;32mI (3027) FSM Loop: Loop Started[0m
+[0;32mI (3027) Data: 41730[0m
+[0;32mI (3027) FSM Loop: Loop Started[0m
+[0;32mI (3037) Data: 41730[0m
+[0;32mI (4257) FSM Loop: Loop Started[0m
+[0;32mI (4257) Data: 41730[0m
+[0;32mI (4257) FSM Loop: Loop Started[0m
+[0;32mI (4257) Data: 41730[0m
+[0;32mI (4257) FSM Loop: Loop Started[0m
+[0;32mI (4257) Data: 41730[0m
+[0;32mI (4267) FSM Loop: Loop Started[0m
+[0;32mI (4267) Data: 41730[0m
+[0;32mI (4267) FSM Loop: Loop Started[0m
+[0;32mI (4267) Data: 41730[0m
+[0;32mI (4277) FSM Loop: Loop Started[0m
+[0;32mI (4277) Data: 41730[0m
+[0;32mI (4277) FSM Loop: Loop Started[0m
+[0;32mI (4277) Data: 41730[0m
+[0;32mI (4277) FSM Loop: Loop Started[0m
+[0;32mI (4287) Data: 41730[0m
+[0;32mI (4287) FSM Loop: Loop Started[0m
+[0;32mI (4287) Data: 41730[0m
+[0;32mI (4287) FSM Loop: Loop Started[0m
+[0;32mI (4297) Data: 41730[0m
+[0;32mI (4297) FSM Loop: Loop Started[0m
+[0;32mI (4297) Data: 41730[0m
+[0;32mI (4297) FSM Loop: Loop Started[0m
+[0;32mI (4307) Data: 41730[0m
+[0;32mI (4307) FSM Loop: Loop Started[0m
+[0;32mI (4307) Data: 41730[0m
+[0;32mI (4687) FSM Loop: Loop Started[0m
+[0;32mI (4687) Data: 0[0m
+[0;32mI (4687) FSM Loop: Loop Started[0m
+[0;32mI (4687) Data: 0[0m
+[0;32mI (4687) FSM Loop: Loop Started[0m
+[0;32mI (4687) Data: 0[0m
+[0;32mI (4697) FSM Loop: Loop Started[0m
+[0;32mI (4697) Data: 0[0m
+[0;32mI (4697) FSM Loop: Loop Started[0m
+[0;32mI (4697) Data: 0[0m
+[0;32mI (4697) FSM Loop: Loop Started[0m
+[0;32mI (4707) Data: 0[0m
+[0;32mI (4707) FSM Loop: Loop Started[0m
+[0;32mI (4707) Data: 0[0m
+[0;32mI (4707) FSM Loop: Loop Started[0m
+[0;32mI (4717) Data: 0[0m
+[0;32mI (4717) FSM Loop: Loop Started[0m
+[0;32mI (4717) Data: 0[0m
+[0;32mI (4717) FSM Loop: Loop Started[0m
+[0;32mI (4717) Data: 41984[0m
+[0;32mI (4727) FSM Loop: Loop Started[0m
+[0;32mI (4727) Data: 41986[0m
+[0;32mI (4727) FSM Loop: Loop Started[0m
+[0;32mI (4727) Data: 41986[0m
+[0;32mI (4737) FSM Loop: Loop Started[0m
+[0;32mI (4737) Data: 41986[0m
+[0;32mI (5117) FSM Loop: Loop Started[0m
+[0;32mI (5117) Data: 41986[0m
+[0;32mI (5117) FSM Loop: Loop Started[0m
+[0;32mI (5117) Data: 41986[0m
+[0;32mI (5117) FSM Loop: Loop Started[0m
+[0;32mI (5117) Data: 41986[0m
+[0;32mI (5117) FSM Loop: Loop Started[0m
+[0;32mI (5127) Data: 41986[0m
+[0;32mI (5127) FSM Loop: Loop Started[0m
+[0;32mI (5127) Data: 41986[0m
+[0;32mI (5127) FSM Loop: Loop Started[0m
+[0;32mI (5137) Data: 41986[0m
+[0;32mI (5137) FSM Loop: Loop Started[0m
+[0;32mI (5137) Data: 41986[0m
+[0;32mI (5137) FSM Loop: Loop Started[0m
+[0;32mI (5147) Data: 41986[0m
+[0;32mI (5147) FSM Loop: Loop Started[0m
+[0;32mI (5147) Data: 41986[0m
+[0;32mI (5147) FSM Loop: Loop Started[0m
+[0;32mI (5157) Data: 41986[0m
+[0;32mI (5157) FSM Loop: Loop Started[0m
+[0;32mI (5157) Data: 41986[0m
+[0;32mI (5157) FSM Loop: Loop Started[0m
+[0;32mI (5167) Data: 41986[0m
+[0;32mI (5167) FSM Loop: Loop Started[0m
+[0;32mI (5167) Data: 41986[0m
+[0;32mI (5547) FSM Loop: Loop Started[0m
+[0;32mI (5547) Data: 0[0m
+[0;32mI (5547) FSM Loop: Loop Started[0m
+[0;32mI (5547) Data: 0[0m
+[0;32mI (5547) FSM Loop: Loop Started[0m
+[0;32mI (5547) Data: 0[0m
+[0;32mI (5547) FSM Loop: Loop Started[0m
+[0;32mI (5557) Data: 0[0m
+[0;32mI (5557) FSM Loop: Loop Started[0m
+[0;32mI (5557) Data: 0[0m
+[0;32mI (5557) FSM Loop: Loop Started[0m
+[0;32mI (5567) Data: 0[0m
+[0;32mI (5567) FSM Loop: Loop Started[0m
+[0;32mI (5567) Data: 0[0m
+[0;32mI (5567) FSM Loop: Loop Started[0m
+[0;32mI (5567) Data: 0[0m
+[0;32mI (5577) FSM Loop: Loop Started[0m
+[0;32mI (5577) Data: 0[0m
+[0;32mI (5577) FSM Loop: Loop Started[0m
+[0;32mI (5577) Data: 43264[0m
+[0;32mI (5587) FSM Loop: Loop Started[0m
+[0;32mI (5587) Data: 43266[0m
+[0;32mI (5587) FSM Loop: Loop Started[0m
+[0;32mI (5587) Data: 43266[0m
+[0;32mI (5597) FSM Loop: Loop Started[0m
+[0;32mI (5597) Data: 43266[0m
+[0;32mI (5977) FSM Loop: Loop Started[0m
+[0;32mI (5977) Data: 43266[0m
+[0;32mI (5977) FSM Loop: Loop Started[0m
+[0;32mI (5977) Data: 43266[0m
+[0;32mI (5977) FSM Loop: Loop Started[0m
+[0;32mI (5977) Data: 43266[0m
+[0;32mI (5977) FSM Loop: Loop Started[0m
+[0;32mI (5987) Data: 43266[0m
+[0;32mI (5987) FSM Loop: Loop Started[0m
+[0;32mI (5987) Data: 43266[0m
+[0;32mI (5987) FSM Loop: Loop Started[0m
+[0;32mI (5997) Data: 43266[0m
+[0;32mI (5997) FSM Loop: Loop Started[0m
+[0;32mI (5997) Data: 43266[0m
+[0;32mI (5997) FSM Loop: Loop Started[0m
+[0;32mI (6007) Data: 43266[0m
+[0;32mI (6007) FSM Loop: Loop Started[0m
+[0;32mI (6007) Data: 43266[0m
+[0;32mI (6007) FSM Loop: Loop Started[0m
+[0;32mI (6017) Data: 43266[0m
+[0;32mI (6017) FSM Loop: Loop Started[0m
+[0;32mI (6017) Data: 43266[0m
+[0;32mI (6017) FSM Loop: Loop Started[0m
+[0;32mI (6017) Data: 43266[0m
+[0;32mI (6027) FSM Loop: Loop Started[0m
+[0;32mI (6027) Data: 43266[0m
+[0;32mI (6407) FSM Loop: Loop Started[0m
+[0;32mI (6407) Data: 0[0m
+[0;32mI (6407) FSM Loop: Loop Started[0m
+[0;32mI (6407) Data: 0[0m
+[0;32mI (6407) FSM Loop: Loop Started[0m
+[0;32mI (6407) Data: 0[0m
+[0;32mI (6407) FSM Loop: Loop Started[0m
+[0;32mI (6417) Data: 0[0m
+[0;32mI (6417) FSM Loop: Loop Started[0m
+[0;32mI (6417) Data: 0[0m
+[0;32mI (6417) FSM Loop: Loop Started[0m
+[0;32mI (6417) Data: 0[0m
+[0;32mI (6427) FSM Loop: Loop Started[0m
+[0;32mI (6427) Data: 0[0m
+[0;32mI (6427) FSM Loop: Loop Started[0m
+[0;32mI (6427) Data: 0[0m
+[0;32mI (6437) FSM Loop: Loop Started[0m
+[0;32mI (6437) Data: 0[0m
+[0;32mI (6437) FSM Loop: Loop Started[0m
+[0;32mI (6437) Data: 42240[0m
+[0;32mI (6437) FSM Loop: Loop Started[0m
+[0;32mI (6447) Data: 42242[0m
+[0;32mI (6447) FSM Loop: Loop Started[0m
+[0;32mI (6447) Data: 42242[0m
+[0;32mI (6447) FSM Loop: Loop Started[0m
+[0;32mI (6457) Data: 42242[0m
+[0;32mI (6837) FSM Loop: Loop Started[0m
+[0;32mI (6837) Data: 42242[0m
+[0;32mI (6837) FSM Loop: Loop Started[0m
+[0;32mI (6837) Data: 42242[0m
+[0;32mI (6837) FSM Loop: Loop Started[0m
+[0;32mI (6837) Data: 42242[0m
+[0;32mI (6837) FSM Loop: Loop Started[0m
+[0;32mI (6847) Data: 42242[0m
+[0;32mI (6847) FSM Loop: Loop Started[0m
+[0;32mI (6847) Data: 42242[0m
+[0;32mI (6847) FSM Loop: Loop Started[0m
+[0;32mI (6857) Data: 42242[0m
+[0;32mI (6857) FSM Loop: Loop Started[0m
+[0;32mI (6857) Data: 42242[0m
+[0;32mI (6857) FSM Loop: Loop Started[0m
+[0;32mI (6857) Data: 42242[0m
+[0;32mI (6867) FSM Loop: Loop Started[0m
+[0;32mI (6867) Data: 42242[0m
+[0;32mI (6867) FSM Loop: Loop Started[0m
+[0;32mI (6867) Data: 42242[0m
+[0;32mI (6877) FSM Loop: Loop Started[0m
+[0;32mI (6877) Data: 42242[0m
+[0;32mI (6877) FSM Loop: Loop Started[0m
+[0;32mI (6877) Data: 42242[0m
+[0;32mI (6887) FSM Loop: Loop Started[0m
+[0;32mI (6887) Data: 42242[0m
+[0;32mI (7267) FSM Loop: Loop Started[0m
+[0;32mI (7267) Data: 0[0m
+[0;32mI (7267) FSM Loop: Loop Started[0m
+[0;32mI (7267) Data: 0[0m
+[0;32mI (7267) FSM Loop: Loop Started[0m
+[0;32mI (7267) Data: 0[0m
+[0;32mI (7267) FSM Loop: Loop Started[0m
+[0;32mI (7277) Data: 0[0m
+[0;32mI (7277) FSM Loop: Loop Started[0m
+[0;32mI (7277) Data: 0[0m
+[0;32mI (7277) FSM Loop: Loop Started[0m
+[0;32mI (7277) Data: 0[0m
+[0;32mI (7287) FSM Loop: Loop Started[0m
+[0;32mI (7287) Data: 0[0m
+[0;32mI (7287) FSM Loop: Loop Started[0m
+[0;32mI (7287) Data: 0[0m
+[0;32mI (7287) FSM Loop: Loop Started[0m
+[0;32mI (7297) Data: 0[0m
+[0;32mI (7297) FSM Loop: Loop Started[0m
+[0;32mI (7297) Data: 42240[0m
+[0;32mI (7297) FSM Loop: Loop Started[0m
+[0;32mI (7307) Data: 42242[0m
+[0;32mI (7307) FSM Loop: Loop Started[0m
+[0;32mI (7307) Data: 42242[0m
+[0;32mI (7307) FSM Loop: Loop Started[0m
+[0;32mI (7317) Data: 42242[0m
+[0;32mI (7697) FSM Loop: Loop Started[0m
+[0;32mI (7697) Data: 42242[0m
+[0;32mI (7697) FSM Loop: Loop Started[0m
+[0;32mI (7697) Data: 42242[0m
+[0;32mI (7697) FSM Loop: Loop Started[0m
+[0;32mI (7697) Data: 42242[0m
+[0;32mI (7697) FSM Loop: Loop Started[0m
+[0;32mI (7697) Data: 42242[0m
+[0;32mI (7707) FSM Loop: Loop Started[0m
+[0;32mI (7707) Data: 42242[0m
+[0;32mI (7707) FSM Loop: Loop Started[0m
+[0;32mI (7707) Data: 42242[0m
+[0;32mI (7717) FSM Loop: Loop Started[0m
+[0;32mI (7717) Data: 42242[0m
+[0;32mI (7717) FSM Loop: Loop Started[0m
+[0;32mI (7717) Data: 42242[0m
+[0;32mI (7727) FSM Loop: Loop Started[0m
+[0;32mI (7727) Data: 42242[0m
+[0;32mI (7727) FSM Loop: Loop Started[0m
+[0;32mI (7727) Data: 42242[0m
+[0;32mI (7727) FSM Loop: Loop Started[0m
+[0;32mI (7737) Data: 42242[0m
+[0;32mI (7737) FSM Loop: Loop Started[0m
+[0;32mI (7737) Data: 42242[0m
+[0;32mI (7737) FSM Loop: Loop Started[0m
+[0;32mI (7747) Data: 42242[0m
+[0;32mI (8127) FSM Loop: Loop Started[0m
+[0;32mI (8127) Data: 0[0m
+[0;32mI (8127) FSM Loop: Loop Started[0m
+[0;32mI (8127) Data: 0[0m
+[0;32mI (8127) FSM Loop: Loop Started[0m
+[0;32mI (8127) Data: 0[0m
+[0;32mI (8127) FSM Loop: Loop Started[0m
+[0;32mI (8127) Data: 0[0m
+[0;32mI (8137) FSM Loop: Loop Started[0m
+[0;32mI (8137) Data: 0[0m
+[0;32mI (8137) FSM Loop: Loop Started[0m
+[0;32mI (8137) Data: 0[0m
+[0;32mI (8137) FSM Loop: Loop Started[0m
+[0;32mI (8147) Data: 0[0m
+[0;32mI (8147) FSM Loop: Loop Started[0m
+[0;32mI (8147) Data: 0[0m
+[0;32mI (8147) FSM Loop: Loop Started[0m
+[0;32mI (8157) Data: 0[0m
+[0;32mI (8157) FSM Loop: Loop Started[0m
+[0;32mI (8157) Data: 42240[0m
+[0;32mI (8157) FSM Loop: Loop Started[0m
+[0;32mI (8167) Data: 42242[0m
+[0;32mI (8167) FSM Loop: Loop Started[0m
+[0;32mI (8167) Data: 42242[0m
+[0;32mI (8167) FSM Loop: Loop Started[0m
+[0;32mI (8177) Data: 42242[0m
+[0;32mI (8557) FSM Loop: Loop Started[0m
+[0;32mI (8557) Data: 42242[0m
+[0;32mI (8557) FSM Loop: Loop Started[0m
+[0;32mI (8557) Data: 42242[0m
+[0;32mI (8557) FSM Loop: Loop Started[0m
+[0;32mI (8557) Data: 42242[0m
+[0;32mI (8557) FSM Loop: Loop Started[0m
+[0;32mI (8557) Data: 42242[0m
+[0;32mI (8567) FSM Loop: Loop Started[0m
+[0;32mI (8567) Data: 42242[0m
+[0;32mI (8567) FSM Loop: Loop Started[0m
+[0;32mI (8567) Data: 42242[0m
+[0;32mI (8567) FSM Loop: Loop Started[0m
+[0;32mI (8577) Data: 42242[0m
+[0;32mI (8577) FSM Loop: Loop Started[0m
+[0;32mI (8577) Data: 42242[0m
+[0;32mI (8577) FSM Loop: Loop Started[0m
+[0;32mI (8587) Data: 42242[0m
+[0;32mI (8587) FSM Loop: Loop Started[0m
+[0;32mI (8587) Data: 42242[0m
+[0;32mI (8587) FSM Loop: Loop Started[0m
+[0;32mI (8597) Data: 42242[0m
+[0;32mI (8597) FSM Loop: Loop Started[0m
+[0;32mI (8597) Data: 42242[0m
+[0;32mI (8597) FSM Loop: Loop Started[0m
+[0;32mI (8607) Data: 42242[0m
+[0;32mI (8987) FSM Loop: Loop Started[0m
+[0;32mI (8987) Data: 0[0m
+[0;32mI (8987) FSM Loop: Loop Started[0m
+[0;32mI (8987) Data: 0[0m
+[0;32mI (8987) FSM Loop: Loop Started[0m
+[0;32mI (8987) Data: 0[0m
+[0;32mI (8987) FSM Loop: Loop Started[0m
+[0;32mI (8987) Data: 0[0m
+[0;32mI (8987) FSM Loop: Loop Started[0m
+[0;32mI (8997) Data: 0[0m
+[0;32mI (8997) FSM Loop: Loop Started[0m
+[0;32mI (8997) Data: 0[0m
+[0;32mI (8997) FSM Loop: Loop Started[0m
+[0;32mI (9007) Data: 0[0m
+[0;32mI (9007) FSM Loop: Loop Started[0m
+[0;32mI (9007) Data: 0[0m
+[0;32mI (9007) FSM Loop: Loop Started[0m
+[0;32mI (9017) Data: 0[0m
+[0;32mI (9017) FSM Loop: Loop Started[0m
+[0;32mI (9017) Data: 42496[0m
+[0;32mI (9017) FSM Loop: Loop Started[0m
+[0;32mI (9017) Data: 42498[0m
+[0;32mI (9027) FSM Loop: Loop Started[0m
+[0;32mI (9027) Data: 42498[0m
+[0;32mI (9027) FSM Loop: Loop Started[0m
+[0;32mI (9027) Data: 42498[0m
+[0;32mI (10257) FSM Loop: Loop Started[0m
+[0;32mI (10257) Data: 42498[0m
+[0;32mI (10257) FSM Loop: Loop Started[0m
+[0;32mI (10257) Data: 42498[0m
+[0;32mI (10257) FSM Loop: Loop Started[0m
+[0;32mI (10257) Data: 42498[0m
+[0;32mI (10257) FSM Loop: Loop Started[0m
+[0;32mI (10267) Data: 42498[0m
+[0;32mI (10267) FSM Loop: Loop Started[0m
+[0;32mI (10267) Data: 42498[0m
+[0;32mI (10267) FSM Loop: Loop Started[0m
+[0;32mI (10277) Data: 42498[0m
+[0;32mI (10277) FSM Loop: Loop Started[0m
+[0;32mI (10277) Data: 42498[0m
+[0;32mI (10277) FSM Loop: Loop Started[0m
+[0;32mI (10287) Data: 42498[0m
+[0;32mI (10287) FSM Loop: Loop Started[0m
+[0;32mI (10287) Data: 42498[0m
+[0;32mI (10287) FSM Loop: Loop Started[0m
+[0;32mI (10297) Data: 42498[0m
+[0;32mI (10297) FSM Loop: Loop Started[0m
+[0;32mI (10297) Data: 42498[0m
+[0;32mI (10297) FSM Loop: Loop Started[0m
+[0;32mI (10307) Data: 0[0m
+[0;32mI (10307) FSM Loop: Loop Started[0m
+[0;32mI (10307) Data: 0[0m
+[0;32mI (10687) FSM Loop: Loop Started[0m
+[0;32mI (10687) Data: 0[0m
+[0;32mI (10687) FSM Loop: Loop Started[0m
+[0;32mI (10687) Data: 0[0m
+[0;32mI (10687) FSM Loop: Loop Started[0m
+[0;32mI (10687) Data: 0[0m
+[0;32mI (10687) FSM Loop: Loop Started[0m
+[0;32mI (10697) Data: 0[0m
+[0;32mI (10697) FSM Loop: Loop Started[0m
+[0;32mI (10697) Data: 0[0m
+[0;32mI (10697) FSM Loop: Loop Started[0m
+[0;32mI (10697) Data: 50331648[0m
+[0;32mI (10707) FSM Loop: Loop Started[0m
+[0;32mI (10707) Data: 50331648[0m
+[0;32mI (10707) FSM Loop: Loop Started[0m
+[0;32mI (10707) Data: 50331648[0m
+[0;32mI (10717) FSM Loop: Loop Started[0m
+[0;32mI (10717) Data: 50331648[0m
+[0;32mI (10717) FSM Loop: Loop Started[0m
+[0;32mI (10727) Data: 50331648[0m
+[0;32mI (10727) FSM Loop: Loop Started[0m
+[0;32mI (10727) Data: 50331648[0m
+[0;32mI (10727) FSM Loop: Loop Started[0m
+[0;32mI (10737) Data: 50331648[0m
+[0;32mI (10737) FSM Loop: Loop Started[0m
+[0;32mI (10737) Data: 50331648[0m
+[0;32mI (11117) FSM Loop: Loop Started[0m
+[0;32mI (11117) Data: 0[0m
+[0;32mI (11117) FSM Loop: Loop Started[0m
+[0;32mI (11117) Data: 0[0m
+[0;32mI (11117) FSM Loop: Loop Started[0m
+[0;32mI (11117) Data: 0[0m
+[0;32mI (11117) FSM Loop: Loop Started[0m
+[0;32mI (11117) Data: 0[0m
+[0;32mI (11127) FSM Loop: Loop Started[0m
+[0;32mI (11127) Data: 0[0m
+[0;32mI (11127) FSM Loop: Loop Started[0m
+[0;32mI (11127) Data: 0[0m
+[0;32mI (11137) FSM Loop: Loop Started[0m
+[0;32mI (11137) Data: 0[0m
+[0;32mI (11137) FSM Loop: Loop Started[0m
+[0;32mI (11137) Data: 0[0m
+[0;32mI (11137) FSM Loop: Loop Started[0m
+[0;32mI (11147) Data: 0[0m
+[0;32mI (11147) FSM Loop: Loop Started[0m
+[0;32mI (11147) Data: 42240[0m
+[0;32mI (11147) FSM Loop: Loop Started[0m
+[0;32mI (11157) Data: 42242[0m
+[0;32mI (11157) FSM Loop: Loop Started[0m
+[0;32mI (11157) Data: 42242[0m
+[0;32mI (11157) FSM Loop: Loop Started[0m
+[0;32mI (11167) Data: 42242[0m
+[0;32mI (12387) FSM Loop: Loop Started[0m
+[0;32mI (12387) Data: 42242[0m
+[0;32mI (12387) FSM Loop: Loop Started[0m
+[0;32mI (12387) Data: 42242[0m
+[0;32mI (12387) FSM Loop: Loop Started[0m
+[0;32mI (12387) Data: 42242[0m
+[0;32mI (12397) FSM Loop: Loop Started[0m
+[0;32mI (12397) Data: 42242[0m
+[0;32mI (12397) FSM Loop: Loop Started[0m
+[0;32mI (12397) Data: 42242[0m
+[0;32mI (12407) FSM Loop: Loop Started[0m
+[0;32mI (12407) Data: 42242[0m
+[0;32mI (12407) FSM Loop: Loop Started[0m
+[0;32mI (12407) Data: 42242[0m
+[0;32mI (12417) FSM Loop: Loop Started[0m
+[0;32mI (12417) Data: 42242[0m
+[0;32mI (12417) FSM Loop: Loop Started[0m
+[0;32mI (12417) Data: 42242[0m
+[0;32mI (12427) FSM Loop: Loop Started[0m
+[0;32mI (12427) Data: 42242[0m
+[0;32mI (12427) FSM Loop: Loop Started[0m
+[0;32mI (12427) Data: 42242[0m
+[0;32mI (12437) FSM Loop: Loop Started[0m
+[0;32mI (12437) Data: 42242[0m
+[0;32mI (12437) FSM Loop: Loop Started[0m
+[0;32mI (12437) Data: 42242[0m
+[0;32mI (12817) FSM Loop: Loop Started[0m
+[0;32mI (12817) Data: 0[0m
+[0;32mI (12817) FSM Loop: Loop Started[0m
+[0;32mI (12817) Data: 0[0m
+[0;32mI (12817) FSM Loop: Loop Started[0m
+[0;32mI (12817) Data: 0[0m
+[0;32mI (12817) FSM Loop: Loop Started[0m
+[0;32mI (12827) Data: 0[0m
+[0;32mI (12827) FSM Loop: Loop Started[0m
+[0;32mI (12827) Data: 0[0m
+[0;32mI (12827) FSM Loop: Loop Started[0m
+[0;32mI (12837) Data: 0[0m
+[0;32mI (12837) FSM Loop: Loop Started[0m
+[0;32mI (12837) Data: 0[0m
+[0;32mI (12837) FSM Loop: Loop Started[0m
+[0;32mI (12837) Data: 0[0m
+[0;32mI (12847) FSM Loop: Loop Started[0m
+[0;32mI (12847) Data: 0[0m
+[0;32mI (12847) FSM Loop: Loop Started[0m
+[0;32mI (12847) Data: 38912[0m
+[0;32mI (12857) FSM Loop: Loop Started[0m
+[0;32mI (12857) Data: 38915[0m
+[0;32mI (12857) FSM Loop: Loop Started[0m
+[0;32mI (12857) Data: 38915[0m
+[0;32mI (12867) FSM Loop: Loop Started[0m
+[0;32mI (12867) Data: 38915[0m
+[0;32mI (13667) FSM Loop: Loop Started[0m
+[0;32mI (13667) Data: 38915[0m
+[0;32mI (13667) FSM Loop: Loop Started[0m
+[0;32mI (13667) Data: 38915[0m
+[0;32mI (13667) FSM Loop: Loop Started[0m
+[0;32mI (13667) Data: 38915[0m
+[0;32mI (13677) FSM Loop: Loop Started[0m
+[0;32mI (13677) Data: 38915[0m
+[0;32mI (13677) FSM Loop: Loop Started[0m
+[0;32mI (13677) Data: 38915[0m
+[0;32mI (13687) FSM Loop: Loop Started[0m
+[0;32mI (13687) Data: 38915[0m
+[0;32mI (13687) FSM Loop: Loop Started[0m
+[0;32mI (13687) Data: 38915[0m
+[0;32mI (13697) FSM Loop: Loop Started[0m
+[0;32mI (13697) Data: 38915[0m
+[0;32mI (13697) FSM Loop: Loop Started[0m
+[0;32mI (13697) Data: 38915[0m
+[0;32mI (13707) FSM Loop: Loop Started[0m
+[0;32mI (13707) Data: 38915[0m
+[0;32mI (13707) FSM Loop: Loop Started[0m
+[0;32mI (13707) Data: 38915[0m
+[0;32mI (13717) FSM Loop: Loop Started[0m
+[0;32mI (13717) Data: 38915[0m
+[0;32mI (13717) FSM Loop: Loop Started[0m
+[0;32mI (13717) Data: 38915[0m
+[0;32mI (14097) FSM Loop: Loop Started[0m
+[0;32mI (14097) Data: 0[0m
+[0;32mI (14097) FSM Loop: Loop Started[0m
+[0;32mI (14097) Data: 0[0m
+[0;32mI (14097) FSM Loop: Loop Started[0m
+[0;32mI (14097) Data: 0[0m
+[0;32mI (14097) FSM Loop: Loop Started[0m
+[0;32mI (14107) Data: 0[0m
+[0;32mI (14107) FSM Loop: Loop Started[0m
+[0;32mI (14107) Data: 0[0m
+[0;32mI (14107) FSM Loop: Loop Started[0m
+[0;32mI (14117) Data: 0[0m
+[0;32mI (14117) FSM Loop: Loop Started[0m
+[0;32mI (14117) Data: 0[0m
+[0;32mI (14117) FSM Loop: Loop Started[0m
+[0;32mI (14127) Data: 0[0m
+[0;32mI (14127) FSM Loop: Loop Started[0m
+[0;32mI (14127) Data: 851968[0m
+[0;32mI (14127) FSM Loop: Loop Started[0m
+[0;32mI (14127) Data: 873472[0m
+[0;32mI (14137) FSM Loop: Loop Started[0m
+[0;32mI (14137) Data: 873474[0m
+[0;32mI (14137) FSM Loop: Loop Started[0m
+[0;32mI (14137) Data: 873474[0m
+[0;32mI (14147) FSM Loop: Loop Started[0m
+[0;32mI (14147) Data: 873474[0m
+[0;32mI (14527) FSM Loop: Loop Started[0m
+[0;32mI (14527) Data: 873474[0m
+[0;32mI (14527) FSM Loop: Loop Started[0m
+[0;32mI (14527) Data: 873474[0m
+[0;32mI (14527) FSM Loop: Loop Started[0m
+[0;32mI (14527) Data: 873474[0m
+[0;32mI (14537) FSM Loop: Loop Started[0m
+[0;32mI (14537) Data: 873474[0m
+[0;32mI (14537) FSM Loop: Loop Started[0m
+[0;32mI (14537) Data: 873474[0m
+[0;32mI (14547) FSM Loop: Loop Started[0m
+[0;32mI (14547) Data: 873474[0m
+[0;32mI (14547) FSM Loop: Loop Started[0m
+[0;32mI (14547) Data: 873474[0m
+[0;32mI (14557) FSM Loop: Loop Started[0m
+[0;32mI (14557) Data: 873474[0m
+[0;32mI (14557) FSM Loop: Loop Started[0m
+[0;32mI (14557) Data: 873474[0m
+[0;32mI (14567) FSM Loop: Loop Started[0m
+[0;32mI (14567) Data: 873474[0m
+[0;32mI (14567) FSM Loop: Loop Started[0m
+[0;32mI (14567) Data: 873474[0m
+[0;32mI (14577) FSM Loop: Loop Started[0m
+[0;32mI (14577) Data: 873474[0m
+[0;32mI (14577) FSM Loop: Loop Started[0m
+[0;32mI (14577) Data: 873474[0m
+[0;32mI (14957) FSM Loop: Loop Started[0m
+[0;32mI (14957) Data: 0[0m
+[0;32mI (14957) FSM Loop: Loop Started[0m
+[0;32mI (14957) Data: 0[0m
+[0;32mI (14957) FSM Loop: Loop Started[0m
+[0;32mI (14957) Data: 0[0m
+[0;32mI (14957) FSM Loop: Loop Started[0m
+[0;32mI (14967) Data: 0[0m
+[0;32mI (14967) FSM Loop: Loop Started[0m
+[0;32mI (14967) Data: 0[0m
+[0;32mI (14967) FSM Loop: Loop Started[0m
+[0;32mI (14967) Data: 0[0m
+[0;32mI (14977) FSM Loop: Loop Started[0m
+[0;32mI (14977) Data: 0[0m
+[0;32mI (14977) FSM Loop: Loop Started[0m
+[0;32mI (14977) Data: 0[0m
+[0;32mI (14987) FSM Loop: Loop Started[0m
+[0;32mI (14987) Data: 851968[0m
+[0;32mI (14987) FSM Loop: Loop Started[0m
+[0;32mI (14987) Data: 889600[0m
+[0;32mI (14997) FSM Loop: Loop Started[0m
+[0;32mI (14997) Data: 889601[0m
+[0;32mI (14997) FSM Loop: Loop Started[0m
+[0;32mI (14997) Data: 889601[0m
+[0;32mI (15007) FSM Loop: Loop Started[0m
+[0;32mI (15007) Data: 889601[0m
+[0;32mI (15387) FSM Loop: Loop Started[0m
+[0;32mI (15387) Data: 889601[0m
+[0;32mI (15387) FSM Loop: Loop Started[0m
+[0;32mI (15387) Data: 889601[0m
+[0;32mI (15387) FSM Loop: Loop Started[0m
+[0;32mI (15387) Data: 889601[0m
+[0;32mI (15387) FSM Loop: Loop Started[0m
+[0;32mI (15397) Data: 889601[0m
+[0;32mI (15397) FSM Loop: Loop Started[0m
+[0;32mI (15397) Data: 889601[0m
+[0;32mI (15397) FSM Loop: Loop Started[0m
+[0;32mI (15407) Data: 889601[0m
+[0;32mI (15407) FSM Loop: Loop Started[0m
+[0;32mI (15407) Data: 889601[0m
+[0;32mI (15407) FSM Loop: Loop Started[0m
+[0;32mI (15417) Data: 889601[0m
+[0;32mI (15417) FSM Loop: Loop Started[0m
+[0;32mI (15417) Data: 889601[0m
+[0;32mI (15417) FSM Loop: Loop Started[0m
+[0;32mI (15427) Data: 889601[0m
+[0;32mI (15427) FSM Loop: Loop Started[0m
+[0;32mI (15427) Data: 889601[0m
+[0;32mI (15427) FSM Loop: Loop Started[0m
+[0;32mI (15437) Data: 889601[0m
+[0;32mI (15437) FSM Loop: Loop Started[0m
+[0;32mI (15437) Data: 889601[0m
+[0;32mI (15817) FSM Loop: Loop Started[0m
+[0;32mI (15817) Data: 0[0m
+[0;32mI (15817) FSM Loop: Loop Started[0m
+[0;32mI (15817) Data: 0[0m
+[0;32mI (15817) FSM Loop: Loop Started[0m
+[0;32mI (15817) Data: 0[0m
+[0;32mI (15817) FSM Loop: Loop Started[0m
+[0;32mI (15817) Data: 0[0m
+[0;32mI (15827) FSM Loop: Loop Started[0m
+[0;32mI (15827) Data: 0[0m
+[0;32mI (15827) FSM Loop: Loop Started[0m
+[0;32mI (15827) Data: 0[0m
+[0;32mI (15837) FSM Loop: Loop Started[0m
+[0;32mI (15837) Data: 0[0m
+[0;32mI (15837) FSM Loop: Loop Started[0m
+[0;32mI (15837) Data: 0[0m
+[0;32mI (15837) FSM Loop: Loop Started[0m
+[0;32mI (15847) Data: 851968[0m
+[0;32mI (15847) FSM Loop: Loop Started[0m
+[0;32mI (15847) Data: 903936[0m
+[0;32mI (15847) FSM Loop: Loop Started[0m
+[0;32mI (15857) Data: 903936[0m
+[0;32mI (15857) FSM Loop: Loop Started[0m
+[0;32mI (15857) Data: 903936[0m
+[0;32mI (15857) FSM Loop: Loop Started[0m
+[0;32mI (15867) Data: 903936[0m
+[0;32mI (16247) FSM Loop: Loop Started[0m
+[0;32mI (16247) Data: 903936[0m
+[0;32mI (16247) FSM Loop: Loop Started[0m
+[0;32mI (16247) Data: 903936[0m
+[0;32mI (16247) FSM Loop: Loop Started[0m
+[0;32mI (16247) Data: 903936[0m
+[0;32mI (16247) FSM Loop: Loop Started[0m
+[0;32mI (16257) Data: 903936[0m
+[0;32mI (16257) FSM Loop: Loop Started[0m
+[0;32mI (16257) Data: 903936[0m
+[0;32mI (16257) FSM Loop: Loop Started[0m
+[0;32mI (16267) Data: 903936[0m
+[0;32mI (16267) FSM Loop: Loop Started[0m
+[0;32mI (16267) Data: 903936[0m
+[0;32mI (16267) FSM Loop: Loop Started[0m
+[0;32mI (16277) Data: 903936[0m
+[0;32mI (16277) FSM Loop: Loop Started[0m
+[0;32mI (16277) Data: 903936[0m
+[0;32mI (16277) FSM Loop: Loop Started[0m
+[0;32mI (16287) Data: 903936[0m
+[0;32mI (16287) FSM Loop: Loop Started[0m
+[0;32mI (16287) Data: 903936[0m
+[0;32mI (16287) FSM Loop: Loop Started[0m
+[0;32mI (16297) Data: 903936[0m
+[0;32mI (16297) FSM Loop: Loop Started[0m
+[0;32mI (16297) Data: 903936[0m
+[0;32mI (16677) FSM Loop: Loop Started[0m
+[0;32mI (16677) Data: 0[0m
+[0;32mI (16677) FSM Loop: Loop Started[0m
+[0;32mI (16677) Data: 0[0m
+[0;32mI (16677) FSM Loop: Loop Started[0m
+[0;32mI (16677) Data: 0[0m
+[0;32mI (16677) FSM Loop: Loop Started[0m
+[0;32mI (16677) Data: 0[0m
+[0;32mI (16687) FSM Loop: Loop Started[0m
+[0;32mI (16687) Data: 0[0m
+[0;32mI (16687) FSM Loop: Loop Started[0m
+[0;32mI (16687) Data: 0[0m
+[0;32mI (16687) FSM Loop: Loop Started[0m
+[0;32mI (16697) Data: 0[0m
+[0;32mI (16697) FSM Loop: Loop Started[0m
+[0;32mI (16697) Data: 0[0m
+[0;32mI (16697) FSM Loop: Loop Started[0m
+[0;32mI (16707) Data: 851968[0m
+[0;32mI (16707) FSM Loop: Loop Started[0m
+[0;32mI (16707) Data: 905984[0m
+[0;32mI (16707) FSM Loop: Loop Started[0m
+[0;32mI (16717) Data: 905984[0m
+[0;32mI (16717) FSM Loop: Loop Started[0m
+[0;32mI (16717) Data: 905984[0m
+[0;32mI (16717) FSM Loop: Loop Started[0m
+[0;32mI (16727) Data: 905984[0m
+[0;32mI (17107) FSM Loop: Loop Started[0m
+[0;32mI (17107) Data: 905984[0m
+[0;32mI (17107) FSM Loop: Loop Started[0m
+[0;32mI (17107) Data: 905984[0m
+[0;32mI (17107) FSM Loop: Loop Started[0m
+[0;32mI (17107) Data: 905984[0m
+[0;32mI (17107) FSM Loop: Loop Started[0m
+[0;32mI (17117) Data: 905984[0m
+[0;32mI (17117) FSM Loop: Loop Started[0m
+[0;32mI (17117) Data: 905984[0m
+[0;32mI (17117) FSM Loop: Loop Started[0m
+[0;32mI (17127) Data: 905984[0m
+[0;32mI (17127) FSM Loop: Loop Started[0m
+[0;32mI (17127) Data: 905984[0m
+[0;32mI (17127) FSM Loop: Loop Started[0m
+[0;32mI (17137) Data: 905984[0m
+[0;32mI (17137) FSM Loop: Loop Started[0m
+[0;32mI (17137) Data: 905984[0m
+[0;32mI (17137) FSM Loop: Loop Started[0m
+[0;32mI (17147) Data: 905984[0m
+[0;32mI (17147) FSM Loop: Loop Started[0m
+[0;32mI (17147) Data: 905984[0m
+[0;32mI (17147) FSM Loop: Loop Started[0m
+[0;32mI (17157) Data: 905984[0m
+[0;32mI (17157) FSM Loop: Loop Started[0m
+[0;32mI (17157) Data: 905984[0m
+[0;32mI (17957) FSM Loop: Loop Started[0m
+[0;32mI (17957) Data: 0[0m
+[0;32mI (17957) FSM Loop: Loop Started[0m
+[0;32mI (17957) Data: 0[0m
+[0;32mI (17957) FSM Loop: Loop Started[0m
+[0;32mI (17957) Data: 0[0m
+[0;32mI (17957) FSM Loop: Loop Started[0m
+[0;32mI (17957) Data: 0[0m
+[0;32mI (17967) FSM Loop: Loop Started[0m
+[0;32mI (17967) Data: 0[0m
+[0;32mI (17967) FSM Loop: Loop Started[0m
+[0;32mI (17967) Data: 0[0m
+[0;32mI (17967) FSM Loop: Loop Started[0m
+[0;32mI (17977) Data: 0[0m
+[0;32mI (17977) FSM Loop: Loop Started[0m
+[0;32mI (17977) Data: 0[0m
+[0;32mI (17977) FSM Loop: Loop Started[0m
+[0;32mI (17987) Data: 0[0m
+[0;32mI (17987) FSM Loop: Loop Started[0m
+[0;32mI (17987) Data: 60160[0m
+[0;32mI (17987) FSM Loop: Loop Started[0m
+[0;32mI (17997) Data: 60161[0m
+[0;32mI (17997) FSM Loop: Loop Started[0m
+[0;32mI (17997) Data: 60161[0m
+[0;32mI (17997) FSM Loop: Loop Started[0m
+[0;32mI (18007) Data: 60161[0m
+[0;32mI (18387) FSM Loop: Loop Started[0m
+[0;32mI (18387) Data: 60161[0m
+[0;32mI (18387) FSM Loop: Loop Started[0m
+[0;32mI (18387) Data: 60161[0m
+[0;32mI (18387) FSM Loop: Loop Started[0m
+[0;32mI (18387) Data: 60161[0m
+[0;32mI (18387) FSM Loop: Loop Started[0m
+[0;32mI (18397) Data: 60161[0m
+[0;32mI (18397) FSM Loop: Loop Started[0m
+[0;32mI (18397) Data: 60161[0m
+[0;32mI (18397) FSM Loop: Loop Started[0m
+[0;32mI (18407) Data: 60161[0m
+[0;32mI (18407) FSM Loop: Loop Started[0m
+[0;32mI (18407) Data: 60161[0m
+[0;32mI (18407) FSM Loop: Loop Started[0m
+[0;32mI (18417) Data: 60161[0m
+[0;32mI (18417) FSM Loop: Loop Started[0m
+[0;32mI (18417) Data: 60161[0m
+[0;32mI (18417) FSM Loop: Loop Started[0m
+[0;32mI (18427) Data: 60161[0m
+[0;32mI (18427) FSM Loop: Loop Started[0m
+[0;32mI (18427) Data: 60161[0m
+[0;32mI (18427) FSM Loop: Loop Started[0m
+[0;32mI (18427) Data: 60161[0m
+[0;32mI (18437) FSM Loop: Loop Started[0m
+[0;32mI (18437) Data: 60161[0m
+[0;32mI (18817) FSM Loop: Loop Started[0m
+[0;32mI (18817) Data: 0[0m
+[0;32mI (18817) FSM Loop: Loop Started[0m
+[0;32mI (18817) Data: 0[0m
+[0;32mI (18817) FSM Loop: Loop Started[0m
+[0;32mI (18817) Data: 0[0m
+[0;32mI (18817) FSM Loop: Loop Started[0m
+[0;32mI (18817) Data: 0[0m
+[0;32mI (18817) FSM Loop: Loop Started[0m
+[0;32mI (18827) Data: 0[0m
+[0;32mI (18827) FSM Loop: Loop Started[0m
+[0;32mI (18827) Data: 0[0m
+[0;32mI (18827) FSM Loop: Loop Started[0m
+[0;32mI (18837) Data: 0[0m
+[0;32mI (18837) FSM Loop: Loop Started[0m
+[0;32mI (18837) Data: 0[0m
+[0;32mI (18837) FSM Loop: Loop Started[0m
+[0;32mI (18847) Data: 0[0m
+[0;32mI (18847) FSM Loop: Loop Started[0m
+[0;32mI (18847) Data: 60416[0m
+[0;32mI (18847) FSM Loop: Loop Started[0m
+[0;32mI (18857) Data: 60417[0m
+[0;32mI (18857) FSM Loop: Loop Started[0m
+[0;32mI (18857) Data: 60417[0m
+[0;32mI (18857) FSM Loop: Loop Started[0m
+[0;32mI (18867) Data: 60417[0m
+[0;32mI (20087) FSM Loop: Loop Started[0m
+[0;32mI (20087) Data: 60417[0m
+[0;32mI (20087) FSM Loop: Loop Started[0m
+[0;32mI (20087) Data: 60417[0m
+[0;32mI (20087) FSM Loop: Loop Started[0m
+[0;32mI (20087) Data: 60417[0m
+[0;32mI (20087) FSM Loop: Loop Started[0m
+[0;32mI (20097) Data: 60417[0m
+[0;32mI (20097) FSM Loop: Loop Started[0m
+[0;32mI (20097) Data: 60417[0m
+[0;32mI (20097) FSM Loop: Loop Started[0m
+[0;32mI (20107) Data: 60417[0m
+[0;32mI (20107) FSM Loop: Loop Started[0m
+[0;32mI (20107) Data: 60417[0m
+[0;32mI (20107) FSM Loop: Loop Started[0m
+[0;32mI (20117) Data: 60417[0m
+[0;32mI (20117) FSM Loop: Loop Started[0m
+[0;32mI (20117) Data: 60417[0m
+[0;32mI (20117) FSM Loop: Loop Started[0m
+[0;32mI (20127) Data: 60417[0m
+[0;32mI (20127) FSM Loop: Loop Started[0m
+[0;32mI (20127) Data: 60417[0m
+[0;32mI (20127) FSM Loop: Loop Started[0m
+[0;32mI (20137) Data: 60417[0m
+[0;32mI (20137) FSM Loop: Loop Started[0m
+[0;32mI (20137) Data: 60417[0m
+[0;32mI (20517) FSM Loop: Loop Started[0m
+[0;32mI (20517) Data: 0[0m
+[0;32mI (20517) FSM Loop: Loop Started[0m
+[0;32mI (20517) Data: 0[0m
+[0;32mI (20517) FSM Loop: Loop Started[0m
+[0;32mI (20517) Data: 0[0m
+[0;32mI (20517) FSM Loop: Loop Started[0m
+[0;32mI (20517) Data: 0[0m
+[0;32mI (20527) FSM Loop: Loop Started[0m
+[0;32mI (20527) Data: 0[0m
+[0;32mI (20527) FSM Loop: Loop Started[0m
+[0;32mI (20527) Data: 0[0m
+[0;32mI (20537) FSM Loop: Loop Started[0m
+[0;32mI (20537) Data: 0[0m
+[0;32mI (20537) FSM Loop: Loop Started[0m
+[0;32mI (20537) Data: 0[0m
+[0;32mI (20537) FSM Loop: Loop Started[0m
+[0;32mI (20547) Data: 65536[0m
+[0;32mI (20547) FSM Loop: Loop Started[0m
+[0;32mI (20547) Data: 66304[0m
+[0;32mI (20547) FSM Loop: Loop Started[0m
+[0;32mI (20557) Data: 66314[0m
+[0;32mI (20557) FSM Loop: Loop Started[0m
+[0;32mI (20557) Data: 66314[0m
+[0;32mI (20557) FSM Loop: Loop Started[0m
+[0;32mI (20567) Data: 66314[0m
+[0;32mI (22637) FSM Loop: Loop Started[0m
+[0;32mI (22637) Data: 66314[0m
+[0;32mI (22637) FSM Loop: Loop Started[0m
+[0;32mI (22637) Data: 66314[0m
+[0;32mI (22637) FSM Loop: Loop Started[0m
+[0;32mI (22637) Data: 66314[0m
+[0;32mI (22637) FSM Loop: Loop Started[0m
+[0;32mI (22637) Data: 66314[0m
+[0;32mI (22637) FSM Loop: Loop Started[0m
+[0;32mI (22647) Data: 66314[0m
+[0;32mI (22647) FSM Loop: Loop Started[0m
+[0;32mI (22647) Data: 66314[0m
+[0;32mI (22647) FSM Loop: Loop Started[0m
+[0;32mI (22657) Data: 66314[0m
+[0;32mI (22657) FSM Loop: Loop Started[0m
+[0;32mI (22657) Data: 66314[0m
+[0;32mI (22657) FSM Loop: Loop Started[0m
+[0;32mI (22667) Data: 66314[0m
+[0;32mI (22667) FSM Loop: Loop Started[0m
+[0;32mI (22667) Data: 66314[0m
+[0;32mI (22667) FSM Loop: Loop Started[0m
+[0;32mI (22677) Data: 66314[0m
+[0;32mI (22677) FSM Loop: Loop Started[0m
+[0;32mI (22677) Data: 66314[0m
+[0;32mI (22677) FSM Loop: Loop Started[0m
+[0;32mI (22687) Data: 66314[0m
+[0;32mI (23057) FSM Loop: Loop Started[0m
+[0;32mI (23057) Data: 0[0m
+[0;32mI (23057) FSM Loop: Loop Started[0m
+[0;32mI (23057) Data: 0[0m
+[0;32mI (23067) FSM Loop: Loop Started[0m
+[0;32mI (23067) Data: 0[0m
+[0;32mI (23067) FSM Loop: Loop Started[0m
+[0;32mI (23067) Data: 0[0m
+[0;32mI (23067) FSM Loop: Loop Started[0m
+[0;32mI (23067) Data: 0[0m
+[0;32mI (23077) FSM Loop: Loop Started[0m
+[0;32mI (23077) Data: 0[0m
+[0;32mI (23077) FSM Loop: Loop Started[0m
+[0;32mI (23077) Data: 0[0m
+[0;32mI (23087) FSM Loop: Loop Started[0m
+[0;32mI (23087) Data: 0[0m
+[0;32mI (23087) FSM Loop: Loop Started[0m
+[0;32mI (23087) Data: 851968[0m
+[0;32mI (23097) FSM Loop: Loop Started[0m
+[0;32mI (23097) Data: 916480[0m
+[0;32mI (23097) FSM Loop: Loop Started[0m
+[0;32mI (23097) Data: 916481[0m
+[0;32mI (23107) FSM Loop: Loop Started[0m
+[0;32mI (23107) Data: 916481[0m
+[0;32mI (23107) FSM Loop: Loop Started[0m
+[0;32mI (23107) Data: 916481[0m
+[0;32mI (23487) FSM Loop: Loop Started[0m
+[0;32mI (23497) Data: 916481[0m
+[0;32mI (23497) FSM Loop: Loop Started[0m
+[0;32mI (23497) Data: 916481[0m
+[0;32mI (23497) FSM Loop: Loop Started[0m
+[0;32mI (23497) Data: 916481[0m
+[0;32mI (23497) FSM Loop: Loop Started[0m
+[0;32mI (23497) Data: 916481[0m
+[0;32mI (23497) FSM Loop: Loop Started[0m
+[0;32mI (23507) Data: 916481[0m
+[0;32mI (23507) FSM Loop: Loop Started[0m
+[0;32mI (23507) Data: 916481[0m
+[0;32mI (23507) FSM Loop: Loop Started[0m
+[0;32mI (23517) Data: 916481[0m
+[0;32mI (23517) FSM Loop: Loop Started[0m
+[0;32mI (23517) Data: 916481[0m
+[0;32mI (23517) FSM Loop: Loop Started[0m
+[0;32mI (23527) Data: 916481[0m
+[0;32mI (23527) FSM Loop: Loop Started[0m
+[0;32mI (23527) Data: 916481[0m
+[0;32mI (23527) FSM Loop: Loop Started[0m
+[0;32mI (23537) Data: 916481[0m
+[0;32mI (23537) FSM Loop: Loop Started[0m
+[0;32mI (23537) Data: 916481[0m
+[0;32mI (23537) FSM Loop: Loop Started[0m
+[0;32mI (23547) Data: 916481[0m
+[0;32mI (23917) FSM Loop: Loop Started[0m
+[0;32mI (23917) Data: 0[0m
+[0;32mI (23917) FSM Loop: Loop Started[0m
+[0;32mI (23917) Data: 0[0m
+[0;32mI (23917) FSM Loop: Loop Started[0m
+[0;32mI (23917) Data: 0[0m
+[0;32mI (23927) FSM Loop: Loop Started[0m
+[0;32mI (23927) Data: 0[0m
+[0;32mI (23927) FSM Loop: Loop Started[0m
+[0;32mI (23927) Data: 0[0m
+[0;32mI (23937) FSM Loop: Loop Started[0m
+[0;32mI (23937) Data: 0[0m
+[0;32mI (23937) FSM Loop: Loop Started[0m
+[0;32mI (23937) Data: 0[0m
+[0;32mI (23937) FSM Loop: Loop Started[0m
+[0;32mI (23947) Data: 0[0m
+[0;32mI (23947) FSM Loop: Loop Started[0m
+[0;32mI (23947) Data: 851968[0m
+[0;32mI (23947) FSM Loop: Loop Started[0m
+[0;32mI (23957) Data: 906752[0m
+[0;32mI (23957) FSM Loop: Loop Started[0m
+[0;32mI (23957) Data: 906752[0m
+[0;32mI (23957) FSM Loop: Loop Started[0m
+[0;32mI (23967) Data: 906752[0m
+[0;32mI (23967) FSM Loop: Loop Started[0m
+[0;32mI (23967) Data: 906752[0m
+[0;32mI (24347) FSM Loop: Loop Started[0m
+[0;32mI (24347) Data: 906752[0m
+[0;32mI (24347) FSM Loop: Loop Started[0m
+[0;32mI (24347) Data: 906752[0m
+[0;32mI (24347) FSM Loop: Loop Started[0m
+[0;32mI (24357) Data: 906752[0m
+[0;32mI (24357) FSM Loop: Loop Started[0m
+[0;32mI (24357) Data: 906752[0m
+[0;32mI (24357) FSM Loop: Loop Started[0m
+[0;32mI (24367) Data: 906752[0m
+[0;32mI (24367) FSM Loop: Loop Started[0m
+[0;32mI (24367) Data: 906752[0m
+[0;32mI (24367) FSM Loop: Loop Started[0m
+[0;32mI (24377) Data: 906752[0m
+[0;32mI (24377) FSM Loop: Loop Started[0m
+[0;32mI (24377) Data: 906752[0m
+[0;32mI (24377) FSM Loop: Loop Started[0m
+[0;32mI (24387) Data: 906752[0m
+[0;32mI (24387) FSM Loop: Loop Started[0m
+[0;32mI (24387) Data: 906752[0m
+[0;32mI (24387) FSM Loop: Loop Started[0m
+[0;32mI (24397) Data: 906752[0m
+[0;32mI (24397) FSM Loop: Loop Started[0m
+[0;32mI (24397) Data: 906752[0m
+[0;32mI (24397) FSM Loop: Loop Started[0m
+[0;32mI (24407) Data: 906752[0m
+[0;32mI (24777) FSM Loop: Loop Started[0m
+[0;32mI (24777) Data: 0[0m
+[0;32mI (24777) FSM Loop: Loop Started[0m
+[0;32mI (24777) Data: 0[0m
+[0;32mI (24777) FSM Loop: Loop Started[0m
+[0;32mI (24777) Data: 0[0m
+[0;32mI (24777) FSM Loop: Loop Started[0m
+[0;32mI (24787) Data: 0[0m
+[0;32mI (24787) FSM Loop: Loop Started[0m
+[0;32mI (24787) Data: 0[0m
+[0;32mI (24787) FSM Loop: Loop Started[0m
+[0;32mI (24797) Data: 0[0m
+[0;32mI (24797) FSM Loop: Loop Started[0m
+[0;32mI (24797) Data: 0[0m
+[0;32mI (24797) FSM Loop: Loop Started[0m
+[0;32mI (24807) Data: 0[0m
+[0;32mI (24807) FSM Loop: Loop Started[0m
+[0;32mI (24807) Data: 851968[0m
+[0;32mI (24807) FSM Loop: Loop Started[0m
+[0;32mI (24817) Data: 912896[0m
+[0;32mI (24817) FSM Loop: Loop Started[0m
+[0;32mI (24817) Data: 912896[0m
+[0;32mI (24817) FSM Loop: Loop Started[0m
+[0;32mI (24827) Data: 912896[0m
+[0;32mI (24827) FSM Loop: Loop Started[0m
+[0;32mI (24827) Data: 912896[0m
+[0;32mI (25207) FSM Loop: Loop Started[0m
+[0;32mI (25207) Data: 912896[0m
+[0;32mI (25207) FSM Loop: Loop Started[0m
+[0;32mI (25207) Data: 912896[0m
+[0;32mI (25207) FSM Loop: Loop Started[0m
+[0;32mI (25207) Data: 912896[0m
+[0;32mI (25217) FSM Loop: Loop Started[0m
+[0;32mI (25217) Data: 912896[0m
+[0;32mI (25217) FSM Loop: Loop Started[0m
+[0;32mI (25227) Data: 912896[0m
+[0;32mI (25227) FSM Loop: Loop Started[0m
+[0;32mI (25227) Data: 912896[0m
+[0;32mI (25227) FSM Loop: Loop Started[0m
+[0;32mI (25237) Data: 912896[0m
+[0;32mI (25237) FSM Loop: Loop Started[0m
+[0;32mI (25237) Data: 912896[0m
+[0;32mI (25237) FSM Loop: Loop Started[0m
+[0;32mI (25247) Data: 912896[0m
+[0;32mI (25247) FSM Loop: Loop Started[0m
+[0;32mI (25247) Data: 912896[0m
+[0;32mI (25247) FSM Loop: Loop Started[0m
+[0;32mI (25257) Data: 912896[0m
+[0;32mI (25257) FSM Loop: Loop Started[0m
+[0;32mI (25257) Data: 912896[0m
+[0;32mI (25257) FSM Loop: Loop Started[0m
+[0;32mI (25267) Data: 912896[0m
+[0;32mI (25637) FSM Loop: Loop Started[0m
+[0;32mI (25637) Data: 0[0m
+[0;32mI (25637) FSM Loop: Loop Started[0m
+[0;32mI (25637) Data: 0[0m
+[0;32mI (25637) FSM Loop: Loop Started[0m
+[0;32mI (25637) Data: 0[0m
+[0;32mI (25637) FSM Loop: Loop Started[0m
+[0;32mI (25647) Data: 0[0m
+[0;32mI (25647) FSM Loop: Loop Started[0m
+[0;32mI (25647) Data: 0[0m
+[0;32mI (25647) FSM Loop: Loop Started[0m
+[0;32mI (25657) Data: 0[0m
+[0;32mI (25657) FSM Loop: Loop Started[0m
+[0;32mI (25657) Data: 0[0m
+[0;32mI (25657) FSM Loop: Loop Started[0m
+[0;32mI (25667) Data: 0[0m
+[0;32mI (25667) FSM Loop: Loop Started[0m
+[0;32mI (25667) Data: 851968[0m
+[0;32mI (25667) FSM Loop: Loop Started[0m
+[0;32mI (25667) Data: 910848[0m
+[0;32mI (25677) FSM Loop: Loop Started[0m
+[0;32mI (25677) Data: 910848[0m
+[0;32mI (25677) FSM Loop: Loop Started[0m
+[0;32mI (25687) Data: 910848[0m
+[0;32mI (25687) FSM Loop: Loop Started[0m
+[0;32mI (25687) Data: 910848[0m
+[0;32mI (26067) FSM Loop: Loop Started[0m
+[0;32mI (26067) Data: 910848[0m
+[0;32mI (26067) FSM Loop: Loop Started[0m
+[0;32mI (26067) Data: 910848[0m
+[0;32mI (26067) FSM Loop: Loop Started[0m
+[0;32mI (26067) Data: 910848[0m
+[0;32mI (26077) FSM Loop: Loop Started[0m
+[0;32mI (26077) Data: 910848[0m
+[0;32mI (26077) FSM Loop: Loop Started[0m
+[0;32mI (26077) Data: 910848[0m
+[0;32mI (26087) FSM Loop: Loop Started[0m
+[0;32mI (26087) Data: 910848[0m
+[0;32mI (26087) FSM Loop: Loop Started[0m
+[0;32mI (26087) Data: 910848[0m
+[0;32mI (26097) FSM Loop: Loop Started[0m
+[0;32mI (26097) Data: 910848[0m
+[0;32mI (26097) FSM Loop: Loop Started[0m
+[0;32mI (26097) Data: 910848[0m
+[0;32mI (26107) FSM Loop: Loop Started[0m
+[0;32mI (26107) Data: 910848[0m
+[0;32mI (26107) FSM Loop: Loop Started[0m
+[0;32mI (26107) Data: 910848[0m
+[0;32mI (26117) FSM Loop: Loop Started[0m
+[0;32mI (26117) Data: 910848[0m
+[0;32mI (26117) FSM Loop: Loop Started[0m
+[0;32mI (26117) Data: 910848[0m
+[0;32mI (26497) FSM Loop: Loop Started[0m
+[0;32mI (26497) Data: 0[0m
+[0;32mI (26497) FSM Loop: Loop Started[0m
+[0;32mI (26497) Data: 0[0m
+[0;32mI (26497) FSM Loop: Loop Started[0m
+[0;32mI (26497) Data: 0[0m
+[0;32mI (26497) FSM Loop: Loop Started[0m
+[0;32mI (26507) Data: 0[0m
+[0;32mI (26507) FSM Loop: Loop Started[0m
+[0;32mI (26507) Data: 0[0m
+[0;32mI (26507) FSM Loop: Loop Started[0m
+[0;32mI (26517) Data: 0[0m
+[0;32mI (26517) FSM Loop: Loop Started[0m
+[0;32mI (26517) Data: 0[0m
+[0;32mI (26517) FSM Loop: Loop Started[0m
+[0;32mI (26517) Data: 0[0m
+[0;32mI (26527) FSM Loop: Loop Started[0m
+[0;32mI (26527) Data: 917504[0m
+[0;32mI (26527) FSM Loop: Loop Started[0m
+[0;32mI (26527) Data: 917504[0m
+[0;32mI (26537) FSM Loop: Loop Started[0m
+[0;32mI (26537) Data: 917504[0m
+[0;32mI (26537) FSM Loop: Loop Started[0m
+[0;32mI (26537) Data: 917504[0m
+[0;32mI (26547) FSM Loop: Loop Started[0m
+[0;32mI (26547) Data: 917504[0m
+[0;32mI (27767) FSM Loop: Loop Started[0m
+[0;32mI (27767) Data: 917504[0m
+[0;32mI (27767) FSM Loop: Loop Started[0m
+[0;32mI (27767) Data: 917504[0m
+[0;32mI (27767) FSM Loop: Loop Started[0m
+[0;32mI (27777) Data: 917504[0m
+[0;32mI (27777) FSM Loop: Loop Started[0m
+[0;32mI (27777) Data: 917504[0m
+[0;32mI (27777) FSM Loop: Loop Started[0m
+[0;32mI (27787) Data: 917504[0m
+[0;32mI (27787) FSM Loop: Loop Started[0m
+[0;32mI (27787) Data: 917504[0m
+[0;32mI (27787) FSM Loop: Loop Started[0m
+[0;32mI (27797) Data: 917504[0m
+[0;32mI (27797) FSM Loop: Loop Started[0m
+[0;32mI (27797) Data: 917504[0m
+[0;32mI (27797) FSM Loop: Loop Started[0m
+[0;32mI (27807) Data: 917504[0m
+[0;32mI (27807) FSM Loop: Loop Started[0m
+[0;32mI (27807) Data: 917504[0m
+[0;32mI (27807) FSM Loop: Loop Started[0m
+[0;32mI (27817) Data: 917504[0m
+[0;32mI (27817) FSM Loop: Loop Started[0m
+[0;32mI (27817) Data: 917504[0m
+[0;32mI (27817) FSM Loop: Loop Started[0m
+[0;32mI (27827) Data: 917504[0m
+[0;32mI (28197) FSM Loop: Loop Started[0m
+[0;32mI (28197) Data: 0[0m
+[0;32mI (28197) FSM Loop: Loop Started[0m
+[0;32mI (28197) Data: 0[0m
+[0;32mI (28197) FSM Loop: Loop Started[0m
+[0;32mI (28197) Data: 0[0m
+[0;32mI (28207) FSM Loop: Loop Started[0m
+[0;32mI (28207) Data: 0[0m
+[0;32mI (28207) FSM Loop: Loop Started[0m
+[0;32mI (28207) Data: 0[0m
+[0;32mI (28207) FSM Loop: Loop Started[0m
+[0;32mI (28217) Data: 0[0m
+[0;32mI (28217) FSM Loop: Loop Started[0m
+[0;32mI (28217) Data: 0[0m
+[0;32mI (28217) FSM Loop: Loop Started[0m
+[0;32mI (28227) Data: 0[0m
+[0;32mI (28227) FSM Loop: Loop Started[0m
+[0;32mI (28227) Data: 917504[0m
+[0;32mI (28227) FSM Loop: Loop Started[0m
+[0;32mI (28237) Data: 923648[0m
+[0;32mI (28237) FSM Loop: Loop Started[0m
+[0;32mI (28237) Data: 923649[0m
+[0;32mI (28237) FSM Loop: Loop Started[0m
+[0;32mI (28247) Data: 923649[0m
+[0;32mI (28247) FSM Loop: Loop Started[0m
+[0;32mI (28247) Data: 923649[0m
+[0;32mI (28627) FSM Loop: Loop Started[0m
+[0;32mI (28627) Data: 923649[0m
+[0;32mI (28627) FSM Loop: Loop Started[0m
+[0;32mI (28627) Data: 923649[0m
+[0;32mI (28627) FSM Loop: Loop Started[0m
+[0;32mI (28627) Data: 923649[0m
+[0;32mI (28637) FSM Loop: Loop Started[0m
+[0;32mI (28637) Data: 923649[0m
+[0;32mI (28637) FSM Loop: Loop Started[0m
+[0;32mI (28637) Data: 923649[0m
+[0;32mI (28647) FSM Loop: Loop Started[0m
+[0;32mI (28647) Data: 923649[0m
+[0;32mI (28647) FSM Loop: Loop Started[0m
+[0;32mI (28647) Data: 923649[0m
+[0;32mI (28657) FSM Loop: Loop Started[0m
+[0;32mI (28657) Data: 923649[0m
+[0;32mI (28657) FSM Loop: Loop Started[0m
+[0;32mI (28667) Data: 923649[0m
+[0;32mI (28667) FSM Loop: Loop Started[0m
+[0;32mI (28667) Data: 923649[0m
+[0;32mI (28667) FSM Loop: Loop Started[0m
+[0;32mI (28677) Data: 923649[0m
+[0;32mI (28677) FSM Loop: Loop Started[0m
+[0;32mI (28677) Data: 923649[0m
+[0;32mI (28677) FSM Loop: Loop Started[0m
+[0;32mI (28687) Data: 923649[0m
+[0;32mI (29057) FSM Loop: Loop Started[0m
+[0;32mI (29057) Data: 0[0m
+[0;32mI (29057) FSM Loop: Loop Started[0m
+[0;32mI (29057) Data: 0[0m
+[0;32mI (29057) FSM Loop: Loop Started[0m
+[0;32mI (29057) Data: 0[0m
+[0;32mI (29057) FSM Loop: Loop Started[0m
+[0;32mI (29067) Data: 0[0m
+[0;32mI (29067) FSM Loop: Loop Started[0m
+[0;32mI (29067) Data: 0[0m
+[0;32mI (29067) FSM Loop: Loop Started[0m
+[0;32mI (29077) Data: 0[0m
+[0;32mI (29077) FSM Loop: Loop Started[0m
+[0;32mI (29077) Data: 0[0m
+[0;32mI (29077) FSM Loop: Loop Started[0m
+[0;32mI (29087) Data: 0[0m
+[0;32mI (29087) FSM Loop: Loop Started[0m
+[0;32mI (29087) Data: 917504[0m
+[0;32mI (29087) FSM Loop: Loop Started[0m
+[0;32mI (29097) Data: 931072[0m
+[0;32mI (29097) FSM Loop: Loop Started[0m
+[0;32mI (29097) Data: 931073[0m
+[0;32mI (29097) FSM Loop: Loop Started[0m
+[0;32mI (29107) Data: 931073[0m
+[0;32mI (29107) FSM Loop: Loop Started[0m
+[0;32mI (29107) Data: 931073[0m
+[0;32mI (29487) FSM Loop: Loop Started[0m
+[0;32mI (29487) Data: 931073[0m
+[0;32mI (29487) FSM Loop: Loop Started[0m
+[0;32mI (29487) Data: 931073[0m
+[0;32mI (29487) FSM Loop: Loop Started[0m
+[0;32mI (29487) Data: 931073[0m
+[0;32mI (29497) FSM Loop: Loop Started[0m
+[0;32mI (29497) Data: 931073[0m
+[0;32mI (29497) FSM Loop: Loop Started[0m
+[0;32mI (29497) Data: 931073[0m
+[0;32mI (29507) FSM Loop: Loop Started[0m
+[0;32mI (29507) Data: 931073[0m
+[0;32mI (29507) FSM Loop: Loop Started[0m
+[0;32mI (29507) Data: 931073[0m
+[0;32mI (29517) FSM Loop: Loop Started[0m
+[0;32mI (29517) Data: 931073[0m
+[0;32mI (29517) FSM Loop: Loop Started[0m
+[0;32mI (29517) Data: 931073[0m
+[0;32mI (29527) FSM Loop: Loop Started[0m
+[0;32mI (29527) Data: 931073[0m
+[0;32mI (29527) FSM Loop: Loop Started[0m
+[0;32mI (29527) Data: 931073[0m
+[0;32mI (29537) FSM Loop: Loop Started[0m
+[0;32mI (29537) Data: 931073[0m
+[0;32mI (29537) FSM Loop: Loop Started[0m
+[0;32mI (29537) Data: 931073[0m
+[0;32mI (29917) FSM Loop: Loop Started[0m
+[0;32mI (29917) Data: 0[0m
+[0;32mI (29917) FSM Loop: Loop Started[0m
+[0;32mI (29917) Data: 0[0m
+[0;32mI (29917) FSM Loop: Loop Started[0m
+[0;32mI (29917) Data: 0[0m
+[0;32mI (29917) FSM Loop: Loop Started[0m
+[0;32mI (29927) Data: 0[0m
+[0;32mI (29927) FSM Loop: Loop Started[0m
+[0;32mI (29927) Data: 0[0m
+[0;32mI (29927) FSM Loop: Loop Started[0m
+[0;32mI (29937) Data: 0[0m
+[0;32mI (29937) FSM Loop: Loop Started[0m
+[0;32mI (29937) Data: 0[0m
+[0;32mI (29937) FSM Loop: Loop Started[0m
+[0;32mI (29937) Data: 0[0m
+[0;32mI (29947) FSM Loop: Loop Started[0m
+[0;32mI (29947) Data: 917504[0m
+[0;32mI (29947) FSM Loop: Loop Started[0m
+[0;32mI (29947) Data: 939776[0m
+[0;32mI (29957) FSM Loop: Loop Started[0m
+[0;32mI (29957) Data: 939776[0m
+[0;32mI (29957) FSM Loop: Loop Started[0m
+[0;32mI (29957) Data: 939776[0m
+[0;32mI (29967) FSM Loop: Loop Started[0m
+[0;32mI (29967) Data: 939776[0m
+[0;32mI (30347) FSM Loop: Loop Started[0m
+[0;32mI (30347) Data: 939776[0m
+[0;32mI (30347) FSM Loop: Loop Started[0m
+[0;32mI (30347) Data: 939776[0m
+[0;32mI (30347) FSM Loop: Loop Started[0m
+[0;32mI (30347) Data: 939776[0m
+[0;32mI (30347) FSM Loop: Loop Started[0m
+[0;32mI (30357) Data: 939776[0m
+[0;32mI (30357) FSM Loop: Loop Started[0m
+[0;32mI (30357) Data: 939776[0m
+[0;32mI (30357) FSM Loop: Loop Started[0m
+[0;32mI (30367) Data: 939776[0m
+[0;32mI (30367) FSM Loop: Loop Started[0m
+[0;32mI (30367) Data: 939776[0m
+[0;32mI (30367) FSM Loop: Loop Started[0m
+[0;32mI (30377) Data: 939776[0m
+[0;32mI (30377) FSM Loop: Loop Started[0m
+[0;32mI (30377) Data: 939776[0m
+[0;32mI (30377) FSM Loop: Loop Started[0m
+[0;32mI (30387) Data: 939776[0m
+[0;32mI (30387) FSM Loop: Loop Started[0m
+[0;32mI (30387) Data: 939776[0m
+[0;32mI (30387) FSM Loop: Loop Started[0m
+[0;32mI (30397) Data: 939776[0m
+[0;32mI (30397) FSM Loop: Loop Started[0m
+[0;32mI (30397) Data: 939776[0m
+[0;32mI (30777) FSM Loop: Loop Started[0m
+[0;32mI (30777) Data: 0[0m
+[0;32mI (30777) FSM Loop: Loop Started[0m
+[0;32mI (30777) Data: 0[0m
+[0;32mI (30777) FSM Loop: Loop Started[0m
+[0;32mI (30777) Data: 0[0m
+[0;32mI (30777) FSM Loop: Loop Started[0m
+[0;32mI (30777) Data: 0[0m
+[0;32mI (30787) FSM Loop: Loop Started[0m
+[0;32mI (30787) Data: 0[0m
+[0;32mI (30787) FSM Loop: Loop Started[0m
+[0;32mI (30787) Data: 0[0m
+[0;32mI (30797) FSM Loop: Loop Started[0m
+[0;32mI (30797) Data: 0[0m
+[0;32mI (30797) FSM Loop: Loop Started[0m
+[0;32mI (30797) Data: 0[0m
+[0;32mI (30797) FSM Loop: Loop Started[0m
+[0;32mI (30807) Data: 917504[0m
+[0;32mI (30807) FSM Loop: Loop Started[0m
+[0;32mI (30807) Data: 929280[0m
+[0;32mI (30817) FSM Loop: Loop Started[0m
+[0;32mI (30817) Data: 929280[0m
+[0;32mI (30817) FSM Loop: Loop Started[0m
+[0;32mI (30817) Data: 929280[0m
+[0;32mI (30827) FSM Loop: Loop Started[0m
+[0;32mI (30827) Data: 929280[0m
+[0;32mI (31207) FSM Loop: Loop Started[0m
+[0;32mI (31207) Data: 929280[0m
+[0;32mI (31207) FSM Loop: Loop Started[0m
+[0;32mI (31207) Data: 929280[0m
+[0;32mI (31207) FSM Loop: Loop Started[0m
+[0;32mI (31207) Data: 929280[0m
+[0;32mI (31207) FSM Loop: Loop Started[0m
+[0;32mI (31217) Data: 929280[0m
+[0;32mI (31217) FSM Loop: Loop Started[0m
+[0;32mI (31217) Data: 929280[0m
+[0;32mI (31217) FSM Loop: Loop Started[0m
+[0;32mI (31227) Data: 929280[0m
+[0;32mI (31227) FSM Loop: Loop Started[0m
+[0;32mI (31227) Data: 929280[0m
+[0;32mI (31227) FSM Loop: Loop Started[0m
+[0;32mI (31237) Data: 929280[0m
+[0;32mI (31237) FSM Loop: Loop Started[0m
+[0;32mI (31237) Data: 929280[0m
+[0;32mI (31237) FSM Loop: Loop Started[0m
+[0;32mI (31247) Data: 929280[0m
+[0;32mI (31247) FSM Loop: Loop Started[0m
+[0;32mI (31247) Data: 929280[0m
+[0;32mI (31247) FSM Loop: Loop Started[0m
+[0;32mI (31257) Data: 929280[0m
+[0;32mI (31257) FSM Loop: Loop Started[0m
+[0;32mI (31257) Data: 929280[0m
+[0;32mI (31637) FSM Loop: Loop Started[0m
+[0;32mI (31637) Data: 0[0m
+[0;32mI (31637) FSM Loop: Loop Started[0m
+[0;32mI (31637) Data: 0[0m
+[0;32mI (31637) FSM Loop: Loop Started[0m
+[0;32mI (31637) Data: 0[0m
+[0;32mI (31637) FSM Loop: Loop Started[0m
+[0;32mI (31637) Data: 0[0m
+[0;32mI (31647) FSM Loop: Loop Started[0m
+[0;32mI (31647) Data: 0[0m
+[0;32mI (31647) FSM Loop: Loop Started[0m
+[0;32mI (31647) Data: 0[0m
+[0;32mI (31647) FSM Loop: Loop Started[0m
+[0;32mI (31657) Data: 0[0m
+[0;32mI (31657) FSM Loop: Loop Started[0m
+[0;32mI (31657) Data: 0[0m
+[0;32mI (31657) FSM Loop: Loop Started[0m
+[0;32mI (31667) Data: 917504[0m
+[0;32mI (31667) FSM Loop: Loop Started[0m
+[0;32mI (31667) Data: 918272[0m
+[0;32mI (31667) FSM Loop: Loop Started[0m
+[0;32mI (31677) Data: 918272[0m
+[0;32mI (31677) FSM Loop: Loop Started[0m
+[0;32mI (31677) Data: 918272[0m
+[0;32mI (31677) FSM Loop: Loop Started[0m
+[0;32mI (31687) Data: 918272[0m
+[0;32mI (32067) FSM Loop: Loop Started[0m
+[0;32mI (32067) Data: 918272[0m
+[0;32mI (32067) FSM Loop: Loop Started[0m
+[0;32mI (32067) Data: 918272[0m
+[0;32mI (32067) FSM Loop: Loop Started[0m
+[0;32mI (32067) Data: 918272[0m
+[0;32mI (32067) FSM Loop: Loop Started[0m
+[0;32mI (32077) Data: 918272[0m
+[0;32mI (32077) FSM Loop: Loop Started[0m
+[0;32mI (32077) Data: 918272[0m
+[0;32mI (32077) FSM Loop: Loop Started[0m
+[0;32mI (32087) Data: 918272[0m
+[0;32mI (32087) FSM Loop: Loop Started[0m
+[0;32mI (32087) Data: 918272[0m
+[0;32mI (32087) FSM Loop: Loop Started[0m
+[0;32mI (32097) Data: 918272[0m
+[0;32mI (32097) FSM Loop: Loop Started[0m
+[0;32mI (32097) Data: 918272[0m
+[0;32mI (32097) FSM Loop: Loop Started[0m
+[0;32mI (32107) Data: 918272[0m
+[0;32mI (32107) FSM Loop: Loop Started[0m
+[0;32mI (32107) Data: 918272[0m
+[0;32mI (32107) FSM Loop: Loop Started[0m
+[0;32mI (32117) Data: 918272[0m
+[0;32mI (32117) FSM Loop: Loop Started[0m
+[0;32mI (32117) Data: 918272[0m
+[0;32mI (32497) FSM Loop: Loop Started[0m
+[0;32mI (32497) Data: 0[0m
+[0;32mI (32497) FSM Loop: Loop Started[0m
+[0;32mI (32497) Data: 0[0m
+[0;32mI (32497) FSM Loop: Loop Started[0m
+[0;32mI (32497) Data: 0[0m
+[0;32mI (32497) FSM Loop: Loop Started[0m
+[0;32mI (32497) Data: 0[0m
+[0;32mI (32497) FSM Loop: Loop Started[0m
+[0;32mI (32507) Data: 0[0m
+[0;32mI (32507) FSM Loop: Loop Started[0m
+[0;32mI (32507) Data: 0[0m
+[0;32mI (32507) FSM Loop: Loop Started[0m
+[0;32mI (32517) Data: 0[0m
+[0;32mI (32517) FSM Loop: Loop Started[0m
+[0;32mI (32517) Data: 0[0m
+[0;32mI (32517) FSM Loop: Loop Started[0m
+[0;32mI (32527) Data: 786432[0m
+[0;32mI (32527) FSM Loop: Loop Started[0m
+[0;32mI (32527) Data: 787968[0m
+[0;32mI (32527) FSM Loop: Loop Started[0m
+[0;32mI (32537) Data: 787971[0m
+[0;32mI (32537) FSM Loop: Loop Started[0m
+[0;32mI (32537) Data: 787971[0m
+[0;32mI (32537) FSM Loop: Loop Started[0m
+[0;32mI (32547) Data: 787971[0m
+[0;32mI (32927) FSM Loop: Loop Started[0m
+[0;32mI (32927) Data: 787971[0m
+[0;32mI (32927) FSM Loop: Loop Started[0m
+[0;32mI (32927) Data: 787971[0m
+[0;32mI (32927) FSM Loop: Loop Started[0m
+[0;32mI (32927) Data: 787971[0m
+[0;32mI (32927) FSM Loop: Loop Started[0m
+[0;32mI (32927) Data: 787971[0m
+[0;32mI (32937) FSM Loop: Loop Started[0m
+[0;32mI (32937) Data: 787971[0m
+[0;32mI (32937) FSM Loop: Loop Started[0m
+[0;32mI (32937) Data: 787971[0m
+[0;32mI (32947) FSM Loop: Loop Started[0m
+[0;32mI (32947) Data: 787971[0m
+[0;32mI (32947) FSM Loop: Loop Started[0m
+[0;32mI (32947) Data: 787971[0m
+[0;32mI (32957) FSM Loop: Loop Started[0m
+[0;32mI (32957) Data: 787971[0m
+[0;32mI (32957) FSM Loop: Loop Started[0m
+[0;32mI (32957) Data: 787971[0m
+[0;32mI (32967) FSM Loop: Loop Started[0m
+[0;32mI (32967) Data: 787971[0m
+[0;32mI (32967) FSM Loop: Loop Started[0m
+[0;32mI (32967) Data: 787971[0m
+[0;32mI (32977) FSM Loop: Loop Started[0m
+[0;32mI (32977) Data: 787971[0m
+[0;32mI (33357) FSM Loop: Loop Started[0m
+[0;32mI (33357) Data: 0[0m
+[0;32mI (33357) FSM Loop: Loop Started[0m
+[0;32mI (33357) Data: 0[0m
+[0;32mI (33357) FSM Loop: Loop Started[0m
+[0;32mI (33357) Data: 0[0m
+[0;32mI (33357) FSM Loop: Loop Started[0m
+[0;32mI (33357) Data: 0[0m
+[0;32mI (33357) FSM Loop: Loop Started[0m
+[0;32mI (33367) Data: 0[0m
+[0;32mI (33367) FSM Loop: Loop Started[0m
+[0;32mI (33367) Data: 0[0m
+[0;32mI (33367) FSM Loop: Loop Started[0m
+[0;32mI (33377) Data: 0[0m
+[0;32mI (33377) FSM Loop: Loop Started[0m
+[0;32mI (33377) Data: 0[0m
+[0;32mI (33377) FSM Loop: Loop Started[0m
+[0;32mI (33377) Data: 720896[0m
+[0;32mI (33387) FSM Loop: Loop Started[0m
+[0;32mI (33387) Data: 735744[0m
+[0;32mI (33387) FSM Loop: Loop Started[0m
+[0;32mI (33397) Data: 735745[0m
+[0;32mI (33397) FSM Loop: Loop Started[0m
+[0;32mI (33397) Data: 735745[0m
+[0;32mI (33397) FSM Loop: Loop Started[0m
+[0;32mI (33407) Data: 735745[0m
+[0;32mI (33787) FSM Loop: Loop Started[0m
+[0;32mI (33787) Data: 735745[0m
+[0;32mI (33787) FSM Loop: Loop Started[0m
+[0;32mI (33787) Data: 735745[0m
+[0;32mI (33787) FSM Loop: Loop Started[0m
+[0;32mI (33787) Data: 735745[0m
+[0;32mI (33787) FSM Loop: Loop Started[0m
+[0;32mI (33787) Data: 735745[0m
+[0;32mI (33797) FSM Loop: Loop Started[0m
+[0;32mI (33797) Data: 735745[0m
+[0;32mI (33797) FSM Loop: Loop Started[0m
+[0;32mI (33797) Data: 735745[0m
+[0;32mI (33807) FSM Loop: Loop Started[0m
+[0;32mI (33807) Data: 735745[0m
+[0;32mI (33807) FSM Loop: Loop Started[0m
+[0;32mI (33807) Data: 735745[0m
+[0;32mI (33817) FSM Loop: Loop Started[0m
+[0;32mI (33817) Data: 735745[0m
+[0;32mI (33817) FSM Loop: Loop Started[0m
+[0;32mI (33817) Data: 735745[0m
+[0;32mI (33827) FSM Loop: Loop Started[0m
+[0;32mI (33827) Data: 735745[0m
+[0;32mI (33827) FSM Loop: Loop Started[0m
+[0;32mI (33827) Data: 735745[0m
+[0;32mI (33837) FSM Loop: Loop Started[0m
+[0;32mI (33837) Data: 735745[0m
+[0;32mI (34207) FSM Loop: Loop Started[0m
+[0;32mI (34217) Data: 0[0m
+[0;32mI (34217) FSM Loop: Loop Started[0m
+[0;32mI (34217) Data: 0[0m
+[0;32mI (34217) FSM Loop: Loop Started[0m
+[0;32mI (34217) Data: 0[0m
+[0;32mI (34217) FSM Loop: Loop Started[0m
+[0;32mI (34217) Data: 0[0m
+[0;32mI (34217) FSM Loop: Loop Started[0m
+[0;32mI (34227) Data: 0[0m
+[0;32mI (34227) FSM Loop: Loop Started[0m
+[0;32mI (34227) Data: 0[0m
+[0;32mI (34227) FSM Loop: Loop Started[0m
+[0;32mI (34227) Data: 0[0m
+[0;32mI (34237) FSM Loop: Loop Started[0m
+[0;32mI (34237) Data: 0[0m
+[0;32mI (34237) FSM Loop: Loop Started[0m
+[0;32mI (34237) Data: 655360[0m
+[0;32mI (34247) FSM Loop: Loop Started[0m
+[0;32mI (34247) Data: 710912[0m
+[0;32mI (34247) FSM Loop: Loop Started[0m
+[0;32mI (34247) Data: 710913[0m
+[0;32mI (34257) FSM Loop: Loop Started[0m
+[0;32mI (34257) Data: 710913[0m
+[0;32mI (34257) FSM Loop: Loop Started[0m
+[0;32mI (34257) Data: 710913[0m
+[0;32mI (34647) FSM Loop: Loop Started[0m
+[0;32mI (34647) Data: 710913[0m
+[0;32mI (34647) FSM Loop: Loop Started[0m
+[0;32mI (34647) Data: 710913[0m
+[0;32mI (34647) FSM Loop: Loop Started[0m
+[0;32mI (34647) Data: 710913[0m
+[0;32mI (34647) FSM Loop: Loop Started[0m
+[0;32mI (34647) Data: 710913[0m
+[0;32mI (34647) FSM Loop: Loop Started[0m
+[0;32mI (34657) Data: 710913[0m
+[0;32mI (34657) FSM Loop: Loop Started[0m
+[0;32mI (34657) Data: 710913[0m
+[0;32mI (34657) FSM Loop: Loop Started[0m
+[0;32mI (34667) Data: 710913[0m
+[0;32mI (34667) FSM Loop: Loop Started[0m
+[0;32mI (34667) Data: 710913[0m
+[0;32mI (34667) FSM Loop: Loop Started[0m
+[0;32mI (34677) Data: 710913[0m
+[0;32mI (34677) FSM Loop: Loop Started[0m
+[0;32mI (34677) Data: 710913[0m
+[0;32mI (34677) FSM Loop: Loop Started[0m
+[0;32mI (34687) Data: 710913[0m
+[0;32mI (34687) FSM Loop: Loop Started[0m
+[0;32mI (34687) Data: 710913[0m
+[0;32mI (34697) FSM Loop: Loop Started[0m
+[0;32mI (34697) Data: 710913[0m
+[0;32mI (36337) FSM Loop: Loop Started[0m
+[0;32mI (36337) Data: 0[0m
+[0;32mI (36337) FSM Loop: Loop Started[0m
+[0;32mI (36337) Data: 0[0m
+[0;32mI (36337) FSM Loop: Loop Started[0m
+[0;32mI (36337) Data: 0[0m
+[0;32mI (36337) FSM Loop: Loop Started[0m
+[0;32mI (36337) Data: 0[0m
+[0;32mI (36347) FSM Loop: Loop Started[0m
+[0;32mI (36347) Data: 0[0m
+[0;32mI (36347) FSM Loop: Loop Started[0m
+[0;32mI (36347) Data: 0[0m
+[0;32mI (36357) FSM Loop: Loop Started[0m
+[0;32mI (36357) Data: 0[0m
+[0;32mI (36357) FSM Loop: Loop Started[0m
+[0;32mI (36357) Data: 0[0m
+[0;32mI (36357) FSM Loop: Loop Started[0m
+[0;32mI (36367) Data: 720896[0m
+[0;32mI (36367) FSM Loop: Loop Started[0m
+[0;32mI (36367) Data: 755200[0m
+[0;32mI (36367) FSM Loop: Loop Started[0m
+[0;32mI (36377) Data: 755200[0m
+[0;32mI (36377) FSM Loop: Loop Started[0m
+[0;32mI (36377) Data: 755200[0m
+[0;32mI (36377) FSM Loop: Loop Started[0m
+[0;32mI (36387) Data: 755200[0m
+[0;32mI (36767) FSM Loop: Loop Started[0m
+[0;32mI (36767) Data: 755200[0m
+[0;32mI (36767) FSM Loop: Loop Started[0m
+[0;32mI (36767) Data: 755200[0m
+[0;32mI (36767) FSM Loop: Loop Started[0m
+[0;32mI (36767) Data: 755200[0m
+[0;32mI (36767) FSM Loop: Loop Started[0m
+[0;32mI (36777) Data: 755200[0m
+[0;32mI (36777) FSM Loop: Loop Started[0m
+[0;32mI (36777) Data: 755200[0m
+[0;32mI (36777) FSM Loop: Loop Started[0m
+[0;32mI (36787) Data: 755200[0m
+[0;32mI (36787) FSM Loop: Loop Started[0m
+[0;32mI (36787) Data: 755200[0m
+[0;32mI (36787) FSM Loop: Loop Started[0m
+[0;32mI (36797) Data: 755200[0m
+[0;32mI (36797) FSM Loop: Loop Started[0m
+[0;32mI (36797) Data: 755200[0m
+[0;32mI (36797) FSM Loop: Loop Started[0m
+[0;32mI (36807) Data: 755200[0m
+[0;32mI (36807) FSM Loop: Loop Started[0m
+[0;32mI (36807) Data: 755200[0m
+[0;32mI (36807) FSM Loop: Loop Started[0m
+[0;32mI (36817) Data: 755200[0m
+[0;32mI (36817) FSM Loop: Loop Started[0m
+[0;32mI (36817) Data: 755200[0m
+[0;32mI (37197) FSM Loop: Loop Started[0m
+[0;32mI (37197) Data: 0[0m
+[0;32mI (37197) FSM Loop: Loop Started[0m
+[0;32mI (37197) Data: 0[0m
+[0;32mI (37197) FSM Loop: Loop Started[0m
+[0;32mI (37197) Data: 0[0m
+[0;32mI (37197) FSM Loop: Loop Started[0m
+[0;32mI (37197) Data: 0[0m
+[0;32mI (37197) FSM Loop: Loop Started[0m
+[0;32mI (37207) Data: 0[0m
+[0;32mI (37207) FSM Loop: Loop Started[0m
+[0;32mI (37207) Data: 0[0m
+[0;32mI (37207) FSM Loop: Loop Started[0m
+[0;32mI (37217) Data: 0[0m
+[0;32mI (37217) FSM Loop: Loop Started[0m
+[0;32mI (37217) Data: 0[0m
+[0;32mI (37217) FSM Loop: Loop Started[0m
+[0;32mI (37227) Data: 720896[0m
+[0;32mI (37227) FSM Loop: Loop Started[0m
+[0;32mI (37227) Data: 748800[0m
+[0;32mI (37227) FSM Loop: Loop Started[0m
+[0;32mI (37237) Data: 748800[0m
+[0;32mI (37237) FSM Loop: Loop Started[0m
+[0;32mI (37237) Data: 748800[0m
+[0;32mI (37237) FSM Loop: Loop Started[0m
+[0;32mI (37247) Data: 748800[0m
+[0;32mI (37627) FSM Loop: Loop Started[0m
+[0;32mI (37627) Data: 748800[0m
+[0;32mI (37627) FSM Loop: Loop Started[0m
+[0;32mI (37627) Data: 748800[0m
+[0;32mI (37627) FSM Loop: Loop Started[0m
+[0;32mI (37627) Data: 748800[0m
+[0;32mI (37627) FSM Loop: Loop Started[0m
+[0;32mI (37637) Data: 748800[0m
+[0;32mI (37637) FSM Loop: Loop Started[0m
+[0;32mI (37637) Data: 748800[0m
+[0;32mI (37637) FSM Loop: Loop Started[0m
+[0;32mI (37647) Data: 748800[0m
+[0;32mI (37647) FSM Loop: Loop Started[0m
+[0;32mI (37647) Data: 748800[0m
+[0;32mI (37647) FSM Loop: Loop Started[0m
+[0;32mI (37657) Data: 748800[0m
+[0;32mI (37657) FSM Loop: Loop Started[0m
+[0;32mI (37657) Data: 748800[0m
+[0;32mI (37657) FSM Loop: Loop Started[0m
+[0;32mI (37667) Data: 748800[0m
+[0;32mI (37667) FSM Loop: Loop Started[0m
+[0;32mI (37667) Data: 748800[0m
+[0;32mI (37667) FSM Loop: Loop Started[0m
+[0;32mI (37677) Data: 748800[0m
+[0;32mI (37677) FSM Loop: Loop Started[0m
+[0;32mI (37677) Data: 748800[0m
+[0;32mI (38057) FSM Loop: Loop Started[0m
+[0;32mI (38057) Data: 0[0m
+[0;32mI (38057) FSM Loop: Loop Started[0m
+[0;32mI (38057) Data: 0[0m
+[0;32mI (38057) FSM Loop: Loop Started[0m
+[0;32mI (38057) Data: 0[0m
+[0;32mI (38057) FSM Loop: Loop Started[0m
+[0;32mI (38057) Data: 0[0m
+[0;32mI (38057) FSM Loop: Loop Started[0m
+[0;32mI (38067) Data: 0[0m
+[0;32mI (38067) FSM Loop: Loop Started[0m
+[0;32mI (38067) Data: 0[0m
+[0;32mI (38067) FSM Loop: Loop Started[0m
+[0;32mI (38077) Data: 0[0m
+[0;32mI (38077) FSM Loop: Loop Started[0m
+[0;32mI (38077) Data: 0[0m
+[0;32mI (38077) FSM Loop: Loop Started[0m
+[0;32mI (38087) Data: 720896[0m
+[0;32mI (38087) FSM Loop: Loop Started[0m
+[0;32mI (38087) Data: 741120[0m
+[0;32mI (38087) FSM Loop: Loop Started[0m
+[0;32mI (38097) Data: 741120[0m
+[0;32mI (38097) FSM Loop: Loop Started[0m
+[0;32mI (38097) Data: 741120[0m
+[0;32mI (38097) FSM Loop: Loop Started[0m
+[0;32mI (38107) Data: 741120[0m
+[0;32mI (38487) FSM Loop: Loop Started[0m
+[0;32mI (38487) Data: 741120[0m
+[0;32mI (38487) FSM Loop: Loop Started[0m
+[0;32mI (38487) Data: 741120[0m
+[0;32mI (38487) FSM Loop: Loop Started[0m
+[0;32mI (38487) Data: 741120[0m
+[0;32mI (38487) FSM Loop: Loop Started[0m
+[0;32mI (38487) Data: 741120[0m
+[0;32mI (38497) FSM Loop: Loop Started[0m
+[0;32mI (38497) Data: 741120[0m
+[0;32mI (38497) FSM Loop: Loop Started[0m
+[0;32mI (38497) Data: 741120[0m
+[0;32mI (38507) FSM Loop: Loop Started[0m
+[0;32mI (38507) Data: 741120[0m
+[0;32mI (38507) FSM Loop: Loop Started[0m
+[0;32mI (38507) Data: 741120[0m
+[0;32mI (38517) FSM Loop: Loop Started[0m
+[0;32mI (38517) Data: 741120[0m
+[0;32mI (38517) FSM Loop: Loop Started[0m
+[0;32mI (38517) Data: 741120[0m
+[0;32mI (38527) FSM Loop: Loop Started[0m
+[0;32mI (38527) Data: 741120[0m
+[0;32mI (38527) FSM Loop: Loop Started[0m
+[0;32mI (38527) Data: 741120[0m
+[0;32mI (38537) FSM Loop: Loop Started[0m
+[0;32mI (38537) Data: 741120[0m
+[0;32mI (40177) FSM Loop: Loop Started[0m
+[0;32mI (40177) Data: 0[0m
+[0;32mI (40177) FSM Loop: Loop Started[0m
+[0;32mI (40177) Data: 0[0m
+[0;32mI (40177) FSM Loop: Loop Started[0m
+[0;32mI (40177) Data: 0[0m
+[0;32mI (40177) FSM Loop: Loop Started[0m
+[0;32mI (40187) Data: 0[0m
+[0;32mI (40187) FSM Loop: Loop Started[0m
+[0;32mI (40187) Data: 0[0m
+[0;32mI (40187) FSM Loop: Loop Started[0m
+[0;32mI (40197) Data: 0[0m
+[0;32mI (40197) FSM Loop: Loop Started[0m
+[0;32mI (40197) Data: 0[0m
+[0;32mI (40197) FSM Loop: Loop Started[0m
+[0;32mI (40197) Data: 0[0m
+[0;32mI (40207) FSM Loop: Loop Started[0m
+[0;32mI (40207) Data: 0[0m
+[0;32mI (40207) FSM Loop: Loop Started[0m
+[0;32mI (40207) Data: 28672[0m
+[0;32mI (40217) FSM Loop: Loop Started[0m
+[0;32mI (40217) Data: 28673[0m
+[0;32mI (40217) FSM Loop: Loop Started[0m
+[0;32mI (40217) Data: 28673[0m
+[0;32mI (40227) FSM Loop: Loop Started[0m
+[0;32mI (40227) Data: 28673[0m
+[0;32mI (40607) FSM Loop: Loop Started[0m
+[0;32mI (40607) Data: 28673[0m
+[0;32mI (40607) FSM Loop: Loop Started[0m
+[0;32mI (40607) Data: 28673[0m
+[0;32mI (40607) FSM Loop: Loop Started[0m
+[0;32mI (40607) Data: 28673[0m
+[0;32mI (40607) FSM Loop: Loop Started[0m
+[0;32mI (40617) Data: 28673[0m
+[0;32mI (40617) FSM Loop: Loop Started[0m
+[0;32mI (40617) Data: 28673[0m
+[0;32mI (40617) FSM Loop: Loop Started[0m
+[0;32mI (40627) Data: 28673[0m
+[0;32mI (40627) FSM Loop: Loop Started[0m
+[0;32mI (40627) Data: 28673[0m
+[0;32mI (40627) FSM Loop: Loop Started[0m
+[0;32mI (40637) Data: 28673[0m
+[0;32mI (40637) FSM Loop: Loop Started[0m
+[0;32mI (40637) Data: 28673[0m
+[0;32mI (40637) FSM Loop: Loop Started[0m
+[0;32mI (40647) Data: 28673[0m
+[0;32mI (40647) FSM Loop: Loop Started[0m
+[0;32mI (40647) Data: 28673[0m
+[0;32mI (40647) FSM Loop: Loop Started[0m
+[0;32mI (40657) Data: 28673[0m
+[0;32mI (40657) FSM Loop: Loop Started[0m
+[0;32mI (40657) Data: 28673[0m
+[0;32mI (41037) FSM Loop: Loop Started[0m
+[0;32mI (41037) Data: 0[0m
+[0;32mI (41037) FSM Loop: Loop Started[0m
+[0;32mI (41037) Data: 0[0m
+[0;32mI (41037) FSM Loop: Loop Started[0m
+[0;32mI (41037) Data: 0[0m
+[0;32mI (41037) FSM Loop: Loop Started[0m
+[0;32mI (41037) Data: 0[0m
+[0;32mI (41047) FSM Loop: Loop Started[0m
+[0;32mI (41047) Data: 0[0m
+[0;32mI (41047) FSM Loop: Loop Started[0m
+[0;32mI (41047) Data: 0[0m
+[0;32mI (41057) FSM Loop: Loop Started[0m
+[0;32mI (41057) Data: 0[0m
+[0;32mI (41057) FSM Loop: Loop Started[0m
+[0;32mI (41057) Data: 0[0m
+[0;32mI (41057) FSM Loop: Loop Started[0m
+[0;32mI (41067) Data: 0[0m
+[0;32mI (41067) FSM Loop: Loop Started[0m
+[0;32mI (41067) Data: 28672[0m
+[0;32mI (41067) FSM Loop: Loop Started[0m
+[0;32mI (41077) Data: 28673[0m
+[0;32mI (41077) FSM Loop: Loop Started[0m
+[0;32mI (41077) Data: 28673[0m
+[0;32mI (41077) FSM Loop: Loop Started[0m
+[0;32mI (41087) Data: 28673[0m
+[0;32mI (41467) FSM Loop: Loop Started[0m
+[0;32mI (41467) Data: 28673[0m
+[0;32mI (41467) FSM Loop: Loop Started[0m
+[0;32mI (41467) Data: 28673[0m
+[0;32mI (41467) FSM Loop: Loop Started[0m
+[0;32mI (41467) Data: 28673[0m
+[0;32mI (41467) FSM Loop: Loop Started[0m
+[0;32mI (41477) Data: 28673[0m
+[0;32mI (41477) FSM Loop: Loop Started[0m
+[0;32mI (41477) Data: 28673[0m
+[0;32mI (41477) FSM Loop: Loop Started[0m
+[0;32mI (41487) Data: 28673[0m
+[0;32mI (41487) FSM Loop: Loop Started[0m
+[0;32mI (41487) Data: 28673[0m
+[0;32mI (41487) FSM Loop: Loop Started[0m
+[0;32mI (41497) Data: 28673[0m
+[0;32mI (41497) FSM Loop: Loop Started[0m
+[0;32mI (41497) Data: 28673[0m
+[0;32mI (41497) FSM Loop: Loop Started[0m
+[0;32mI (41507) Data: 28673[0m
+[0;32mI (41507) FSM Loop: Loop Started[0m
+[0;32mI (41507) Data: 28673[0m
+[0;32mI (41507) FSM Loop: Loop Started[0m
+[0;32mI (41517) Data: 28673[0m
+[0;32mI (41517) FSM Loop: Loop Started[0m
+[0;32mI (41517) Data: 28673[0m
+[0;32mI (41897) FSM Loop: Loop Started[0m
+[0;32mI (41897) Data: 0[0m
+[0;32mI (41897) FSM Loop: Loop Started[0m
+[0;32mI (41897) Data: 0[0m
+[0;32mI (41897) FSM Loop: Loop Started[0m
+[0;32mI (41897) Data: 0[0m
+[0;32mI (41897) FSM Loop: Loop Started[0m
+[0;32mI (41897) Data: 0[0m
+[0;32mI (41907) FSM Loop: Loop Started[0m
+[0;32mI (41907) Data: 0[0m
+[0;32mI (41907) FSM Loop: Loop Started[0m
+[0;32mI (41907) Data: 0[0m
+[0;32mI (41907) FSM Loop: Loop Started[0m
+[0;32mI (41917) Data: 0[0m
+[0;32mI (41917) FSM Loop: Loop Started[0m
+[0;32mI (41917) Data: 0[0m
+[0;32mI (41917) FSM Loop: Loop Started[0m
+[0;32mI (41927) Data: 0[0m
+[0;32mI (41927) FSM Loop: Loop Started[0m
+[0;32mI (41927) Data: 29184[0m
+[0;32mI (41927) FSM Loop: Loop Started[0m
+[0;32mI (41937) Data: 29185[0m
+[0;32mI (41937) FSM Loop: Loop Started[0m
+[0;32mI (41937) Data: 29185[0m
+[0;32mI (41937) FSM Loop: Loop Started[0m
+[0;32mI (41947) Data: 29185[0m
+[0;32mI (42327) FSM Loop: Loop Started[0m
+[0;32mI (42327) Data: 29185[0m
+[0;32mI (42327) FSM Loop: Loop Started[0m
+[0;32mI (42327) Data: 29185[0m
+[0;32mI (42327) FSM Loop: Loop Started[0m
+[0;32mI (42327) Data: 29185[0m
+[0;32mI (42327) FSM Loop: Loop Started[0m
+[0;32mI (42337) Data: 29185[0m
+[0;32mI (42337) FSM Loop: Loop Started[0m
+[0;32mI (42337) Data: 29185[0m
+[0;32mI (42337) FSM Loop: Loop Started[0m
+[0;32mI (42347) Data: 29185[0m
+[0;32mI (42347) FSM Loop: Loop Started[0m
+[0;32mI (42347) Data: 29185[0m
+[0;32mI (42347) FSM Loop: Loop Started[0m
+[0;32mI (42357) Data: 29185[0m
+[0;32mI (42357) FSM Loop: Loop Started[0m
+[0;32mI (42357) Data: 29185[0m
+[0;32mI (42357) FSM Loop: Loop Started[0m
+[0;32mI (42367) Data: 29185[0m
+[0;32mI (42367) FSM Loop: Loop Started[0m
+[0;32mI (42367) Data: 29185[0m
+[0;32mI (42367) FSM Loop: Loop Started[0m
+[0;32mI (42367) Data: 29185[0m
+[0;32mI (42377) FSM Loop: Loop Started[0m
+[0;32mI (42377) Data: 29185[0m
+[0;32mI (42757) FSM Loop: Loop Started[0m
+[0;32mI (42757) Data: 0[0m
+[0;32mI (42757) FSM Loop: Loop Started[0m
+[0;32mI (42757) Data: 0[0m
+[0;32mI (42757) FSM Loop: Loop Started[0m
+[0;32mI (42757) Data: 0[0m
+[0;32mI (42757) FSM Loop: Loop Started[0m
+[0;32mI (42757) Data: 0[0m
+[0;32mI (42757) FSM Loop: Loop Started[0m
+[0;32mI (42767) Data: 0[0m
+[0;32mI (42767) FSM Loop: Loop Started[0m
+[0;32mI (42767) Data: 0[0m
+[0;32mI (42767) FSM Loop: Loop Started[0m
+[0;32mI (42777) Data: 0[0m
+[0;32mI (42777) FSM Loop: Loop Started[0m
+[0;32mI (42777) Data: 0[0m
+[0;32mI (42777) FSM Loop: Loop Started[0m
+[0;32mI (42787) Data: 0[0m
+[0;32mI (42787) FSM Loop: Loop Started[0m
+[0;32mI (42787) Data: 28928[0m
+[0;32mI (42787) FSM Loop: Loop Started[0m
+[0;32mI (42797) Data: 28929[0m
+[0;32mI (42797) FSM Loop: Loop Started[0m
+[0;32mI (42797) Data: 28929[0m
+[0;32mI (42797) FSM Loop: Loop Started[0m
+[0;32mI (42807) Data: 28929[0m
+[0;32mI (43187) FSM Loop: Loop Started[0m
+[0;32mI (43187) Data: 28929[0m
+[0;32mI (43187) FSM Loop: Loop Started[0m
+[0;32mI (43187) Data: 28929[0m
+[0;32mI (43187) FSM Loop: Loop Started[0m
+[0;32mI (43187) Data: 28929[0m
+[0;32mI (43187) FSM Loop: Loop Started[0m
+[0;32mI (43187) Data: 28929[0m
+[0;32mI (43197) FSM Loop: Loop Started[0m
+[0;32mI (43197) Data: 28929[0m
+[0;32mI (43197) FSM Loop: Loop Started[0m
+[0;32mI (43197) Data: 28929[0m
+[0;32mI (43207) FSM Loop: Loop Started[0m
+[0;32mI (43207) Data: 28929[0m
+[0;32mI (43207) FSM Loop: Loop Started[0m
+[0;32mI (43207) Data: 28929[0m
+[0;32mI (43217) FSM Loop: Loop Started[0m
+[0;32mI (43217) Data: 28929[0m
+[0;32mI (43217) FSM Loop: Loop Started[0m
+[0;32mI (43217) Data: 28929[0m
+[0;32mI (43227) FSM Loop: Loop Started[0m
+[0;32mI (43227) Data: 28929[0m
+[0;32mI (43227) FSM Loop: Loop Started[0m
+[0;32mI (43227) Data: 28929[0m
+[0;32mI (43237) FSM Loop: Loop Started[0m
+[0;32mI (43237) Data: 28929[0m
+[0;32mI (43617) FSM Loop: Loop Started[0m
+[0;32mI (43617) Data: 0[0m
+[0;32mI (43617) FSM Loop: Loop Started[0m
+[0;32mI (43617) Data: 0[0m
+[0;32mI (43617) FSM Loop: Loop Started[0m
+[0;32mI (43617) Data: 0[0m
+[0;32mI (43617) FSM Loop: Loop Started[0m
+[0;32mI (43617) Data: 0[0m
+[0;32mI (43617) FSM Loop: Loop Started[0m
+[0;32mI (43627) Data: 0[0m
+[0;32mI (43627) FSM Loop: Loop Started[0m
+[0;32mI (43627) Data: 0[0m
+[0;32mI (43627) FSM Loop: Loop Started[0m
+[0;32mI (43637) Data: 0[0m
+[0;32mI (43637) FSM Loop: Loop Started[0m
+[0;32mI (43637) Data: 0[0m
+[0;32mI (43637) FSM Loop: Loop Started[0m
+[0;32mI (43637) Data: 0[0m
+[0;32mI (43647) FSM Loop: Loop Started[0m
+[0;32mI (43647) Data: 28672[0m
+[0;32mI (43647) FSM Loop: Loop Started[0m
+[0;32mI (43647) Data: 28673[0m
+[0;32mI (43657) FSM Loop: Loop Started[0m
+[0;32mI (43657) Data: 28673[0m
+[0;32mI (43657) FSM Loop: Loop Started[0m
+[0;32mI (43657) Data: 28673[0m
+[0;32mI (44047) FSM Loop: Loop Started[0m
+[0;32mI (44047) Data: 28673[0m
+[0;32mI (44047) FSM Loop: Loop Started[0m
+[0;32mI (44047) Data: 28673[0m
+[0;32mI (44047) FSM Loop: Loop Started[0m
+[0;32mI (44047) Data: 28673[0m
+[0;32mI (44047) FSM Loop: Loop Started[0m
+[0;32mI (44047) Data: 28673[0m
+[0;32mI (44057) FSM Loop: Loop Started[0m
+[0;32mI (44057) Data: 28673[0m
+[0;32mI (44057) FSM Loop: Loop Started[0m
+[0;32mI (44057) Data: 28673[0m
+[0;32mI (44067) FSM Loop: Loop Started[0m
+[0;32mI (44067) Data: 28673[0m
+[0;32mI (44067) FSM Loop: Loop Started[0m
+[0;32mI (44067) Data: 28673[0m
+[0;32mI (44077) FSM Loop: Loop Started[0m
+[0;32mI (44077) Data: 28673[0m
+[0;32mI (44077) FSM Loop: Loop Started[0m
+[0;32mI (44077) Data: 28673[0m
+[0;32mI (44087) FSM Loop: Loop Started[0m
+[0;32mI (44087) Data: 28673[0m
+[0;32mI (44087) FSM Loop: Loop Started[0m
+[0;32mI (44087) Data: 28673[0m
+[0;32mI (44097) FSM Loop: Loop Started[0m
+[0;32mI (44097) Data: 28673[0m
+[0;32mI (44477) FSM Loop: Loop Started[0m
+[0;32mI (44477) Data: 0[0m
+[0;32mI (44477) FSM Loop: Loop Started[0m
+[0;32mI (44477) Data: 0[0m
+[0;32mI (44477) FSM Loop: Loop Started[0m
+[0;32mI (44477) Data: 0[0m
+[0;32mI (44477) FSM Loop: Loop Started[0m
+[0;32mI (44477) Data: 0[0m
+[0;32mI (44477) FSM Loop: Loop Started[0m
+[0;32mI (44487) Data: 0[0m
+[0;32mI (44487) FSM Loop: Loop Started[0m
+[0;32mI (44487) Data: 0[0m
+[0;32mI (44487) FSM Loop: Loop Started[0m
+[0;32mI (44497) Data: 0[0m
+[0;32mI (44497) FSM Loop: Loop Started[0m
+[0;32mI (44497) Data: 0[0m
+[0;32mI (44497) FSM Loop: Loop Started[0m
+[0;32mI (44497) Data: 0[0m
+[0;32mI (44507) FSM Loop: Loop Started[0m
+[0;32mI (44507) Data: 29184[0m
+[0;32mI (44507) FSM Loop: Loop Started[0m
+[0;32mI (44507) Data: 29185[0m
+[0;32mI (44517) FSM Loop: Loop Started[0m
+[0;32mI (44517) Data: 29185[0m
+[0;32mI (44517) FSM Loop: Loop Started[0m
+[0;32mI (44517) Data: 29185[0m
+[0;32mI (44907) FSM Loop: Loop Started[0m
+[0;32mI (44907) Data: 29185[0m
+[0;32mI (44907) FSM Loop: Loop Started[0m
+[0;32mI (44907) Data: 29185[0m
+[0;32mI (44907) FSM Loop: Loop Started[0m
+[0;32mI (44907) Data: 29185[0m
+[0;32mI (44907) FSM Loop: Loop Started[0m
+[0;32mI (44907) Data: 29185[0m
+[0;32mI (44907) FSM Loop: Loop Started[0m
+[0;32mI (44917) Data: 29185[0m
+[0;32mI (44917) FSM Loop: Loop Started[0m
+[0;32mI (44917) Data: 29185[0m
+[0;32mI (44917) FSM Loop: Loop Started[0m
+[0;32mI (44927) Data: 29185[0m
+[0;32mI (44927) FSM Loop: Loop Started[0m
+[0;32mI (44927) Data: 29185[0m
+[0;32mI (44927) FSM Loop: Loop Started[0m
+[0;32mI (44937) Data: 29185[0m
+[0;32mI (44937) FSM Loop: Loop Started[0m
+[0;32mI (44937) Data: 29185[0m
+[0;32mI (44937) FSM Loop: Loop Started[0m
+[0;32mI (44947) Data: 29185[0m
+[0;32mI (44947) FSM Loop: Loop Started[0m
+[0;32mI (44947) Data: 29185[0m
+[0;32mI (44947) FSM Loop: Loop Started[0m
+[0;32mI (44957) Data: 29185[0m
+[0;32mI (45327) FSM Loop: Loop Started[0m
+[0;32mI (45327) Data: 0[0m
+[0;32mI (45327) FSM Loop: Loop Started[0m
+[0;32mI (45337) Data: 0[0m
+[0;32mI (45337) FSM Loop: Loop Started[0m
+[0;32mI (45337) Data: 0[0m
+[0;32mI (45337) FSM Loop: Loop Started[0m
+[0;32mI (45337) Data: 0[0m
+[0;32mI (45337) FSM Loop: Loop Started[0m
+[0;32mI (45347) Data: 0[0m
+[0;32mI (45347) FSM Loop: Loop Started[0m
+[0;32mI (45347) Data: 0[0m
+[0;32mI (45347) FSM Loop: Loop Started[0m
+[0;32mI (45347) Data: 0[0m
+[0;32mI (45357) FSM Loop: Loop Started[0m
+[0;32mI (45357) Data: 0[0m
+[0;32mI (45357) FSM Loop: Loop Started[0m
+[0;32mI (45357) Data: 0[0m
+[0;32mI (45367) FSM Loop: Loop Started[0m
+[0;32mI (45367) Data: 29184[0m
+[0;32mI (45367) FSM Loop: Loop Started[0m
+[0;32mI (45367) Data: 29185[0m
+[0;32mI (45377) FSM Loop: Loop Started[0m
+[0;32mI (45377) Data: 29185[0m
+[0;32mI (45377) FSM Loop: Loop Started[0m
+[0;32mI (45377) Data: 29185[0m
+[0;32mI (45767) FSM Loop: Loop Started[0m
+[0;32mI (45767) Data: 29185[0m
+[0;32mI (45767) FSM Loop: Loop Started[0m
+[0;32mI (45767) Data: 29185[0m
+[0;32mI (45767) FSM Loop: Loop Started[0m
+[0;32mI (45767) Data: 29185[0m
+[0;32mI (45767) FSM Loop: Loop Started[0m
+[0;32mI (45767) Data: 29185[0m
+[0;32mI (45767) FSM Loop: Loop Started[0m
+[0;32mI (45777) Data: 29185[0m
+[0;32mI (45777) FSM Loop: Loop Started[0m
+[0;32mI (45777) Data: 29185[0m
+[0;32mI (45777) FSM Loop: Loop Started[0m
+[0;32mI (45787) Data: 29185[0m
+[0;32mI (45787) FSM Loop: Loop Started[0m
+[0;32mI (45787) Data: 29185[0m
+[0;32mI (45787) FSM Loop: Loop Started[0m
+[0;32mI (45797) Data: 29185[0m
+[0;32mI (45797) FSM Loop: Loop Started[0m
+[0;32mI (45797) Data: 29185[0m
+[0;32mI (45797) FSM Loop: Loop Started[0m
+[0;32mI (45807) Data: 29185[0m
+[0;32mI (45807) FSM Loop: Loop Started[0m
+[0;32mI (45807) Data: 29185[0m
+[0;32mI (45807) FSM Loop: Loop Started[0m
+[0;32mI (45817) Data: 29185[0m
+[0;32mI (46187) FSM Loop: Loop Started[0m
+[0;32mI (46187) Data: 0[0m
+[0;32mI (46187) FSM Loop: Loop Started[0m
+[0;32mI (46187) Data: 0[0m
+[0;32mI (46187) FSM Loop: Loop Started[0m
+[0;32mI (46187) Data: 0[0m
+[0;32mI (46197) FSM Loop: Loop Started[0m
+[0;32mI (46197) Data: 0[0m
+[0;32mI (46197) FSM Loop: Loop Started[0m
+[0;32mI (46197) Data: 0[0m
+[0;32mI (46207) FSM Loop: Loop Started[0m
+[0;32mI (46207) Data: 0[0m
+[0;32mI (46207) FSM Loop: Loop Started[0m
+[0;32mI (46207) Data: 0[0m
+[0;32mI (46207) FSM Loop: Loop Started[0m
+[0;32mI (46217) Data: 0[0m
+[0;32mI (46217) FSM Loop: Loop Started[0m
+[0;32mI (46217) Data: 0[0m
+[0;32mI (46217) FSM Loop: Loop Started[0m
+[0;32mI (46227) Data: 28928[0m
+[0;32mI (46227) FSM Loop: Loop Started[0m
+[0;32mI (46227) Data: 28929[0m
+[0;32mI (46227) FSM Loop: Loop Started[0m
+[0;32mI (46237) Data: 28929[0m
+[0;32mI (46237) FSM Loop: Loop Started[0m
+[0;32mI (46237) Data: 28929[0m
+[0;32mI (46617) FSM Loop: Loop Started[0m
+[0;32mI (46617) Data: 28929[0m
+[0;32mI (46617) FSM Loop: Loop Started[0m
+[0;32mI (46617) Data: 28929[0m
+[0;32mI (46617) FSM Loop: Loop Started[0m
+[0;32mI (46627) Data: 28929[0m
+[0;32mI (46627) FSM Loop: Loop Started[0m
+[0;32mI (46627) Data: 28929[0m
+[0;32mI (46627) FSM Loop: Loop Started[0m
+[0;32mI (46637) Data: 28929[0m
+[0;32mI (46637) FSM Loop: Loop Started[0m
+[0;32mI (46637) Data: 28929[0m
+[0;32mI (46637) FSM Loop: Loop Started[0m
+[0;32mI (46647) Data: 28929[0m
+[0;32mI (46647) FSM Loop: Loop Started[0m
+[0;32mI (46647) Data: 28929[0m
+[0;32mI (46647) FSM Loop: Loop Started[0m
+[0;32mI (46657) Data: 28929[0m
+[0;32mI (46657) FSM Loop: Loop Started[0m
+[0;32mI (46657) Data: 28929[0m
+[0;32mI (46657) FSM Loop: Loop Started[0m
+[0;32mI (46667) Data: 28929[0m
+[0;32mI (46667) FSM Loop: Loop Started[0m
+[0;32mI (46667) Data: 28929[0m
+[0;32mI (46667) FSM Loop: Loop Started[0m
+[0;32mI (46677) Data: 28929[0m
+[0;32mI (47047) FSM Loop: Loop Started[0m
+[0;32mI (47047) Data: 0[0m
+[0;32mI (47047) FSM Loop: Loop Started[0m
+[0;32mI (47047) Data: 0[0m
+[0;32mI (47047) FSM Loop: Loop Started[0m
+[0;32mI (47047) Data: 0[0m
+[0;32mI (47057) FSM Loop: Loop Started[0m
+[0;32mI (47057) Data: 0[0m
+[0;32mI (47057) FSM Loop: Loop Started[0m
+[0;32mI (47057) Data: 0[0m
+[0;32mI (47057) FSM Loop: Loop Started[0m
+[0;32mI (47067) Data: 0[0m
+[0;32mI (47067) FSM Loop: Loop Started[0m
+[0;32mI (47067) Data: 0[0m
+[0;32mI (47067) FSM Loop: Loop Started[0m
+[0;32mI (47077) Data: 0[0m
+[0;32mI (47077) FSM Loop: Loop Started[0m
+[0;32mI (47077) Data: 0[0m
+[0;32mI (47077) FSM Loop: Loop Started[0m
+[0;32mI (47087) Data: 28928[0m
+[0;32mI (47087) FSM Loop: Loop Started[0m
+[0;32mI (47087) Data: 28929[0m
+[0;32mI (47087) FSM Loop: Loop Started[0m
+[0;32mI (47097) Data: 28929[0m
+[0;32mI (47097) FSM Loop: Loop Started[0m
+[0;32mI (47097) Data: 28929[0m
+[0;32mI (47477) FSM Loop: Loop Started[0m
+[0;32mI (47477) Data: 28929[0m
+[0;32mI (47477) FSM Loop: Loop Started[0m
+[0;32mI (47477) Data: 28929[0m
+[0;32mI (47477) FSM Loop: Loop Started[0m
+[0;32mI (47477) Data: 28929[0m
+[0;32mI (47487) FSM Loop: Loop Started[0m
+[0;32mI (47487) Data: 28929[0m
+[0;32mI (47487) FSM Loop: Loop Started[0m
+[0;32mI (47487) Data: 28929[0m
+[0;32mI (47497) FSM Loop: Loop Started[0m
+[0;32mI (47497) Data: 28929[0m
+[0;32mI (47497) FSM Loop: Loop Started[0m
+[0;32mI (47497) Data: 28929[0m
+[0;32mI (47507) FSM Loop: Loop Started[0m
+[0;32mI (47507) Data: 28929[0m
+[0;32mI (47507) FSM Loop: Loop Started[0m
+[0;32mI (47507) Data: 28929[0m
+[0;32mI (47517) FSM Loop: Loop Started[0m
+[0;32mI (47517) Data: 28929[0m
+[0;32mI (47517) FSM Loop: Loop Started[0m
+[0;32mI (47517) Data: 28929[0m
+[0;32mI (47527) FSM Loop: Loop Started[0m
+[0;32mI (47527) Data: 28929[0m
+[0;32mI (47527) FSM Loop: Loop Started[0m
+[0;32mI (47527) Data: 28929[0m
+[0;32mI (47907) FSM Loop: Loop Started[0m
+[0;32mI (47907) Data: 0[0m
+[0;32mI (47907) FSM Loop: Loop Started[0m
+[0;32mI (47907) Data: 0[0m
+[0;32mI (47907) FSM Loop: Loop Started[0m
+[0;32mI (47907) Data: 0[0m
+[0;32mI (47907) FSM Loop: Loop Started[0m
+[0;32mI (47917) Data: 0[0m
+[0;32mI (47917) FSM Loop: Loop Started[0m
+[0;32mI (47917) Data: 0[0m
+[0;32mI (47917) FSM Loop: Loop Started[0m
+[0;32mI (47927) Data: 0[0m
+[0;32mI (47927) FSM Loop: Loop Started[0m
+[0;32mI (47927) Data: 0[0m
+[0;32mI (47927) FSM Loop: Loop Started[0m
+[0;32mI (47937) Data: 0[0m
+[0;32mI (47937) FSM Loop: Loop Started[0m
+[0;32mI (47937) Data: 0[0m
+[0;32mI (47937) FSM Loop: Loop Started[0m
+[0;32mI (47937) Data: 29184[0m
+[0;32mI (47947) FSM Loop: Loop Started[0m
+[0;32mI (47947) Data: 29185[0m
+[0;32mI (47947) FSM Loop: Loop Started[0m
+[0;32mI (47947) Data: 29185[0m
+[0;32mI (47957) FSM Loop: Loop Started[0m
+[0;32mI (47957) Data: 29185[0m
+[0;32mI (48337) FSM Loop: Loop Started[0m
+[0;32mI (48337) Data: 29185[0m
+[0;32mI (48337) FSM Loop: Loop Started[0m
+[0;32mI (48337) Data: 29185[0m
+[0;32mI (48337) FSM Loop: Loop Started[0m
+[0;32mI (48337) Data: 29185[0m
+[0;32mI (48347) FSM Loop: Loop Started[0m
+[0;32mI (48347) Data: 29185[0m
+[0;32mI (48347) FSM Loop: Loop Started[0m
+[0;32mI (48347) Data: 29185[0m
+[0;32mI (48357) FSM Loop: Loop Started[0m
+[0;32mI (48357) Data: 29185[0m
+[0;32mI (48357) FSM Loop: Loop Started[0m
+[0;32mI (48357) Data: 29185[0m
+[0;32mI (48367) FSM Loop: Loop Started[0m
+[0;32mI (48367) Data: 29185[0m
+[0;32mI (48367) FSM Loop: Loop Started[0m
+[0;32mI (48367) Data: 29185[0m
+[0;32mI (48377) FSM Loop: Loop Started[0m
+[0;32mI (48377) Data: 29185[0m
+[0;32mI (48377) FSM Loop: Loop Started[0m
+[0;32mI (48377) Data: 29185[0m
+[0;32mI (48387) FSM Loop: Loop Started[0m
+[0;32mI (48387) Data: 29185[0m
+[0;32mI (48387) FSM Loop: Loop Started[0m
+[0;32mI (48387) Data: 29185[0m
+[0;32mI (48767) FSM Loop: Loop Started[0m
+[0;32mI (48767) Data: 0[0m
+[0;32mI (48767) FSM Loop: Loop Started[0m
+[0;32mI (48767) Data: 0[0m
+[0;32mI (48767) FSM Loop: Loop Started[0m
+[0;32mI (48767) Data: 0[0m
+[0;32mI (48767) FSM Loop: Loop Started[0m
+[0;32mI (48777) Data: 0[0m
+[0;32mI (48777) FSM Loop: Loop Started[0m
+[0;32mI (48777) Data: 0[0m
+[0;32mI (48777) FSM Loop: Loop Started[0m
+[0;32mI (48787) Data: 0[0m
+[0;32mI (48787) FSM Loop: Loop Started[0m
+[0;32mI (48787) Data: 0[0m
+[0;32mI (48787) FSM Loop: Loop Started[0m
+[0;32mI (48787) Data: 0[0m
+[0;32mI (48797) FSM Loop: Loop Started[0m
+[0;32mI (48797) Data: 0[0m
+[0;32mI (48797) FSM Loop: Loop Started[0m
+[0;32mI (48797) Data: 28928[0m
+[0;32mI (48807) FSM Loop: Loop Started[0m
+[0;32mI (48807) Data: 28929[0m
+[0;32mI (48807) FSM Loop: Loop Started[0m
+[0;32mI (48807) Data: 28929[0m
+[0;32mI (48817) FSM Loop: Loop Started[0m
+[0;32mI (48817) Data: 28929[0m
+[0;32mI (49197) FSM Loop: Loop Started[0m
+[0;32mI (49197) Data: 28929[0m
+[0;32mI (49197) FSM Loop: Loop Started[0m
+[0;32mI (49197) Data: 28929[0m
+[0;32mI (49197) FSM Loop: Loop Started[0m
+[0;32mI (49197) Data: 28929[0m
+[0;32mI (49207) FSM Loop: Loop Started[0m
+[0;32mI (49207) Data: 28929[0m
+[0;32mI (49207) FSM Loop: Loop Started[0m
+[0;32mI (49207) Data: 28929[0m
+[0;32mI (49217) FSM Loop: Loop Started[0m
+[0;32mI (49217) Data: 28929[0m
+[0;32mI (49217) FSM Loop: Loop Started[0m
+[0;32mI (49217) Data: 28929[0m
+[0;32mI (49227) FSM Loop: Loop Started[0m
+[0;32mI (49227) Data: 28929[0m
+[0;32mI (49227) FSM Loop: Loop Started[0m
+[0;32mI (49227) Data: 28929[0m
+[0;32mI (49237) FSM Loop: Loop Started[0m
+[0;32mI (49237) Data: 28929[0m
+[0;32mI (49237) FSM Loop: Loop Started[0m
+[0;32mI (49237) Data: 28929[0m
+[0;32mI (49247) FSM Loop: Loop Started[0m
+[0;32mI (49247) Data: 28929[0m
+[0;32mI (49247) FSM Loop: Loop Started[0m
+[0;32mI (49247) Data: 28929[0m
+[0;32mI (49627) FSM Loop: Loop Started[0m
+[0;32mI (49627) Data: 0[0m
+[0;32mI (49627) FSM Loop: Loop Started[0m
+[0;32mI (49627) Data: 0[0m
+[0;32mI (49627) FSM Loop: Loop Started[0m
+[0;32mI (49627) Data: 0[0m
+[0;32mI (49627) FSM Loop: Loop Started[0m
+[0;32mI (49637) Data: 0[0m
+[0;32mI (49637) FSM Loop: Loop Started[0m
+[0;32mI (49637) Data: 0[0m
+[0;32mI (49637) FSM Loop: Loop Started[0m
+[0;32mI (49637) Data: 0[0m
+[0;32mI (49647) FSM Loop: Loop Started[0m
+[0;32mI (49647) Data: 0[0m
+[0;32mI (49647) FSM Loop: Loop Started[0m
+[0;32mI (49647) Data: 0[0m
+[0;32mI (49657) FSM Loop: Loop Started[0m
+[0;32mI (49657) Data: 0[0m
+[0;32mI (49657) FSM Loop: Loop Started[0m
+[0;32mI (49657) Data: 28928[0m
+[0;32mI (49667) FSM Loop: Loop Started[0m
+[0;32mI (49667) Data: 28929[0m
+[0;32mI (49667) FSM Loop: Loop Started[0m
+[0;32mI (49667) Data: 28929[0m
+[0;32mI (49677) FSM Loop: Loop Started[0m
+[0;32mI (49677) Data: 28929[0m
+[0;32mI (50057) FSM Loop: Loop Started[0m
+[0;32mI (50057) Data: 28929[0m
+[0;32mI (50057) FSM Loop: Loop Started[0m
+[0;32mI (50057) Data: 28929[0m
+[0;32mI (50057) FSM Loop: Loop Started[0m
+[0;32mI (50057) Data: 28929[0m
+[0;32mI (50057) FSM Loop: Loop Started[0m
+[0;32mI (50067) Data: 28929[0m
+[0;32mI (50067) FSM Loop: Loop Started[0m
+[0;32mI (50067) Data: 28929[0m
+[0;32mI (50067) FSM Loop: Loop Started[0m
+[0;32mI (50077) Data: 28929[0m
+[0;32mI (50077) FSM Loop: Loop Started[0m
+[0;32mI (50077) Data: 28929[0m
+[0;32mI (50077) FSM Loop: Loop Started[0m
+[0;32mI (50087) Data: 28929[0m
+[0;32mI (50087) FSM Loop: Loop Started[0m
+[0;32mI (50087) Data: 28929[0m
+[0;32mI (50087) FSM Loop: Loop Started[0m
+[0;32mI (50097) Data: 28929[0m
+[0;32mI (50097) FSM Loop: Loop Started[0m
+[0;32mI (50097) Data: 28929[0m
+[0;32mI (50097) FSM Loop: Loop Started[0m
+[0;32mI (50107) Data: 28929[0m
+[0;32mI (50107) FSM Loop: Loop Started[0m
+[0;32mI (50107) Data: 28929[0m
+[0;32mI (50487) FSM Loop: Loop Started[0m
+[0;32mI (50487) Data: 0[0m
+[0;32mI (50487) FSM Loop: Loop Started[0m
+[0;32mI (50487) Data: 0[0m
+[0;32mI (50487) FSM Loop: Loop Started[0m
+[0;32mI (50487) Data: 0[0m
+[0;32mI (50487) FSM Loop: Loop Started[0m
+[0;32mI (50487) Data: 0[0m
+[0;32mI (50497) FSM Loop: Loop Started[0m
+[0;32mI (50497) Data: 0[0m
+[0;32mI (50497) FSM Loop: Loop Started[0m
+[0;32mI (50497) Data: 0[0m
+[0;32mI (50507) FSM Loop: Loop Started[0m
+[0;32mI (50507) Data: 0[0m
+[0;32mI (50507) FSM Loop: Loop Started[0m
+[0;32mI (50507) Data: 0[0m
+[0;32mI (50507) FSM Loop: Loop Started[0m
+[0;32mI (50517) Data: 0[0m
+[0;32mI (50517) FSM Loop: Loop Started[0m
+[0;32mI (50517) Data: 28672[0m
+[0;32mI (50517) FSM Loop: Loop Started[0m
+[0;32mI (50527) Data: 28673[0m
+[0;32mI (50527) FSM Loop: Loop Started[0m
+[0;32mI (50527) Data: 28673[0m
+[0;32mI (50527) FSM Loop: Loop Started[0m
+[0;32mI (50537) Data: 28673[0m
+[0;32mI (50917) FSM Loop: Loop Started[0m
+[0;32mI (50917) Data: 28673[0m
+[0;32mI (50917) FSM Loop: Loop Started[0m
+[0;32mI (50917) Data: 28673[0m
+[0;32mI (50917) FSM Loop: Loop Started[0m
+[0;32mI (50917) Data: 28673[0m
+[0;32mI (50917) FSM Loop: Loop Started[0m
+[0;32mI (50927) Data: 28673[0m
+[0;32mI (50927) FSM Loop: Loop Started[0m
+[0;32mI (50927) Data: 28673[0m
+[0;32mI (50927) FSM Loop: Loop Started[0m
+[0;32mI (50937) Data: 28673[0m
+[0;32mI (50937) FSM Loop: Loop Started[0m
+[0;32mI (50937) Data: 28673[0m
+[0;32mI (50937) FSM Loop: Loop Started[0m
+[0;32mI (50947) Data: 28673[0m
+[0;32mI (50947) FSM Loop: Loop Started[0m
+[0;32mI (50947) Data: 28673[0m
+[0;32mI (50947) FSM Loop: Loop Started[0m
+[0;32mI (50957) Data: 28673[0m
+[0;32mI (50957) FSM Loop: Loop Started[0m
+[0;32mI (50957) Data: 28673[0m
+[0;32mI (50957) FSM Loop: Loop Started[0m
+[0;32mI (50967) Data: 28673[0m
+[0;32mI (50967) FSM Loop: Loop Started[0m
+[0;32mI (50967) Data: 28673[0m
+[0;32mI (51347) FSM Loop: Loop Started[0m
+[0;32mI (51347) Data: 0[0m
+[0;32mI (51347) FSM Loop: Loop Started[0m
+[0;32mI (51347) Data: 0[0m
+[0;32mI (51347) FSM Loop: Loop Started[0m
+[0;32mI (51347) Data: 0[0m
+[0;32mI (51347) FSM Loop: Loop Started[0m
+[0;32mI (51347) Data: 0[0m
+[0;32mI (51357) FSM Loop: Loop Started[0m
+[0;32mI (51357) Data: 0[0m
+[0;32mI (51357) FSM Loop: Loop Started[0m
+[0;32mI (51357) Data: 0[0m
+[0;32mI (51357) FSM Loop: Loop Started[0m
+[0;32mI (51367) Data: 0[0m
+[0;32mI (51367) FSM Loop: Loop Started[0m
+[0;32mI (51367) Data: 0[0m
+[0;32mI (51367) FSM Loop: Loop Started[0m
+[0;32mI (51377) Data: 0[0m
+[0;32mI (51377) FSM Loop: Loop Started[0m
+[0;32mI (51377) Data: 29184[0m
+[0;32mI (51377) FSM Loop: Loop Started[0m
+[0;32mI (51387) Data: 29185[0m
+[0;32mI (51387) FSM Loop: Loop Started[0m
+[0;32mI (51387) Data: 29185[0m
+[0;32mI (51387) FSM Loop: Loop Started[0m
+[0;32mI (51397) Data: 29185[0m
+[0;32mI (51777) FSM Loop: Loop Started[0m
+[0;32mI (51777) Data: 29185[0m
+[0;32mI (51777) FSM Loop: Loop Started[0m
+[0;32mI (51777) Data: 29185[0m
+[0;32mI (51777) FSM Loop: Loop Started[0m
+[0;32mI (51777) Data: 29185[0m
+[0;32mI (51777) FSM Loop: Loop Started[0m
+[0;32mI (51787) Data: 29185[0m
+[0;32mI (51787) FSM Loop: Loop Started[0m
+[0;32mI (51787) Data: 29185[0m
+[0;32mI (51787) FSM Loop: Loop Started[0m
+[0;32mI (51787) Data: 29185[0m
+[0;32mI (51797) FSM Loop: Loop Started[0m
+[0;32mI (51797) Data: 29185[0m
+[0;32mI (51797) FSM Loop: Loop Started[0m
+[0;32mI (51797) Data: 29185[0m
+[0;32mI (51807) FSM Loop: Loop Started[0m
+[0;32mI (51807) Data: 29185[0m
+[0;32mI (51807) FSM Loop: Loop Started[0m
+[0;32mI (51807) Data: 29185[0m
+[0;32mI (51817) FSM Loop: Loop Started[0m
+[0;32mI (51817) Data: 29185[0m
+[0;32mI (51817) FSM Loop: Loop Started[0m
+[0;32mI (51817) Data: 29185[0m
+[0;32mI (51827) FSM Loop: Loop Started[0m
+[0;32mI (51827) Data: 29185[0m
+[0;32mI (52207) FSM Loop: Loop Started[0m
+[0;32mI (52207) Data: 0[0m
+[0;32mI (52207) FSM Loop: Loop Started[0m
+[0;32mI (52207) Data: 0[0m
+[0;32mI (52207) FSM Loop: Loop Started[0m
+[0;32mI (52207) Data: 0[0m
+[0;32mI (52207) FSM Loop: Loop Started[0m
+[0;32mI (52207) Data: 0[0m
+[0;32mI (52207) FSM Loop: Loop Started[0m
+[0;32mI (52217) Data: 0[0m
+[0;32mI (52217) FSM Loop: Loop Started[0m
+[0;32mI (52217) Data: 0[0m
+[0;32mI (52217) FSM Loop: Loop Started[0m
+[0;32mI (52227) Data: 0[0m
+[0;32mI (52227) FSM Loop: Loop Started[0m
+[0;32mI (52227) Data: 0[0m
+[0;32mI (52227) FSM Loop: Loop Started[0m
+[0;32mI (52237) Data: 0[0m
+[0;32mI (52237) FSM Loop: Loop Started[0m
+[0;32mI (52237) Data: 28928[0m
+[0;32mI (52237) FSM Loop: Loop Started[0m
+[0;32mI (52247) Data: 28929[0m
+[0;32mI (52247) FSM Loop: Loop Started[0m
+[0;32mI (52247) Data: 28929[0m
+[0;32mI (52247) FSM Loop: Loop Started[0m
+[0;32mI (52257) Data: 28929[0m

@@ -1,0 +1,36 @@
+Command: make -j 6 all
+In file included from /home/bmetal/esp-idf/components/esp_common/include/esp_check.h:9,
+                 from /home/bmetal/esp-idf/components/esp_driver_uart/include/driver/uart.h:14,
+                 from /home/bmetal/esp-idf/uartTest/main/uartTest.c:2:
+/home/bmetal/esp-idf/uartTest/main/uartTest.c: In function 'uart_rcv':
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:64:52: error: 'LaserResponse' undeclared (first use in this function)
+   64 |                         ESP_LOGI("Distance", "%d", LaserResponse.payload_distance.total_measurement);
+      |                                                    ^~~~~~~~~~~~~
+/home/bmetal/esp-idf/components/log/include/esp_log.h:220:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  220 |         if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_ERROR)        { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_ERROR),   tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/bmetal/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:64:25: note: in expansion of macro 'ESP_LOGI'
+   64 |                         ESP_LOGI("Distance", "%d", LaserResponse.payload_distance.total_measurement);
+      |                         ^~~~~~~~
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:64:52: note: each undeclared identifier is reported only once for each function it appears in
+   64 |                         ESP_LOGI("Distance", "%d", LaserResponse.payload_distance.total_measurement);
+      |                                                    ^~~~~~~~~~~~~
+/home/bmetal/esp-idf/components/log/include/esp_log.h:220:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  220 |         if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_ERROR)        { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_ERROR),   tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/bmetal/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:64:25: note: in expansion of macro 'ESP_LOGI'
+   64 |                         ESP_LOGI("Distance", "%d", LaserResponse.payload_distance.total_measurement);
+      |                         ^~~~~~~~
+/home/bmetal/esp-idf/uartTest/main/uartTest.c:57:38: warning: variable 'responseData' set but not used [-Wunused-but-set-variable]
+   57 |                 struct LaserResponse responseData;
+      |                                      ^~~~~~~~~~~~
+configdep.c:648: in main: exec_process exited with error code: 1
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:79: esp-idf/main/CMakeFiles/__idf_main.dir/uartTest.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:9466: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2
